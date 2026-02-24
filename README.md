@@ -86,14 +86,14 @@ Blocky: system UI look, dialogue card emphasis
 
 ## 4) HTML customization tutorial
 > There are two layers:
-# Layer A: “UI Engine Pack” (capabilities)
+- Layer A: “UI Engine Pack” (capabilities)
 > Defines what UIs can do:
 Tabs, drawers, modals, dossier pages, feed switchers
 CSS-only toggles (input/label)
 Animation families by UI_LEVEL
 Accessibility rules (tap targets, scrollable panels)
 
-# Layer B: Style toggles (art direction)
+- Layer B: Style toggles (art direction)
 > Pick one:
 ModernUI: floating glass, grids, negative space, noir HUD, phone apps
 FantasyDocs: scene cards, parchment letters, seals, journal pages
