@@ -84,21 +84,21 @@ Wrap types:
 Blocky: system UI look, dialogue card emphasis
 > If you want the fancy prose look on desktop, use UI panels instead (ModernUI/FantasyDocs), not VTK wraps.
 
-4) HTML customization tutorial
+## 4) HTML customization tutorial
 > There are two layers:
-## Layer A: “UI Engine Pack” (capabilities)
+# Layer A: “UI Engine Pack” (capabilities)
 > Defines what UIs can do:
 Tabs, drawers, modals, dossier pages, feed switchers
 CSS-only toggles (input/label)
 Animation families by UI_LEVEL
 Accessibility rules (tap targets, scrollable panels)
 
-## Layer B: Style toggles (art direction)
+# Layer B: Style toggles (art direction)
 > Pick one:
 ModernUI: floating glass, grids, negative space, noir HUD, phone apps
 FantasyDocs: scene cards, parchment letters, seals, journal pages
 
-5) RPG tracker tutorial
+## 5) RPG tracker tutorial
 > Plain tracker:
 Enabling tracking will append a small tracker to the bottom of the narrative, and the regex will enclose it in an HTML box.
 > RPG TRACKER:
