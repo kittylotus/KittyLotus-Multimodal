@@ -1,0 +1,193 @@
+[
+    {
+        "id": "d5f24f21-8bb8-4096-aa38-88511031e1cd",
+        "scriptName": "🧩 [Thinking] 01 — Collapsible think",
+        "findRegex": "/<(think|thinking)>(.*?)<\\/\\1>\\s*/is",
+        "replaceString": "<hr><details name=\"thought\"><summary>Thought</summary>$2</details><hr>",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": true,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "4660cca4-d642-49ca-9e7d-5adcd7752849",
+        "scriptName": "🧩 [Thinking] 02 — Hide Think",
+        "findRegex": "/<(think|thinking)>.*?<\\/\\1>\\s*/is",
+        "replaceString": "",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": false,
+        "promptOnly": true,
+        "runOnEdit": true,
+        "substituteRegex": 0,
+        "minDepth": 1,
+        "maxDepth": null
+    },
+    {
+        "id": "17b2c761-4acd-4c81-8ecf-2b80322b897e",
+        "scriptName": "🧩 [Thinking] 03 — Ongoing Thinking label",
+        "findRegex": "/<(think|thinking)>(?!.*?<\\/\\1>)(.*)/is",
+        "replaceString": "<hr><details name=\"thought\"><summary>Thinking</summary>$2</details><hr>",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": true,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "e4b91eeb-aa16-4ad4-a4d7-fdcc922c5020",
+        "scriptName": "🧩 [BRANCH] 01 — <branch> → <branch-list>",
+        "findRegex": "/<branch>\\s*([\\s\\S]*?)\\s*<\\/branch>/g",
+        "replaceString": "<branch-list>$1</branch-list>",
+        "trimStrings": [
+            "\\r"
+        ],
+        "placement": [
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": false,
+        "promptOnly": false,
+        "runOnEdit": true,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "8c4bf9b2-d1f8-4cd6-bc4f-37cf9729ea32",
+        "scriptName": "🧩 [BRANCH] 02 — Delimiter",
+        "findRegex": "/<branch-list>\\s*([\\s\\S]*?)\\s*<\\/branch-list>/g",
+        "replaceString": "<!-- UI_START --><div class=\"html-safe-wrap\"><style>:root{--m-bg:rgba(12,14,18,0.94);--m-p:rgba(255,255,255,0.06);--m-b:rgba(255,255,255,0.12);--m-t:#eaf0fa;--m-m:rgba(234,240,250,0.72);--m-a:#93c5fd;} .bio-test-hide{position:absolute;opacity:0;pointer-events:none;width:0;height:0;margin:0;padding:0;border:0;overflow:hidden;z-index:-1;} .branch-root{max-width:720px;margin:14px auto;box-sizing:border-box;background:var(--m-bg);border:1px solid var(--m-b);border-radius:16px;padding:14px 14px 12px 14px;font-family:system-ui;color:var(--m-t);overflow-x:hidden} .branch-h{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin:0 0 10px 0} .branch-title{font-weight:800;letter-spacing:.10em;font-size:12px;opacity:.95} .branch-sub{font-size:12px;color:var(--m-m)} .branch-grid{display:flex;flex-direction:column;gap:10px} .branch-card{border:1px solid rgba(255,255,255,0.12);border-radius:14px;background:var(--m-p);padding:12px;line-height:1.35} .branch-top{display:flex;gap:10px;align-items:baseline} .branch-n{color:var(--m-a);font-weight:800} .branch-name{font-weight:750} .branch-body{margin-top:8px} .branch-cons{margin-top:8px;color:var(--m-m);font-size:12px} </style><div class=\"branch-root\"><div class=\"branch-h\"><div class=\"branch-title\">CHOICES</div><div class=\"branch-sub\">Reply with 1 / 2 / 3</div></div><div class=\"branch-grid\">$1</div></div></div><!-- UI_END -->",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": false,
+        "promptOnly": false,
+        "runOnEdit": true,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "f7857391-dd31-4977-9b7c-227ff25556d0",
+        "scriptName": "🧩 [BRANCH] 03 — Options → Cards",
+        "findRegex": "/([1-3])\\|([^|\\n\\r]+)\\|([^|\\n\\r]+)\\|([^|\\n\\r]*?)~END~/gm",
+        "replaceString": "<div class=\"branch-card\"><div class=\"branch-top\"><div class=\"branch-n\">$1)</div><div class=\"branch-name\">$2</div></div><div class=\"branch-body\">$3</div><div class=\"branch-cons\"><b>Consequence:</b> $4</div></div>",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": false,
+        "promptOnly": false,
+        "runOnEdit": true,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "4672d259-e574-4db4-8480-18b66cfdd15f",
+        "scriptName": "🧩 [WEBNOVEL] 01 — Pretty Titles",
+        "findRegex": "/^\\s*<chap>([^|<]*)\\|([^<]*)<\\/chap>\\s*/m",
+        "replaceString": "<!-- UI_START --><div class=\"html-safe-wrap\"><style>.wn-wrap{max-width:720px;margin:22px auto;text-align:center;box-sizing:border-box}.wn-hr{border:0;height:1px;background-image:linear-gradient(to right, rgba(0,0,0,0), rgba(150,150,150,0.75), rgba(0,0,0,0));}.wn-ch{font-family:Courier New, monospace;letter-spacing:.22rem;font-size:.85rem;margin-top:12px;opacity:.85}.wn-title{font-family:Georgia, Times New Roman, serif;font-weight:normal;margin:10px 0;line-height:1.15}.wn-mark{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;font-size:12px;opacity:.6;letter-spacing:.08em;margin-bottom:12px}</style><div class=\"wn-wrap\"><hr class=\"wn-hr\"><div class=\"wn-ch\">CHAPTER $1</div><h2 class=\"wn-title\">$2</h2><div class=\"wn-mark\">— ✦ —</div><hr class=\"wn-hr\"></div></div><!-- UI_END -->\n",
+        "trimStrings": [
+            "\\r"
+        ],
+        "placement": [
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": false,
+        "promptOnly": false,
+        "runOnEdit": true,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "ca3ba442-02f7-45f3-ae2d-dd4c32f1774e",
+        "scriptName": "🧩 [TRACK] 01 — Pretty Track Card",
+        "findRegex": "/<track>\\s*([\\s\\S]*?)\\s*<\\/track>/g",
+        "replaceString": "<!-- UI_START --><div class=\"html-safe-wrap\"><style>:root{--t-bg:rgba(12,14,18,0.94);--t-b:rgba(255,255,255,0.12);--t-p:rgba(255,255,255,0.06);--t-t:#eaf0fa;--t-m:rgba(234,240,250,0.72);} .track-root{max-width:680px;margin:14px auto 0 auto;box-sizing:border-box;background:var(--t-bg);border:1px solid var(--t-b);border-radius:14px;padding:12px 14px;font-family:system-ui;color:var(--t-t);overflow-x:hidden} .track-h{font-weight:800;letter-spacing:.10em;font-size:12px;opacity:.92;margin-bottom:8px} .track-body{font-size:13px;line-height:1.35;white-space:pre-wrap;word-wrap:break-word;color:var(--t-t)} </style><div class=\"track-root\"><div class=\"track-h\">TRACK</div><div class=\"track-body\">$1</div></div></div><!-- UI_END -->",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": false,
+        "promptOnly": false,
+        "runOnEdit": true,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "8ad7d6aa-af0b-4439-8685-1bb4ea12c6c8",
+        "scriptName": "⚙️ [CTX] 01 — Strip Anchored UI Blocks",
+        "findRegex": "/<!--\\s*(?:TRACK_START|BRANCH_UI_START|CHAPTER_UI_START|UI_START)\\s*-->[\\s\\S]*?<!--\\s*(?:TRACK_END|BRANCH_UI_END|CHAPTER_UI_END|UI_END)\\s*-->/gi",
+        "replaceString": "",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": false,
+        "promptOnly": true,
+        "runOnEdit": false,
+        "substituteRegex": 0,
+        "minDepth": 3,
+        "maxDepth": null
+    },
+    {
+        "id": "62a391a5-8df3-4421-88d3-628248d2baa5",
+        "scriptName": "⚙️ [CTX] 06 — Strip [OOC: …] Lines",
+        "findRegex": "/^\\s*\\[OOC:[^\\n]*\\]\\s*$/gmi",
+        "replaceString": "",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": true,
+        "markdownOnly": false,
+        "promptOnly": true,
+        "runOnEdit": false,
+        "substituteRegex": 0,
+        "minDepth": 3,
+        "maxDepth": null
+    },
+    {
+        "id": "aa799693-2bc5-4df8-b5a0-d64f7d1f833c",
+        "scriptName": "⚙️ [CTX] 07 — Strip STATE/DEBUG Block (optional)",
+        "findRegex": "/^\\s*STATE\\s*:\\s*[\\s\\S]*?(?=\\n\\s*\\n|$)/gmi",
+        "replaceString": "",
+        "trimStrings": [],
+        "placement": [
+            2
+        ],
+        "disabled": true,
+        "markdownOnly": false,
+        "promptOnly": true,
+        "runOnEdit": false,
+        "substituteRegex": 0,
+        "minDepth": 3,
+        "maxDepth": null
+    }
+]
