@@ -40,32 +40,32 @@ Canon NPCs must come from the same IP
 Goal: “make it darker” without changing genre.
 
 > Use DARK_LEVEL as a dial:
-0: gentle world, recovery is easy, coincidences allowed
-1–2: tension + friction, mistakes cost time/trust/resources
-3: harsh realism, consequences compound, luck decreases
-4: severe stakes, safety is temporary, help is conditional
-5: no safety net, major loss possible, closure not guaranteed
+- 0: gentle world, recovery is easy, coincidences allowed
+- 1–2: tension + friction, mistakes cost time/trust/resources
+- 3: harsh realism, consequences compound, luck decreases
+- 4: severe stakes, safety is temporary, help is conditional
+- 5: no safety net, major loss possible, closure not guaranteed
 
 > How to use:
-Set DARK_LEVEL=2 for “tense but not brutal”
-Set DARK_LEVEL=4 for “everything has consequences”
-Set DARK_LEVEL=5 your actions are often unforgiven.
+- Set DARK_LEVEL=2 for “tense but not brutal”
+- Set DARK_LEVEL=4 for “everything has consequences”
+- Set DARK_LEVEL=5 your actions are often unforgiven.
 
 > It won’t auto-add gore or explicit content. That’s separate.
 
 
 ## 2) VILLAIN SYSTEM (quick start)
 Step 1: pick an archetype
-> Strategist: plans, contingencies, leverage, patience
-> Charmer: social engineering, grooming, plausible lies
-> Enforcer: intimidation, coercion, direct consequence
-> Predator: stalking vulnerability, closing distance, pressure
-> Zealot: ideology, “necessary harm,” recruitment logic
-> Trickster: misdirection, traps, mask-switching
-> Parasite: dependency, obligation, subtle isolation
+- Strategist: plans, contingencies, leverage, patience
+- Charmer: social engineering, grooming, plausible lies
+- Enforcer: intimidation, coercion, direct consequence
+- Predator: stalking vulnerability, closing distance, pressure
+- Zealot: ideology, “necessary harm,” recruitment logic
+- Trickster: misdirection, traps, mask-switching
+- Parasite: dependency, obligation, subtle isolation
 
 Step 2: optional modifier
-Obsessive: fixation on the protagonist via access/control/profiling
+- Obsessive: fixation on the protagonist via access/control/profiling
 
 > How to use (example combos):
 Strategist + Obsessive = meticulous “I already planned your life” horror
@@ -76,8 +76,8 @@ Predator + Obsessive = stalking + engineered proximity
 Problem: narrative HTML wraps can break click/scroll on desktop. Fix: wraps are mobile-only.
 
 > How it works:
-If UI_PLATFORM=Mobile → wraps allowed
-If UI_PLATFORM=Desktop → narrative is normal text (no VTK wrapper)
+- If UI_PLATFORM=Mobile → wraps allowed
+- If UI_PLATFORM=Desktop → narrative is normal text (no VTK wrapper)
 
 Wrap types:
 > Soft: serif “book page” look, gentle gradients
@@ -99,7 +99,7 @@ ModernUI: floating glass, grids, negative space, noir HUD, phone apps
 FantasyDocs: scene cards, parchment letters, seals, journal pages
 
 ## 5) RPG tracker tutorial
-> Plain tracker:
+- Plain tracker:
 Enabling tracking will append a small tracker to the bottom of the narrative, and the regex will enclose it in an HTML box.
-> RPG TRACKER:
+- RPG TRACKER:
 Enabling tracking + RPG Tracker(+persona tracker) + RPGHUD dependency will rerout the tracker data to a Game Like, interactive, consistent RPG Tracker.
