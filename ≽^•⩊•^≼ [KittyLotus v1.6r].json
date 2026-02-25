@@ -1925,7 +1925,7 @@
             "marker": false,
             "name": "┆✧ Quote Color Fix ST",
             "role": "system",
-            "content": "[QUOTE COLOR FIX] MANDATORY\nNEVER output quotes inside HTML, replace `\"` with `&quot;` and `'` with `&apos;`.",
+            "content":"[QUOTE COLOR FIX] Applies to all HTML UI. Never render straight quotes in visible UI text (\" or '). Do NOT use &quot; or &apos; for dialogue—those decode back into straight quotes. Use curly quotes (“ ” / ‘ ’) or replace quotes with a leading symbol (e.g., › or ➤) or italics/smallcaps. Optional: wrap emphasized quoted phrases as <span class=ui-quote>“text”</span> and define .ui-quote{color:var(--quote,var(--text));font-weight:600;} in the UI <style>.",
             "injection_position": 0,
             "injection_depth": 0,
             "injection_order": 100,
