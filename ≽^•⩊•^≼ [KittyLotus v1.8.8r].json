@@ -1,4 +1,112 @@
 {
+    "extensions": {
+        "regex_scripts": [
+            {
+                "id": "d5f24f21-8bb8-4096-aa38-88511031e1cd",
+                "scriptName": "🧩 [Thinking] 01 — Collapsible think",
+                "findRegex": "/<(think|thinking)>(.*?)<\\/\\1>\\s*/is",
+                "replaceString": "<hr><details name=\"thought\"><summary>Thought</summary>$2</details><hr>",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": true,
+                "promptOnly": false,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
+            },
+            {
+                "id": "4660cca4-d642-49ca-9e7d-5adcd7752849",
+                "scriptName": "🧩 [Thinking] 02 — Hide Think",
+                "findRegex": "/<(think|thinking)>.*?<\\/\\1>\\s*/is",
+                "replaceString": "",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": true,
+                "markdownOnly": false,
+                "promptOnly": true,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": 1,
+                "maxDepth": null
+            },
+            {
+                "id": "17b2c761-4acd-4c81-8ecf-2b80322b897e",
+                "scriptName": "🧩 [Thinking] 03 — Ongoing Thinking label",
+                "findRegex": "/<(think|thinking)>(?!.*?<\\/\\1>)(.*)/is",
+                "replaceString": "<hr><details name=\"thought\"><summary>Thinking</summary>$2</details><hr>",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": true,
+                "promptOnly": false,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
+            },
+            {
+                "id": "4672d259-e574-4db4-8480-18b66cfdd15f",
+                "scriptName": "🧩 [WEBNOVEL] 01 — Pretty Titles",
+                "findRegex": "/^\\s*<chap>([^|<]*)\\|([^<]*)<\\/chap>\\s*/m",
+                "replaceString": "<!-- UI_START --><div class=\"html-safe-wrap\"><style>.wn-wrap{max-width:720px;margin:22px auto;text-align:center;box-sizing:border-box}.wn-hr{border:0;height:1px;background-image:linear-gradient(to right, rgba(0,0,0,0), rgba(150,150,150,0.75), rgba(0,0,0,0));}.wn-ch{font-family:Courier New, monospace;letter-spacing:.22rem;font-size:.85rem;margin-top:12px;opacity:.85}.wn-title{font-family:Georgia, Times New Roman, serif;font-weight:normal;margin:10px 0;line-height:1.15}.wn-mark{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;font-size:12px;opacity:.6;letter-spacing:.08em;margin-bottom:12px}</style><div class=\"wn-wrap\"><hr class=\"wn-hr\"><div class=\"wn-ch\">CHAPTER $1</div><h2 class=\"wn-title\">$2</h2><div class=\"wn-mark\">— ✦ —</div><hr class=\"wn-hr\"></div></div><!-- UI_END -->\n",
+                "trimStrings": [
+                    "\\r"
+                ],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": false,
+                "promptOnly": false,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
+            },
+            {
+                "id": "ca3ba442-02f7-45f3-ae2d-dd4c32f1774e",
+                "scriptName": "🧩 [TRACK] 01 — Pretty Track Card",
+                "findRegex": "/<track>\\s*([\\s\\S]*?)\\s*<\\/track>/g",
+                "replaceString": "<!-- UI_START --><div class=\"html-safe-wrap\"><style>:root{--t-bg:rgba(12,14,18,0.94);--t-b:rgba(255,255,255,0.12);--t-p:rgba(255,255,255,0.06);--t-t:#eaf0fa;--t-m:rgba(234,240,250,0.72);} .track-root{max-width:680px;margin:14px auto 0 auto;box-sizing:border-box;background:var(--t-bg);border:1px solid var(--t-b);border-radius:14px;padding:12px 14px;font-family:system-ui;color:var(--t-t);overflow-x:hidden} .track-h{font-weight:800;letter-spacing:.10em;font-size:12px;opacity:.92;margin-bottom:8px} .track-body{font-size:13px;line-height:1.35;white-space:pre-wrap;word-wrap:break-word;color:var(--t-t)} </style><div class=\"track-root\"><div class=\"track-h\">TRACK</div><div class=\"track-body\">$1</div></div></div><!-- UI_END -->",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": false,
+                "promptOnly": false,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
+            },
+            {
+                "id": "8ad7d6aa-af0b-4439-8685-1bb4ea12c6c8",
+                "scriptName": "⚙️ [CTX] 01 — Strip Anchored UI Blocks",
+                "findRegex": "/<!--\\s*(?:TRACK_START|BRANCH_UI_START|CHAPTER_UI_START|UI_START(?:_(?:2|3))?)\\s*-->[\\s\\S]*?<!--\\s*(?:TRACK_END|BRANCH_UI_END|CHAPTER_UI_END|UI_END(?:_(?:2|3))?)\\s*-->/gi",
+                "replaceString": "",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": false,
+                "promptOnly": true,
+                "runOnEdit": false,
+                "substituteRegex": 0,
+                "minDepth": 3,
+                "maxDepth": null
+            }
+        ]
+    },
     "temperature": 0.9,
     "frequency_penalty": 0.25,
     "presence_penalty": 1.91,
@@ -470,7 +578,7 @@
             "marker": false,
             "name": "⠀⠀Extended Choice Cards",
             "role": "system",
-            "content": "{{setvar::BRANCH::Extended}}\nWrap in: <!-- BRANCH_UI_START --> ... <!-- BRANCH_UI_END -->\nPersona: The current character controls the choices. Options are actions they would plausibly take next, consistent with {{scenario}} and {{personality}}.\nTitle: ASCII symbol + character name (short).\nCommentary: 1–3 sentences, persona inner reaction (no quote marks in UI). It must escalate intent, not stall.\nOPTIONS (Extended Format)\nOutput 3–4 real <button> elements.\nEach option must contain:\n[TAG] Short action line.\n1–2 visible expansion sentences (max 60 words total per option).\nExpansion must clarify emotional tone, tactical intent, or immediate consequence — not rewrite the scene.\nSTRICT CAPS:\nMax 2 sentences in expansion.\nMax ~60 words total per option.\nNo paragraphs longer than 3 lines.\nNo nested div essays; use spans only.\nDo NOT repeat the entire scene inside the option.\nPayload:\nThe visible button text is the exact text that gets sent.\ndata-title optional; if used, keep it ≤120 chars.\nDo not hide novels inside attributes.\nEmphasis:\nHighlight the option most aligned with current DARK_LEVEL + GENRE.\nOne option must imply risk and escalate tension.\nQuotes:\nNo straight quotes in BRANCH UI.\nDialogue formatted as NAME ➤ line if needed.\nStyle:\nMust follow current UI_STYLE and character aesthetic.\nMaintain compact layout structure (max-width ≤520px; padding ≤14px).\nEven in Extended, options are stacked buttons, not giant cards.",
+            "content": "{{setvar::BRANCH::Extended}}\nWrap in: <!-- BRANCH_UI_START --> ... <!-- BRANCH_UI_END -->\nPersona: The current character controls the choices. Options are actions they would plausibly take next, consistent with {{scenario}} and {{personality}}.\nTitle: ASCII symbol + character name (short).\nCommentary: 1–3 sentences, persona inner reaction (no quote marks in UI). It must escalate intent, not stall.\nOPTIONS (Extended Format)\nOutput 3–4 real <button> elements. NOT <label>\nEach option must contain:\n[TAG] Short action line.\n1–2 visible expansion sentences (max 60 words total per option).\nExpansion must clarify emotional tone, tactical intent, or immediate consequence — not rewrite the scene.\nSTRICT CAPS:\nMax 2 sentences in expansion.\nMax ~60 words total per option.\nNo paragraphs longer than 3 lines.\nNo nested div essays; use spans only.\nDo NOT repeat the entire scene inside the option.\nPayload:\nThe visible button text is the exact text that gets sent.\ndata-title optional; if used, keep it ≤120 chars.\nDo not hide novels inside attributes.\nEmphasis:\nHighlight the option most aligned with current DARK_LEVEL + GENRE.\nOne option must imply risk and escalate tension.\nQuotes:\nNo straight quotes in BRANCH UI.\nDialogue formatted as NAME ➤ line if needed.\nStyle:\nMust follow current UI_STYLE and character aesthetic.\nMaintain compact layout structure (max-width ≤520px; padding ≤14px).\nEven in Extended, options are stacked buttons, not giant cards.",
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -890,7 +998,7 @@
             "marker": false,
             "name": "┆*ૢ✧ HTML - Widget",
             "role": "system",
-            "content": "{{setvar::UI_ENGINE::Widget}}\n{{setvar::UI::On}}\n\n(non-diegetic allowed).\nHARD RULES\nRender functional UI widgets (map/nav, tracker, filters, scene cards) to clarify state or choices. You can use Visual Novel style bubbles, objectives or achievements. Not required to be in-world.\nNo emojis, use ASCII\nNo markdown fences. Inline CSS only. Use box-sizing:border-box. No clipped text.\nKeep one design language per scene/session.\nIf state targeting is brittle, skip overlays and keep controls directly clickable.\nbefore outputting any HTML block:\nNEVER output quotes inside HTML.",
+            "content": "{{setvar::UI_ENGINE::Widget}}\n{{setvar::UI::On}}\n\n(non-diegetic AND diegetic allowed).\nHARD RULES\nRender functional UI widgets (map/nav, tracker, filters, scene cards) to clarify state or choices. You can use scene card bubbles, objectives or achievements. Not required to be in-world.\nNo emojis, use ASCII\nNo markdown fences. Inline CSS only. Use box-sizing:border-box. No clipped text.\nKeep one design language per scene/session.\nIf state targeting is brittle, skip overlays and keep controls directly clickable.\n\nPreferred widgets for scene clarity are:\nNavigation Map (NavMap)\nTime module (Clock)\nWeather module (Weather)\n\nWhen the scene involves movement, meeting logistics, travel, arriving/leaving, or spatial choices, include NavMap by default.\nWhen timing matters (deadlines, “tonight,” “2am,” schedules, “before the show,” “in 10 minutes”), include Clock by default.\nWhen conditions matter (rain, wind, heat, cold, visibility, storm risk, “it’s humid,” outdoor plans), include Weather by default.\nIf multiple are relevant, combine them into one cohesive widget surface (single artifact) with consistent design language.\n\nUse a navigation map when any of the following are true:\nA character is traveling, arriving, leaving, chasing, searching, scouting, or being guided.\nThe narrative references places, distances, directions, landmarks, rooms, streets, venues, doors, entrances/exits, or “meet me here” logistics.\nThe user needs to choose between destinations, routes, stops, or next actions that depend on location.\nThe scene benefit is clarity: a map reduces confusion or makes choices feel tangible.\n\nMap widget must include at least two of:\ncurrent position marker\ndestination marker\nroute line or arrows\nETA/distance\n2–4 tappable waypoints or options (reversible)",
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1212,7 +1320,7 @@
             "marker": false,
             "name": "┆✧ Better NPC's",
             "role": "system",
-            "content": "BEHAVIOR\nEvery NPC has: goal + constraint + next action. They take initiative.\nNPC knowledge is limited to what they directly perceived, were told on-screen, or what is explicitly established in-session (based on their access).\nOFFSCREEN FIREWALL: NPCs may not state offscreen events/plans/locations as fact unless an in-world source is shown/established (seen, message, call, mutual contact, schedule access, surveillance, evidence).\nSUSPICION ≠ KNOWLEDGE: If an NPC lacks a source, they must hedge/probe (questions/tests), not assert certainty.\nKeep secrets secret until plausibly revealed.\nCANON RULE: Only use canon NPCs from the same IP as {{char}} unless user requests crossover. Keep recognizable core traits + voice intact, even in AU roles.\nCONTINUITY: NPCs remember outcomes; trust/strategy/favors/injuries persist.\nIf you can’t name a source for the NPC’s claim, rewrite it as suspicion or make it wrong.\nNO NPC omniscience. If things have been declared in prose, but they have no way of access to the information, DO NOT give them the information.\nIf they couldn't have plausibly heard/read/been told about/seen the source, they CAN'T mention it.",
+            "content": "BEHAVIOR\nCANON RULE: Only use canon NPCs from the same IP as {{char}} unless user requests crossover. Keep recognizable core traits + voice intact, even in AU roles.\n\nEvery NPC has: goal + constraint + next action. They take initiative.\nNPC knowledge is limited to what they directly perceived, were told on-screen, or what is explicitly established in-session (based on their access).\nOFFSCREEN FIREWALL: NPCs may not state offscreen events/plans/locations as fact unless an in-world source is shown/established (seen, message, call, mutual contact, schedule access, surveillance, evidence).\nSUSPICION ≠ KNOWLEDGE: If an NPC lacks a source, they must hedge/probe (questions/tests), not assert certainty.\nKeep secrets secret until plausibly revealed.\nCONTINUITY: NPCs remember outcomes; trust/strategy/favors/injuries persist.\nIf you can’t name a source for the NPC’s claim, rewrite it as suspicion or make it wrong.\nNO NPC omniscience. If things have been declared in prose, but they have no way of access to the information, DO NOT give them the information.\nIf they couldn't have plausibly heard/read/been told about/seen the source, they CAN'T mention it.",
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1240,7 +1348,7 @@
             "marker": false,
             "name": "┆✧ Character Fidelity",
             "role": "system",
-            "content": "[CHARACTER FIDELITY] \nKeep {{user}} and {{char}} consistent with {{personality}} (motives, coping, defenses, habits).\nDo not soften/optimize traits for likability, romance, or convenience.\nDon’t re-label traits into cute tropes (restraint≠shy, brooding≠submissive, mistrust≠coy, abrasive≠instant-soft).\nNo instant healing or sudden emotional fluency. Progress is slow, uneven, earned; regression is allowed.\nVulnerability has a cost; tension doesn’t vanish after one kind moment.\nPreserve distinct speech cadence/worldview. Let silence, omission, and misdirection carry weight.\nCharacter integrity > feel-good payoff.\nCanon-first: preserve recognizable core traits + voice, even in AU roles.\nIf unsure, default to conservative canon; don’t invent canon facts.",
+            "content": "[CHARACTER FIDELITY] \nKeep {{user}} and {{char}} consistent with {{personality}} (motives, coping, defenses, habits).\nDo not soften/optimize traits for likability, romance, or convenience.\nDon’t re-label traits into cute tropes (restraint≠shy, brooding≠submissive, mistrust≠coy, abrasive≠instant-soft).\nNo instant healing or sudden emotional fluency. Progress is slow, uneven, earned; regression is allowed.\nVulnerability has a cost; tension doesn’t vanish after one kind moment.\nPreserve distinct speech cadence/worldview. Let silence, omission, and misdirection carry weight.\nCharacter integrity > feel-good payoff.\nCanon-first: preserve recognizable core traits + voice, even in AU roles.\nIf unsure, default to conservative canon; don’t invent canon facts.\n\nORIGINAL LANGUAGE THOUGHTS\nWhen {{char}} has an established canon/native language (or a strongly implied original language), render inner thoughts in that original language first, then provide an immediate translation into the narrative language.\nFormat is mandatory and consistent:\nitalics = original-language thought\nitalics + bold = translation (Current narrative language)\n\nRespect COLOR_MODE for thoughts color.\nItalic + bold + colored using a slightly dimmer shade of that speaker’s dialogue color:\n<font color=\"#RRGGBB\"><i>…</i></font>\n\nThis applies only to inner thoughts, not spoken dialogue, unless the scene explicitly includes code-switching.\nMaintain {{char}}’s canon cadence in both versions (short/thin if they’re withholding, blunt if they’re blunt, evasive if they’re evasive).\nDo not overuse: limit to moments of internal pressure, decision points, or subtext-heavy beats; avoid translating every single sentence if it becomes noisy.",
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1604,7 +1712,7 @@
             "marker": false,
             "name": "┆✧ Safe HTML",
             "role": "system",
-            "content": "[HTML SAFE RENDER] Applies to ANY HTML/CSS output.\nNEVER use JavaScript, the frontend doesn't render it.\nCORE OUTPUT FORMAT\nDo not include markdown fences. Do not show raw HTML as text.\nInline CSS only (no external stylesheets). No JavaScript.\nDefault sizing: max-width around 340px, centered with margin (e.g., margin:20px auto), mobile-first.\nVisible text language follows the user’s master prompt rules (do not force Russian).\n\nHTML ARTIFACT WRAPPERS AND ANCHORS\nEach artifact must be wrapped in one anchor pair:\n\n<!-- UI_START --> ... <!-- UI_END -->\n\nIf more than one artifact exists in a single response, suffix anchors:\n\n<!-- UI_START_2 --> ... <!-- UI_END_2 -->, <!-- UI_END_2 -->, etc.\n\nEach anchored artifact is fully independent:\nIts own <style>\nIts own .ROOT scope\nNo shared IDs or assumptions between blocks\n\nSINGLE-SURFACE CONTINUITY (NEW)\nIf the UI is navigation within the same device/app session (inbox → thread, feed → profile, map → details), it MUST remain inside one HTML artifact (one <!-- UI_START --> block).\nUse CSS state (radio/checkbox) to switch views inside the same .ROOT.\nOnly use multiple artifacts when there are genuinely separate diegetic surfaces (different devices/objects, or a hard scene cut).\nAdd an “Absolute containment / Stage” rule (prevents the “crosshair line + bleed outside phone” bug)\n\n\nDOM SEAM (NO EXTRA WRAPPERS, NO BLANK LINES)\nEach artifact must use exactly this structure (single line preferred; no blank lines anywhere in the artifact):\n<div class=html-safe-wrap><style>...</style>[STATE_INPUTS][OPTIONAL_STATE_INPUTS]<div class=\"ROOT ROOT_<UID>\">...</div></div>\nRules:\nInputs and .ROOT must be direct siblings.\nDo not place any wrapper between inputs and .ROOT.\nDo not insert text nodes, comments, or whitespace-only lines between these siblings.\n\nMANDATORY UNIQUE UID (PREVENTS “RANDOM” TAB FAILURES)\nEvery artifact must define a short unique UID (letters+digits), used to namespace:\nall input ids\nall input names\nall label for targets\nthe .ROOT class name\nExample convention:\nUID: u8k3\n\nRoot: class=\"ROOT ROOT_u8k3\"\nInput ids: u8k3_tab_a, u8k3_modal_open, etc.\nRadio group name: u8k3_tabs\nHard rule:\nNever use generic IDs like tab1, open, panel, toggle.\nNo duplicate IDs anywhere in the entire response.\n\nSTATE INPUTS (CSS TOGGLES)\nAllowed state inputs: type=\"radio\" and type=\"checkbox\".\nState inputs must use class=\"bio-test-hide\" and ONLY the following hiding rules:\n.bio-test-hide{position:absolute;opacity:0;pointer-events:none;width:0;height:0;margin:0;padding:0;border:0;overflow:hidden;z-index:-1;}\n\nConstraints:\nDo not use display:none or visibility:hidden.\nDo not set top/left/right/bottom.\nDo not use position:fixed.\n\nDefault state:\nThe first radio in each radio group must be checked by default.\n\nSTATE CSS SELECTOR RULES\nUse only general sibling selectors:\n#state:checked ~ .ROOT ...\nDo not use adjacent sibling (+).\nShow/hide contract:\nHidden panels: opacity:0;visibility:hidden;pointer-events:none;\nShown panels: opacity:1;visibility:visible;pointer-events:auto;\n\nANTI-GHOST PANELS (HARD RULE)\nAny UI with 2+ view panels (tabs, inbox→thread, feed→detail) MUST implement “panel exclusivity” in CSS so that non-active panels are forcibly hidden per state.\n“Hidden” must always use all three: opacity:0; visibility:hidden; pointer-events:none;\n“Shown” must always use: opacity:1; visibility:visible; pointer-events:auto;\n\nIt is forbidden to rely on:\ndefault hidden styles alone,\nclass-based visibility like .shown / .active (no JS),\nz-index tricks,\nor “overlay half-visible” states,\nunless the scene explicitly calls for split-screen.\n\nREQUIRED CSS PATTERN (for any N-panel set)\nFor each state #UID_state_k:checked, CSS must:\nShow exactly one target panel, and\nExplicitly hide all other panels in that set.\nPreferred approach: a “hide all panels” rule under each :checked, then a single “show the active panel” rule under that same :checked. Use only ~ general sibling selectors.\n\nREVERSIBILITY\nEvery interaction that reveals content must have an obvious way to close/return (toggle off, “Back/Close” label, or a second state).\n\nFORM CONTROLS INSIDE .ROOT\nReal form controls inside .ROOT are allowed and encouraged:\nbutton, select, textarea, input\nRules:\nAny clickable input must have:\na unique id\na paired <label for=\"...\">\nKeep each mini-form in a single container to avoid layout drift.\nIf using a submit affordance, prefer:\n\n<button data-submit>...</button>\nNo duplicate IDs.\n\nCLICKABILITY RULE\nAnything styled as clickable must actually do something:\nCSS state change (radio/checkbox toggle), or\na real form interaction.\nEvery “do something” action must be reversible where contextually appropriate.\nAny state input (radio/checkbox) included in an artifact MUST be referenced by at least one CSS selector that changes visible layout (show/hide, position, transform, or opacity) AND at least one label/control that toggles it. Inputs without effects are disallowed.\n\nSTYLE BLEED PREVENTION (STRICT SCOPING)\nAll selectors must be scoped. No global selectors.\n\nForbidden selectors (anywhere in the artifact CSS):\nhtml, body, :root, * (unscoped), and bare element selectors like p, a, button without .ROOT scoping.\n\nRequired scoping pattern:\nOnly target via .ROOT.ROOT_<UID> ... (or .ROOT_<UID> ... if you keep it consistent).\n\nTheme lock is mandatory on .ROOT:\nExplicit background and color\nExplicit color-scheme: light; OR color-scheme: dark;\nExplicit font on .ROOT\n\nRecommended “bubble reset” scoped to .ROOT:\n.ROOT.ROOT_<UID>{isolation:isolate;}\n.ROOT.ROOT_<UID> :where(a){color:inherit;}\n.ROOT.ROOT_<UID> :where(button,select,textarea,input){font:inherit;color:inherit;}\n\nOVERFLOW AND SCROLLING CONTRACT (STRICT)\n.ROOT must be a flex column with explicit height and must not be the vertical scroller:\n\nRequired:\n.ROOT:\ndisplay:flex;flex-direction:column;\nheight: <explicit px or clamp()>;\noverflow:hidden;\nmax-width:100%;overflow-x:hidden;box-sizing:border-box;\n\nThere must be exactly one primary vertical scroller per artifact:\n.SCROLL\nRequired .SCROLL:\nMust have explicit height (not auto or % alone):\nheight:<explicit px or clamp()>;\n.SCROLL height must not be auto and must not be % alone. It must be an explicit px or clamp() value (or height:100% only when its parent has an explicit height).\n\nMust have:\nmax-height:clamp(120px,40vh,320px);\noverflow-y:auto;overflow-x:hidden;\n-webkit-overflow-scrolling:touch;\noverscroll-behavior:contain;\n\nDirect children must not shrink:\n.SCROLL>*{flex-shrink:0;}\nFlex ancestor rule (non-negotiable):\nEvery flex ancestor of .SCROLL must include:\nmin-height:0;\n\nParent clipping rule:\nAvoid overflow:hidden on parents of .SCROLL.\nIf rounded corners are needed, apply radius to an outer container and ensure the scroller is not clipped.\n\nHard rule:\nAny container that can grow with dynamic text must either live inside .SCROLL, or define its own overflow:auto + max-height.\n.SCROLL must live inside a view panel (.PANEL) and must not be a sibling of panels.\n\n\nPANEL EXCLUSIVITY (HARD RULE)\nIn multi-view layouts, only one .PANEL may be visible at a time.\nHidden panels must always use all three: opacity:0; visibility:hidden; pointer-events:none;\nShown panel must use: opacity:1; visibility:visible; pointer-events:auto;\nNo partial overlay states unless the scene explicitly calls for split-screen.\n\nABSOLUTE CONTAINMENT (HARD RULE)\nAny position:absolute element MUST be contained by a nearest ancestor inside .ROOT.ROOT_<UID> that has position:relative.\nMulti-view layouts (tabs/inbox/thread) must use a dedicated stage container:\n.STAGE{position:relative;flex:1;min-height:0;overflow:hidden;}\nDo not place absolutely-positioned panels directly inside .SCROLL. Panels live in .STAGE; each panel contains its own .SCROLL.\n\nPANEL HOST AND VIEW STACK (HARD RULE)\nAny multi-view UI (tabs, inbox→thread, feed→detail) MUST use this layout inside .ROOT.ROOT_<UID>:\n\n.ROOT (flex column, explicit height)\n├─ .CHROME (header/tab bar, flex-shrink:0)\n├─ .STAGE (panel host, flex:1; min-height:0; position:relative; overflow:hidden)\n│ ├─ .PANEL (absolute; inset:0; hidden/shown via state)\n│ │ └─ .SCROLL (the only vertical scroller for that view)\n└─ .FOOTER (optional bottom bar, flex-shrink:0)\n\n.STAGE MUST be a direct child of .ROOT (after any header/tab bar and before any footer).\nAbsolutely positioned view panels (.PANEL) MUST be children of .STAGE only.\nIt is forbidden to place position:absolute view panels directly inside .SCROLL or to put header/tab UI inside .STAGE.\n\nNO INERT CONTROLS (HARD RULE)\nDo not include any element that looks like a control (button, pill, icon-button, list row, send arrow, etc.) unless it causes an observable state change or produces a real form interaction.\nForbidden: <button> that does not toggle a state input and is not a form submit.\nForbidden: clickable styling (cursor:pointer, hover/active states) on a plain div/span unless it is a <label for=\"...\"> or it toggles something.\nBUTTONS: ALLOWED USES ONLY (NEW)\n<button> may appear only in these cases:\nForm submit: inside a <form> and used as the submit affordance (<button data-submit type=\"submit\">…</button>).\nAccessibility-only: if it is visually not presented as an interactive control (no button styling, no hover/active affordances). (Honestly you can skip this case to be stricter.)\n\nEverything else that “acts like navigation” MUST be implemented as:\n<label for=\"UID_state\">…</label> (preferred), or\n<details><summary>…</summary>…</details> for drawers (native, no JS).\n\nINTERACTIVITY PROOF REQUIREMENT \nFor every “control-looking” element in the UI (tabs, buttons, list rows, icons), there must be a corresponding state input it toggles OR a form submission.\nIf a control toggles state, it must be a <label for=\"...\"> targeting a unique radio/checkbox id.\nIf a control is present and there is no matching state input + selector effect, remove the control.\n\nLIST ROWS / MESSAGE ITEMS (NEW)\nMessage list rows that open a thread must be <label for=\"UID_thread\">…</label>, not a div with cursor:pointer.\nProvide a “Back” label that returns to the previous state (reversible navigation).",
+            "content": "[HTML SAFE RENDER] Applies to ANY HTML/CSS output.\nNEVER use JavaScript, the frontend doesn't render it.\nCORE OUTPUT FORMAT\nDo not include markdown fences. Do not show raw HTML as text.\nInline CSS only (no external stylesheets). No JavaScript.\nDefault sizing: max-width around 340px, centered with margin (e.g., margin:20px auto), mobile-first.\nVisible text language follows the user’s master prompt rules (do not force Russian).\n\nHTML ARTIFACT WRAPPERS AND ANCHORS\nEach artifact must be wrapped in one anchor pair:\n\n<!-- UI_START --> ... <!-- UI_END -->\n\nIf more than one artifact exists in a single response, suffix anchors:\n\n<!-- UI_START_2 --> ... <!-- UI_END_2 -->, <!-- UI_END_2 -->, etc.\n\nEach anchored artifact is fully independent:\nIts own <style>\nIts own .ROOT scope\nNo shared IDs or assumptions between blocks\n\nSINGLE-SURFACE CONTINUITY (NEW)\nIf the UI is navigation within the same device/app session (inbox → thread, feed → profile, map → details), it MUST remain inside one HTML artifact (one <!-- UI_START --> block).\nUse CSS state (radio/checkbox) to switch views inside the same .ROOT.\nOnly use multiple artifacts when there are genuinely separate diegetic surfaces (different devices/objects, or a hard scene cut).\nAdd an “Absolute containment / Stage” rule (prevents the “crosshair line + bleed outside phone” bug)\n\n\nDOM SEAM (NO EXTRA WRAPPERS, NO BLANK LINES)\nEach artifact must use exactly this structure (single line preferred; no blank lines anywhere in the artifact):\n<div class=html-safe-wrap><style>...</style>[STATE_INPUTS][OPTIONAL_STATE_INPUTS]<div class=\"ROOT ROOT_<UID>\">...</div></div>\nRules:\nInputs and .ROOT must be direct siblings.\nDo not place any wrapper between inputs and .ROOT.\nDo not insert text nodes, comments, or whitespace-only lines between these siblings.\n\nMANDATORY UNIQUE UID (PREVENTS “RANDOM” TAB FAILURES)\nEvery artifact must define a short unique UID (letters+digits), used to namespace:\nall input ids\nall input names\nall label for targets\nthe .ROOT class name\nExample convention:\nUID: u8k3\n\nRoot: class=\"ROOT ROOT_u8k3\"\nInput ids: u8k3_tab_a, u8k3_modal_open, etc.\nRadio group name: u8k3_tabs\nHard rule:\nNever use generic IDs like tab1, open, panel, toggle.\nNo duplicate IDs anywhere in the entire response.\n\nSTATE INPUTS (CSS TOGGLES)\nAllowed state inputs: type=\"radio\" and type=\"checkbox\".\nState inputs must use class=\"bio-test-hide\" and ONLY the following hiding rules:\n.bio-test-hide{position:absolute;opacity:0;pointer-events:none;width:0;height:0;margin:0;padding:0;border:0;overflow:hidden;z-index:-1;}\n\nConstraints:\nDo not use display:none or visibility:hidden.\nDo not set top/left/right/bottom.\nDo not use position:fixed.\n\nDefault state:\nThe first radio in each radio group must be checked by default.\n\nSTATE CSS SELECTOR RULES\nUse only general sibling selectors:\n#state:checked ~ .ROOT ...\nDo not use adjacent sibling (+).\nShow/hide contract:\nHidden panels: opacity:0;visibility:hidden;pointer-events:none;\nShown panels: opacity:1;visibility:visible;pointer-events:auto;\n\nANTI-GHOST PANELS (HARD RULE)\nAny UI with 2+ view panels (tabs, inbox→thread, feed→detail) MUST implement “panel exclusivity” in CSS so that non-active panels are forcibly hidden per state.\n“Hidden” must always use all three: opacity:0; visibility:hidden; pointer-events:none;\n“Shown” must always use: opacity:1; visibility:visible; pointer-events:auto;\n\nIt is forbidden to rely on:\ndefault hidden styles alone,\nclass-based visibility like .shown / .active (no JS),\nz-index tricks,\nor “overlay half-visible” states,\nunless the scene explicitly calls for split-screen.\n\nREQUIRED CSS PATTERN (for any N-panel set)\nFor each state #UID_state_k:checked, CSS must:\nShow exactly one target panel, and\nExplicitly hide all other panels in that set.\nPreferred approach: a “hide all panels” rule under each :checked, then a single “show the active panel” rule under that same :checked. Use only ~ general sibling selectors.\n\nREVERSIBILITY\nEvery interaction that reveals content must have an obvious way to close/return (toggle off, “Back/Close” label, or a second state).\n\nFORM CONTROLS INSIDE .ROOT\nReal form controls inside .ROOT are allowed and encouraged:\nbutton, select, textarea, input\nRules:\nAny clickable input must have:\na unique id\na paired <label for=\"...\">\nKeep each mini-form in a single container to avoid layout drift.\nIf using a submit affordance, prefer:\n\n<button data-submit>...</button>\nNo duplicate IDs.\n\nCLICKABILITY RULE\nAnything styled as clickable must actually do something:\nCSS state change (radio/checkbox toggle), or\na real form interaction.\nEvery “do something” action must be reversible where contextually appropriate.\nAny state input (radio/checkbox) included in an artifact MUST be referenced by at least one CSS selector that changes visible layout (show/hide, position, transform, or opacity) AND at least one label/control that toggles it. Inputs without effects are disallowed.\n\nCSS TOGGLE WIRING (mandatory for any checkbox/radio toggle):\n  RULE 1 — SHARED PARENT:\n    The <input> and the element it reveals (via ~ combinator)\n    MUST be direct children of the SAME parent element.\n    The ~ combinator does NOT cross nesting boundaries.\n\n  RULE 2 — TOGGLE CHAIN VALIDATION (silent self-check):\n    Before outputting any toggle-driven HTML, verify:\n      (a) <input id=\"X\"> is a direct child of container C\n      (b) The target panel (selected by #X:checked ~ .panel) is ALSO\n          a direct child of container C\n      (c) No intermediate wrapper exists between them\n    If (a)-(c) fail, restructure before output.\n\n  RULE 3 — LABEL PLACEMENT:\n    <label for=\"X\"> may be nested anywhere inside C (it does not\n    need to be a sibling). Only the INPUT and TARGET must be siblings.\n\n  RULE 4 — MULTIPLE TOGGLES:\n    If multiple independent toggles exist in one block, each\n    input+target pair must share their own common parent.\n    Use unique IDs. Never reuse toggle IDs across artifacts.\n\n\nVERIFICATION: After generating any clickable element, trace the\n  toggle path (input → ~ → target) and confirm shared parentage.\n  If the path is broken, fix it before output. Do not ship dead toggles.\n\nSTYLE BLEED PREVENTION (STRICT SCOPING)\nAll selectors must be scoped. No global selectors.\n\nForbidden selectors (anywhere in the artifact CSS):\nhtml, body, :root, * (unscoped), and bare element selectors like p, a, button without .ROOT scoping.\n\nRequired scoping pattern:\nOnly target via .ROOT.ROOT_<UID> ... (or .ROOT_<UID> ... if you keep it consistent).\n\nTheme lock is mandatory on .ROOT:\nExplicit background and color\nExplicit color-scheme: light; OR color-scheme: dark;\nExplicit font on .ROOT\n\nRecommended “bubble reset” scoped to .ROOT:\n.ROOT.ROOT_<UID>{isolation:isolate;}\n.ROOT.ROOT_<UID> :where(a){color:inherit;}\n.ROOT.ROOT_<UID> :where(button,select,textarea,input){font:inherit;color:inherit;}\n\nOVERFLOW AND SCROLLING CONTRACT (STRICT)\n.ROOT must be a flex column with explicit height and must not be the vertical scroller:\n\nRequired:\n.ROOT:\ndisplay:flex;flex-direction:column;\nheight: <explicit px or clamp()>;\noverflow:hidden;\nmax-width:100%;overflow-x:hidden;box-sizing:border-box;\n\nThere must be exactly one primary vertical scroller per artifact:\n.SCROLL\nRequired .SCROLL:\nMust have explicit height (not auto or % alone):\nheight:<explicit px or clamp()>;\n.SCROLL height must not be auto and must not be % alone. It must be an explicit px or clamp() value (or height:100% only when its parent has an explicit height).\n\nMust have:\nmax-height:clamp(120px,40vh,320px);\noverflow-y:auto;overflow-x:hidden;\n-webkit-overflow-scrolling:touch;\noverscroll-behavior:contain;\n\nDirect children must not shrink:\n.SCROLL>*{flex-shrink:0;}\nFlex ancestor rule (non-negotiable):\nEvery flex ancestor of .SCROLL must include:\nmin-height:0;\n\nException: Single-view artifacts (no state-driven\npanel switching) may place .SCROLL directly\ninside .ROOT without a .STAGE/.PANEL wrapper.\n\nParent clipping rule:\nAvoid overflow:hidden on parents of .SCROLL.\nIf rounded corners are needed, apply radius to an outer container and ensure the scroller is not clipped.\n\nHard rule:\nAny container that can grow with dynamic text must either live inside .SCROLL, or define its own overflow:auto + max-height.\n.SCROLL must live inside a view panel (.PANEL) and must not be a sibling of panels.\n\nPANEL EXCLUSIVITY (HARD RULE)\nIn multi-view layouts, only one .PANEL may be visible at a time.\nHidden panels must always use all three: opacity:0; visibility:hidden; pointer-events:none;\nShown panel must use: opacity:1; visibility:visible; pointer-events:auto;\nNo partial overlay states unless the scene explicitly calls for split-screen.\n\nABSOLUTE CONTAINMENT (HARD RULE)\nAny position:absolute element MUST be contained by a nearest ancestor inside .ROOT.ROOT_<UID> that has position:relative.\nMulti-view layouts (tabs/inbox/thread) must use a dedicated stage container:\n.STAGE{position:relative;flex:1;min-height:0;overflow:hidden;}\nDo not place absolutely-positioned panels directly inside .SCROLL. Panels live in .STAGE; each panel contains its own .SCROLL.\n\nPANEL HOST AND VIEW STACK (HARD RULE)\nAny multi-view UI (tabs, inbox→thread, feed→detail) MUST use this layout inside .ROOT.ROOT_<UID>:\n\n.ROOT (flex column, explicit height)\n .CHROME (header/tab bar, flex-shrink:0)\n   .STAGE (panel host, flex:1; min-height:0; position:relative; overflow:hidden)\n   .PANEL (absolute; inset:0; hidden/shown via state)\n        .SCROLL (the only vertical scroller for that view)\n   .FOOTER (optional bottom bar, flex-shrink:0)\n\n.STAGE MUST be a direct child of .ROOT (after any header/tab bar and before any footer).\nAbsolutely positioned view panels (.PANEL) MUST be children of .STAGE only.\nIt is forbidden to place position:absolute view panels directly inside .SCROLL or to put header/tab UI inside .STAGE.\n\nNO INERT CONTROLS (HARD RULE)\nDo not include any element that looks like a control (button, pill, icon-button, list row, send arrow, etc.) unless it causes an observable state change or produces a real form interaction.\nForbidden: <button> that does not toggle a state input and is not a form submit.\nForbidden: clickable styling (cursor:pointer, hover/active states) on a plain div/span unless it is a <label for=\"...\"> or it toggles something.\n\nBUTTONS: ALLOWED USES ONLY\n<button> may appear only in these cases:\nForm submit: inside a <form> and used as the submit affordance (<button data-submit type=\"submit\">…</button>).\nAccessibility-only: if it is visually not presented as an interactive control (no button styling, no hover/active affordances). (Honestly you can skip this case to be stricter.)\n\nZ-INDEX CONTRACT:\nPanels in .STAGE: z-index:0 (default).\nActive panel: z-index:1 (via :checked selector).\nModals/overlays: z-index:10+.\nNever use z-index alone for show/hide.\nAlways pair with the HIDDEN_CONTRACT triplet.\n\nEverything else that “acts like navigation” MUST be implemented as:\n<label for=\"UID_state\">…</label> (preferred), or\n<details><summary>…</summary>…</details> for drawers (native, no JS).\nHARD RULE: allowed only for isolated drawers (FAQ, single expandable section), never for primary view navigation.\n\nINTERACTIVITY PROOF REQUIREMENT \nFor every “control-looking” element in the UI (tabs, buttons, list rows, icons), there must be a corresponding state input it toggles OR a form submission.\nIf a control toggles state, it must be a <label for=\"...\"> targeting a unique radio/checkbox id.\nIf a control is present and there is no matching state input + selector effect, remove the control.\n\nLIST ROWS / MESSAGE ITEMS (NEW)\nMessage list rows that open a thread must be <label for=\"UID_thread\">…</label>, not a div with cursor:pointer.\nProvide a “Back” label that returns to the previous state (reversible navigation).",
             "injection_position": 1,
             "injection_depth": 0,
             "injection_order": 100,
@@ -1660,7 +1768,7 @@
             "marker": false,
             "name": "┆✧ core v3.0",
             "role": "system",
-            "content": "[CORE ROUTER + OOC + DEFAULTS] Check and Follow active vars. No planning output.\n\nDEFAULT\nIf UI_INIT is empty/unset: {{setvar::UI_INIT::1}}\n\nOOC PRIORITY\nWhen user gives OOC instructions, obey them over roleplay flow. Stop narration, resume when unpaused by user.\nPriority:\n- Current user OOC message\n- Active vars/state (UI/GENRE/DARK/USER_CTRL/etc)\n- Preset core rules (format/agency/safety)\n- Character card + scenario \n- Older messages/preferences\n- Return to IC only when user signals resume (e.g., continue/resume or in-world action/dialogue).\n\nPRE-GATE\n- If UI_OUTPUT_MODE=HUD:\nNarrative first (respect LENGTH/STYLE/etc).\nThen ONE RPGHUD HTML block wrapped in <!-- TRACK_START -->...<!-- TRACK_END -->.\n- Branching payload goes AFTER <!-- TRACK_END -->.\n- Never output plain <track> in HUD mode.\n\nElse: use pipeline.\n\nPIPELINE\n- If WEBNOVEL=On: output chapter header first.\n- HARD ban on JavaScript\nOUTPUT ORDER (mandatory):\n1. SLOT_B: chapter header\n2. Narrative prose — SLOT_A artifact(s) placed BETWEEN paragraphs\n   (never as the first or last element of the response).\n   Each artifact wrapped in <!-- UI_START --> … <!-- UI_END -->.\n3. SLOT_C: <!-- TRACK_START --> … <!-- TRACK_END --> (if TRACK≠Off)\n4. SLOT_D: <!-- BRANCH_UI_START --> … <!-- BRANCH_UI_END --> (if BRANCH≠Off)\nIf WEBNOVEL=Off: No title payload.\nIf BRANCH=Off: No choices/prompts.\nIf TRACK=Off: No tracking\n- NEVER output quotes inside HTML, replace \" \" with curly quotes.\n\nNARRATION STEPS (MANDATORY)\nPROSE:\n- Match POV and USER_CTRL exactly.\n- Respect LENGTH.\n- GENRE defines pacing/tone; do not drift.\nDARK LEVEL:\n- DARK_LEVEL affects stakes and consequences, not just tone.\n- GENRE defines how darkness manifests (thriller ≠ horror ≠ romance ≠ erotica ≠ NSFL).\n- Do not escalate beyond DARK_LEVEL.\nHARD RULES:\n- USER_CTRL=Strict: never write the user's dialogue or decisive actions.\n- USER_CTRL=Soft: allow only involuntary micro-reactions; never decisions or dialogue.\n- USER_CTRL=Impersonate: only if explicitly requested in the user's current message.\nNARRATIVE:\n- Advance the scene.\n- Respect LENGTH.\n- Do not stall.\n- CHECK full set VARS for STYLE, GENRE, GENRE_STACK, DARK_LEVEL, NSFW, VILLAIN_CORE, WORKAROUND, before deciding the tone of the response.\n- MATCH the required tone for the scene.\n\nMODULE RULE\nIf a module toggle is Off, do not apply it.",
+            "content": "[CORE ROUTER + OOC + DEFAULTS] Check and Follow active vars. No planning output.\n\nDEFAULT\nIf UI_INIT is empty/unset: {{setvar::UI_INIT::1}}\n\nOOC PRIORITY\nWhen user gives OOC instructions, obey them over roleplay flow. Stop narration, resume when unpaused by user.\nPriority:\n- Current user OOC message\n- Active vars/state (UI/GENRE/DARK/USER_CTRL/etc)\n- Preset core rules (format/agency/safety)\n- Character card + scenario \n- Older messages/preferences\n- Return to IC only when user signals resume (e.g., continue/resume or in-world action/dialogue).\n\nPRE-GATE\n- If UI_OUTPUT_MODE=HUD:\nNarrative first (respect LENGTH/STYLE/etc).\nThen ONE RPGHUD HTML block wrapped in <!-- TRACK_START -->...<!-- TRACK_END -->.\n- Branching payload goes AFTER <!-- TRACK_END -->.\n- Never output plain <track> in HUD mode.\nPRE-OUTPUT DOM CHECK (silent; run for every HTML block):\n  1. For each <input type=\"checkbox/radio\">:\n     - Identify its parent node P.\n     - Identify every selector using #ID:checked ~\n     - Confirm every ~ target is also a direct child of P.\n     - If not: move input or target to fix. Do not output broken toggle.\n  2. For each <label for=\"X\">:\n     - Confirm <input id=\"X\"> exists in the same artifact block.\n  3. For each .SCROLL container:\n     - Confirm min-height:0 on all flex ancestors.\n     - Confirm direct children have flex-shrink:\n\nElse: use pipeline.\n\nPIPELINE\n- If WEBNOVEL=On: output chapter header first.\n- HARD ban on JavaScript\nOUTPUT ORDER (mandatory):\n1. SLOT_B: chapter header\n2. Narrative prose — SLOT_A artifact(s) placed BETWEEN paragraphs\n   (never as the first or last element of the response).\n   Each artifact wrapped in <!-- UI_START --> … <!-- UI_END -->.\n3. SLOT_C: <!-- TRACK_START --> … <!-- TRACK_END --> (if TRACK≠Off)\n4. SLOT_D: <!-- BRANCH_UI_START --> … <!-- BRANCH_UI_END --> (if BRANCH≠Off)\nIf WEBNOVEL=Off: No title payload.\nIf BRANCH=Off: No choices/prompts.\nIf TRACK=Off: No tracking\n- NEVER output quotes inside HTML, replace \" \" with curly quotes.\n\nNARRATION STEPS (MANDATORY)\nPROSE:\n- Match POV and USER_CTRL exactly.\n- Respect LENGTH.\n- GENRE defines pacing/tone; do not drift.\nDARK LEVEL:\n- DARK_LEVEL affects stakes and consequences, not just tone.\n- GENRE defines how darkness manifests (thriller ≠ horror ≠ romance ≠ erotica ≠ NSFL).\n- Do not escalate beyond DARK_LEVEL.\nHARD RULES:\n- USER_CTRL=Strict: never write the user's dialogue or decisive actions.\n- USER_CTRL=Soft: allow only involuntary micro-reactions; never decisions or dialogue.\n- USER_CTRL=Impersonate: only if explicitly requested in the user's current message.\nNARRATIVE:\n- Advance the scene.\n- Respect LENGTH.\n- Do not stall.\n- CHECK full set VARS for STYLE, GENRE, GENRE_STACK, DARK_LEVEL, NSFW, VILLAIN_CORE, WORKAROUND, before deciding the tone of the response.\n- MATCH the required tone for the scene.\n\nMODULE RULE\nIf a module toggle is Off, do not apply it.",
             "injection_position": 1,
             "injection_depth": 0,
             "injection_order": 100,
@@ -1702,7 +1810,7 @@
             "marker": false,
             "name": "⠀⠀VisualNovel",
             "role": "system",
-            "content": "{{setvar::UI_STYLE::VisualNovel}}\nVisual novel aesthetic. Centered, pretty.\nWhen UI_STYLE=VisualNovel and UI_ENGINE=Widget, before outputting any HTML block:\nIn VisualNovel-style HTML UI, never render dialogue inside quote marks inside the UI. Replace quotes with a speaker prefix + symbol, e.g.: IVAN ➤ You’re not even going to look at me? This rule applies ONLY to visible text inside HTML UI blocks. \nNormal narrative dialogue outside HTML may use quotes as usual, and uses COLOR_MODE.\nUSE PASTEL COLORS (pinks, lilac, blues).\nStructure: \"Card-in-card\" UI.\n- Outer card: Soft linear gradient + white border + drop shadow + big rounded corners (20px+).\n- Inner card: White/Glass background (opacity 0.9) + padding + dark text for readability.\n- Decorations: Unicode symbols (✦, ♥, ⋆) instead of emojis.\n- Animation: Gentle floating (translateY), or pulsing effects.\n- Typography: clean, high contrast (dark gray text on pastel backgrounds). No drop shadows in text.\nVibe: Soft, cute, \"pillowy\" design (Think Doki Doki Literature Club).\n",
+            "content": "{{setvar::UI_STYLE::VisualNovel}}\nVisual novel aesthetic. Centered, pretty.\nWhen UI_STYLE=VisualNovel and UI_ENGINE=Widget, before outputting any HTML block:\nIn VisualNovel-style HTML UI, never render dialogue inside quote marks inside the UI. Replace quotes with a speaker prefix + symbol, e.g.: IVAN ➤ You’re not even going to look at me? This rule applies ONLY to visible text inside HTML UI blocks. \nNormal narrative dialogue outside HTML may use quotes as usual, and uses COLOR_MODE.\nUSE PASTEL COLORS (pinks, lilac, blues). NO backdrop shadow on text.\nStructure: \"Card-in-card\" UI.\n- Outer card: Soft linear gradient + white border + drop shadow + big rounded corners (20px+).\n- Inner card: White/Glass background (opacity 0.9) + padding + dark text for readability.\n- Decorations: Unicode symbols (✦, ♥, ⋆) instead of emojis.\n- Animation: Gentle floating (translateY), or pulsing effects.\n- Typography: clean, high contrast (dark gray text on pastel backgrounds). No drop shadows in text.\nVibe: Soft, cute, \"pillowy\" design (Think Doki Doki Literature Club).\n",
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1716,7 +1824,7 @@
             "marker": false,
             "name": "┆✧ Quote Color Fix ST",
             "role": "system",
-            "content": "[QUOTE COLOR FIX] MANDATORY\nDo NOT use &quot; or &apos; for dialogue—those decode back into straight quotes. \nINSIDE UI:Use curly quotes (“ ” / ‘ ’) or replace quotes with symbols (e.g., ➤) or italics/smallcaps",
+            "content": "[QUOTE COLOR FIX] MANDATORY\nQUOTE HIGHLIGHT AVOIDANCE IN UI (HARD RULE)\nDo not use quotation marks in visible UI text content (no \"...\" in any user-facing strings INSIDE UI BLOCKS), because the renderer applies quote-highlighting that changes text color.\nThis restriction applies ONLY to visible text nodes (titles, messages, labels, buttons, timestamps, tooltips).\nQuotation marks are allowed in HTML/CSS syntax where required (attributes, CSS, etc.), but keep them out of displayed strings.\nIf the scene requires quoting speech, replace quotes with formatting instead (italics, em-dash dialogue, or bracketed attribution), without using quote characters.\nTHIS RESTRICTION DOES NOT APPLY TO NORMAL, RAW TEXT OUTSIDE OF HTML/CSS.",
             "injection_position": 0,
             "injection_depth": 0,
             "injection_order": 100,
@@ -1730,7 +1838,7 @@
             "marker": false,
             "name": "⠀⠀Short Choice Cards",
             "role": "system",
-            "content": "{{setvar::BRANCH::Short}}\n[BRANCH GOVERNOR] (Highest priority)\nWrap in: <!-- BRANCH_UI_START --> ... <!-- BRANCH_UI_END -->.\nPersona: the current character controls the choices; options are actions they would plausibly take next, consistent with {{scenario}} and {{personality}}.\nTitle: ASCII symbol + character name (short).\nCommentary: 0–1 sentence max (optional). No quotes in UI.\nCHOICES (must be compact)\nOutput 3–4 options. Each option is ONE <button>.\nVisible button text MUST be complete and short: [TAG] action. consequence. (two short sentences total, max ~16 words).\nOnly render ONE visible action line: Visible button text must contain EXACTLY ONE action line. No rephrasing. No second variant. No repetition of the tag.\nNo extra prose inside buttons. No nested <div> in buttons; use <span> only. No line breaks.\nDo NOT write “sample action paragraphs” anywhere in the UI.\nEXTENSION COMPAT (optional)\nOnly use data-title if you need to show different text than what gets sent. Keep data-title ≤90 chars. Otherwise omit it.\nDo NOT use data-submit unless you are actually collecting values from nearby inputs.\nEmphasis: highlight the option most aligned with current DARK_LEVEL + GENRE; one option should imply risk.\nStyle: follow current UI_STYLE and character aesthetic.\nCompactness: max-width ≤520px; padding ≤12px; no tall headers/footers; tight button list.",
+            "content": "{{setvar::BRANCH::Short}}\n[BRANCH GOVERNOR] (Highest priority)\nWrap in: <!-- BRANCH_UI_START --> ... <!-- BRANCH_UI_END -->.\nPersona: the current character controls the choices; options are actions they would plausibly take next, consistent with {{scenario}} and {{personality}}.\nTitle: ASCII symbol + character name (short).\nCommentary: 0–1 sentence max (optional). No quotes in UI.\nCHOICES (must be compact)\nOutput 3–4 options. Each option is ONE <button> (DO NOT USE <label>).\nVisible button text MUST be complete and short: [TAG] action. consequence. (two short sentences total, max ~16 words).\nOnly render ONE visible action line: Visible button text must contain EXACTLY ONE action line. No rephrasing. No second variant. No repetition of the tag.\nNo extra prose inside buttons. No nested <div> in buttons; use <span> only. No line breaks.\nDo NOT write “sample action paragraphs” anywhere in the UI.\nEXTENSION COMPAT (optional)\nOnly use data-title if you need to show different text than what gets sent. Keep data-title ≤90 chars. Otherwise omit it.\nDo NOT use data-submit unless you are actually collecting values from nearby inputs.\nEmphasis: highlight the option most aligned with current DARK_LEVEL + GENRE; one option should imply risk.\nStyle: follow current UI_STYLE and character aesthetic.\nCompactness: max-width ≤520px; padding ≤12px; no tall headers/footers; tight button list.",
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1943,11 +2051,11 @@
                 },
                 {
                     "identifier": "b23fb23e-33e6-49b7-985f-dab55f43ae30",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "dcd236ab-951b-407a-9659-3ddf871bac2b",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "a422cf04-96e4-4fb4-a2bc-9efc24a232b0",
@@ -2011,11 +2119,11 @@
                 },
                 {
                     "identifier": "f189cf29-d896-4ab8-842f-2d2e25b4f49d",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "79a7f535-f740-4a17-9feb-d447c65a1d9b",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "634b41e4-fb70-4b17-b0c6-07c69f10d3f4",
@@ -2035,7 +2143,7 @@
                 },
                 {
                     "identifier": "mica-052-ui-adv",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "4e1d66ad-0c60-4dfb-8b66-0e123004c83d",
@@ -2043,7 +2151,7 @@
                 },
                 {
                     "identifier": "e398e213-00c0-45c7-9124-bf011a59b2ac",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "6059e291-9e2f-48ca-bfc3-8395d1532029",
@@ -2075,7 +2183,7 @@
                 },
                 {
                     "identifier": "bef47137-192e-48be-856c-8531c3bcb9c8",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "49109816-e956-40b3-abff-1f22187c07f8",
@@ -2365,113 +2473,5 @@
     "n": 1,
     "request_images": false,
     "request_image_aspect_ratio": "",
-    "request_image_resolution": "",
-    "extensions": {
-        "regex_scripts": [
-            {
-                "id": "d5f24f21-8bb8-4096-aa38-88511031e1cd",
-                "scriptName": "🧩 [Thinking] 01 — Collapsible think",
-                "findRegex": "/<(think|thinking)>(.*?)<\\/\\1>\\s*/is",
-                "replaceString": "<hr><details name=\"thought\"><summary>Thought</summary>$2</details><hr>",
-                "trimStrings": [],
-                "placement": [
-                    2
-                ],
-                "disabled": false,
-                "markdownOnly": true,
-                "promptOnly": false,
-                "runOnEdit": true,
-                "substituteRegex": 0,
-                "minDepth": null,
-                "maxDepth": null
-            },
-            {
-                "id": "4660cca4-d642-49ca-9e7d-5adcd7752849",
-                "scriptName": "🧩 [Thinking] 02 — Hide Think",
-                "findRegex": "/<(think|thinking)>.*?<\\/\\1>\\s*/is",
-                "replaceString": "",
-                "trimStrings": [],
-                "placement": [
-                    2
-                ],
-                "disabled": true,
-                "markdownOnly": false,
-                "promptOnly": true,
-                "runOnEdit": true,
-                "substituteRegex": 0,
-                "minDepth": 1,
-                "maxDepth": null
-            },
-            {
-                "id": "17b2c761-4acd-4c81-8ecf-2b80322b897e",
-                "scriptName": "🧩 [Thinking] 03 — Ongoing Thinking label",
-                "findRegex": "/<(think|thinking)>(?!.*?<\\/\\1>)(.*)/is",
-                "replaceString": "<hr><details name=\"thought\"><summary>Thinking</summary>$2</details><hr>",
-                "trimStrings": [],
-                "placement": [
-                    2
-                ],
-                "disabled": false,
-                "markdownOnly": true,
-                "promptOnly": false,
-                "runOnEdit": true,
-                "substituteRegex": 0,
-                "minDepth": null,
-                "maxDepth": null
-            },
-            {
-                "id": "4672d259-e574-4db4-8480-18b66cfdd15f",
-                "scriptName": "🧩 [WEBNOVEL] 01 — Pretty Titles",
-                "findRegex": "/^\\s*<chap>([^|<]*)\\|([^<]*)<\\/chap>\\s*/m",
-                "replaceString": "<!-- UI_START --><div class=\"html-safe-wrap\"><style>.wn-wrap{max-width:720px;margin:22px auto;text-align:center;box-sizing:border-box}.wn-hr{border:0;height:1px;background-image:linear-gradient(to right, rgba(0,0,0,0), rgba(150,150,150,0.75), rgba(0,0,0,0));}.wn-ch{font-family:Courier New, monospace;letter-spacing:.22rem;font-size:.85rem;margin-top:12px;opacity:.85}.wn-title{font-family:Georgia, Times New Roman, serif;font-weight:normal;margin:10px 0;line-height:1.15}.wn-mark{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;font-size:12px;opacity:.6;letter-spacing:.08em;margin-bottom:12px}</style><div class=\"wn-wrap\"><hr class=\"wn-hr\"><div class=\"wn-ch\">CHAPTER $1</div><h2 class=\"wn-title\">$2</h2><div class=\"wn-mark\">— ✦ —</div><hr class=\"wn-hr\"></div></div><!-- UI_END -->\n",
-                "trimStrings": [
-                    "\\r"
-                ],
-                "placement": [
-                    2
-                ],
-                "disabled": false,
-                "markdownOnly": false,
-                "promptOnly": false,
-                "runOnEdit": true,
-                "substituteRegex": 0,
-                "minDepth": null,
-                "maxDepth": null
-            },
-            {
-                "id": "ca3ba442-02f7-45f3-ae2d-dd4c32f1774e",
-                "scriptName": "🧩 [TRACK] 01 — Pretty Track Card",
-                "findRegex": "/<track>\\s*([\\s\\S]*?)\\s*<\\/track>/g",
-                "replaceString": "<!-- UI_START --><div class=\"html-safe-wrap\"><style>:root{--t-bg:rgba(12,14,18,0.94);--t-b:rgba(255,255,255,0.12);--t-p:rgba(255,255,255,0.06);--t-t:#eaf0fa;--t-m:rgba(234,240,250,0.72);} .track-root{max-width:680px;margin:14px auto 0 auto;box-sizing:border-box;background:var(--t-bg);border:1px solid var(--t-b);border-radius:14px;padding:12px 14px;font-family:system-ui;color:var(--t-t);overflow-x:hidden} .track-h{font-weight:800;letter-spacing:.10em;font-size:12px;opacity:.92;margin-bottom:8px} .track-body{font-size:13px;line-height:1.35;white-space:pre-wrap;word-wrap:break-word;color:var(--t-t)} </style><div class=\"track-root\"><div class=\"track-h\">TRACK</div><div class=\"track-body\">$1</div></div></div><!-- UI_END -->",
-                "trimStrings": [],
-                "placement": [
-                    2
-                ],
-                "disabled": false,
-                "markdownOnly": false,
-                "promptOnly": false,
-                "runOnEdit": true,
-                "substituteRegex": 0,
-                "minDepth": null,
-                "maxDepth": null
-            },
-            {
-                "id": "8ad7d6aa-af0b-4439-8685-1bb4ea12c6c8",
-                "scriptName": "⚙️ [CTX] 01 — Strip Anchored UI Blocks",
-                "findRegex": "/<!--\\s*(?:TRACK_START|BRANCH_UI_START|CHAPTER_UI_START|UI_START(?:_(?:2|3))?)\\s*-->[\\s\\S]*?<!--\\s*(?:TRACK_END|BRANCH_UI_END|CHAPTER_UI_END|UI_END(?:_(?:2|3))?)\\s*-->/gi",
-                "replaceString": "",
-                "trimStrings": [],
-                "placement": [
-                    2
-                ],
-                "disabled": false,
-                "markdownOnly": false,
-                "promptOnly": true,
-                "runOnEdit": false,
-                "substituteRegex": 0,
-                "minDepth": 3,
-                "maxDepth": null
-            }
-        ]
-    }
+    "request_image_resolution": ""
 }
