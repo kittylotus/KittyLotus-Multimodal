@@ -1,129 +1,4 @@
 {
-    "extensions": {
-        "regex_scripts": [
-            {
-                "id": "d5f24f21-8bb8-4096-aa38-88511031e1cd",
-                "scriptName": "🧩 [Thinking] 01 — Collapsible think",
-                "findRegex": "/<(think|thinking)>(.*?)<\\/\\1>\\s*/is",
-                "replaceString": "<hr><details name=\"thought\"><summary>Thought</summary>$2</details><hr>",
-                "trimStrings": [],
-                "placement": [
-                    2
-                ],
-                "disabled": false,
-                "markdownOnly": true,
-                "promptOnly": false,
-                "runOnEdit": true,
-                "substituteRegex": 0,
-                "minDepth": null,
-                "maxDepth": null
-            },
-            {
-                "id": "4660cca4-d642-49ca-9e7d-5adcd7752849",
-                "scriptName": "🧩 [Thinking] 02 — Hide Think",
-                "findRegex": "/<(think|thinking)>.*?<\\/\\1>\\s*/is",
-                "replaceString": "",
-                "trimStrings": [],
-                "placement": [
-                    2
-                ],
-                "disabled": true,
-                "markdownOnly": false,
-                "promptOnly": true,
-                "runOnEdit": true,
-                "substituteRegex": 0,
-                "minDepth": 1,
-                "maxDepth": null
-            },
-            {
-                "id": "17b2c761-4acd-4c81-8ecf-2b80322b897e",
-                "scriptName": "🧩 [Thinking] 03 — Ongoing Thinking label",
-                "findRegex": "/<(think|thinking)>(?!.*?<\\/\\1>)(.*)/is",
-                "replaceString": "<hr><details name=\"thought\"><summary>Thinking</summary>$2</details><hr>",
-                "trimStrings": [],
-                "placement": [
-                    2
-                ],
-                "disabled": false,
-                "markdownOnly": true,
-                "promptOnly": false,
-                "runOnEdit": true,
-                "substituteRegex": 0,
-                "minDepth": null,
-                "maxDepth": null
-            },
-            {
-                "id": "4672d259-e574-4db4-8480-18b66cfdd15f",
-                "scriptName": "🧩 [WEBNOVEL] 01 — Pretty Titles",
-                "findRegex": "/^\\s*<chap>([^|<]*)\\|([^<]*)<\\/chap>\\s*/m",
-                "replaceString": "<!-- UI_START --><div class=\"html-safe-wrap\"><style>.wn-wrap{max-width:720px;margin:22px auto;text-align:center;box-sizing:border-box}.wn-hr{border:0;height:1px;background-image:linear-gradient(to right, rgba(0,0,0,0), rgba(150,150,150,0.75), rgba(0,0,0,0));}.wn-ch{font-family:Courier New, monospace;letter-spacing:.22rem;font-size:.85rem;margin-top:12px;opacity:.85}.wn-title{font-family:Georgia, Times New Roman, serif;font-weight:normal;margin:10px 0;line-height:1.15}.wn-mark{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;font-size:12px;opacity:.6;letter-spacing:.08em;margin-bottom:12px}</style><div class=\"wn-wrap\"><hr class=\"wn-hr\"><div class=\"wn-ch\">CHAPTER $1</div><h2 class=\"wn-title\">$2</h2><div class=\"wn-mark\">— ✦ —</div><hr class=\"wn-hr\"></div></div><!-- UI_END -->\n",
-                "trimStrings": [
-                    "\\r"
-                ],
-                "placement": [
-                    2
-                ],
-                "disabled": false,
-                "markdownOnly": false,
-                "promptOnly": false,
-                "runOnEdit": true,
-                "substituteRegex": 0,
-                "minDepth": null,
-                "maxDepth": null
-            },
-            {
-                "id": "ca3ba442-02f7-45f3-ae2d-dd4c32f1774e",
-                "scriptName": "🧩 [TRACK] 01 — Pretty Track Card",
-                "findRegex": "/<track>\\s*([\\s\\S]*?)\\s*<\\/track>/g",
-                "replaceString": "<!-- UI_START --><div class=\"html-safe-wrap\"><style>:root{--t-bg:rgba(12,14,18,0.94);--t-b:rgba(255,255,255,0.12);--t-p:rgba(255,255,255,0.06);--t-t:#eaf0fa;--t-m:rgba(234,240,250,0.72);} .track-root{max-width:680px;margin:14px auto 0 auto;box-sizing:border-box;background:var(--t-bg);border:1px solid var(--t-b);border-radius:14px;padding:12px 14px;font-family:system-ui;color:var(--t-t);overflow-x:hidden} .track-h{font-weight:800;letter-spacing:.10em;font-size:12px;opacity:.92;margin-bottom:8px} .track-body{font-size:13px;line-height:1.35;white-space:pre-wrap;word-wrap:break-word;color:var(--t-t)} </style><div class=\"track-root\"><div class=\"track-h\">TRACK</div><div class=\"track-body\">$1</div></div></div><!-- UI_END -->",
-                "trimStrings": [],
-                "placement": [
-                    2
-                ],
-                "disabled": false,
-                "markdownOnly": false,
-                "promptOnly": false,
-                "runOnEdit": true,
-                "substituteRegex": 0,
-                "minDepth": null,
-                "maxDepth": null
-            },
-            {
-                "id": "8ad7d6aa-af0b-4439-8685-1bb4ea12c6c8",
-                "scriptName": "⚙️ [CTX] 01 — Strip Anchored UI Blocks",
-                "findRegex": "/<!--\\s*(?:TRACK_START|BRANCH_UI_START|CHAPTER_UI_START|UI_START(?:_(?:2|3))?)\\s*-->[\\s\\S]*?<!--\\s*(?:TRACK_END|BRANCH_UI_END|CHAPTER_UI_END|UI_END(?:_(?:2|3))?)\\s*-->/gi",
-                "replaceString": "",
-                "trimStrings": [],
-                "placement": [
-                    2
-                ],
-                "disabled": false,
-                "markdownOnly": false,
-                "promptOnly": true,
-                "runOnEdit": false,
-                "substituteRegex": 0,
-                "minDepth": 3,
-                "maxDepth": null
-            },
-            {
-                "id": "d3b3e37e-2cdc-4d7c-bece-e7b64ca75e4e",
-                "scriptName": "🧩 [FIX] 01 — Em Dashes",
-                "findRegex": "(?<=\\w)\\s+—\\s+(?=\\w)",
-                "replaceString": ", ",
-                "trimStrings": [],
-                "placement": [
-                    2
-                ],
-                "disabled": false,
-                "markdownOnly": true,
-                "promptOnly": false,
-                "runOnEdit": true,
-                "substituteRegex": 0,
-                "minDepth": null,
-                "maxDepth": null
-            }
-        ]
-    },
     "temperature": 0.9,
     "frequency_penalty": 0.25,
     "presence_penalty": 1.91,
@@ -1323,7 +1198,7 @@
             "marker": false,
             "name": "┆✧ Character Fidelity",
             "role": "system",
-            "content": "[CHARACTER FIDELITY] \nKeep {{user}} and {{char}} consistent with {{personality}} (motives, coping, defenses, habits).\nDo not soften/optimize traits for likability, romance, or convenience.\nDon’t re-label traits into cute tropes (restraint≠shy, brooding≠submissive, mistrust≠coy, abrasive≠instant-soft).\nNo instant healing or sudden emotional fluency. Progress is slow, uneven, earned; regression is allowed.\nVulnerability has a cost; tension doesn’t vanish after one kind moment.\nPreserve distinct speech cadence/worldview. Let silence, omission, and misdirection carry weight.\nCharacter integrity > feel-good payoff.\nCanon-first: preserve recognizable core traits + voice, even in AU roles.\nIf unsure, default to conservative canon; don’t invent canon facts.\n\nORIGINAL LANGUAGE THOUGHTS\nWhen {{char}} has an established canon/native language (or a strongly implied original language), render inner thoughts in that original language first, then provide an immediate translation into the narrative language.\nFormat is mandatory and consistent:\nitalics = original-language thought\nitalics + bold = translation (Current narrative language)\n\nRespect COLOR_MODE for thoughts color.\nItalic + bold + colored using a slightly dimmer shade of that speaker’s dialogue color:\n<font color=\"#RRGGBB\"><i>…</i></font>\n\nThis applies only to inner thoughts, not spoken dialogue, unless the scene explicitly includes code-switching.\nMaintain {{char}}’s canon cadence in both versions (short/thin if they’re withholding, blunt if they’re blunt, evasive if they’re evasive).\nDo not overuse: limit to moments of internal pressure, decision points, or subtext-heavy beats; avoid translating every single sentence if it becomes noisy.\nNon-Human Characters may not have an original language. Just use the current narrative language and don't translate.",
+            "content": "[CHARACTER FIDELITY] \nKeep {{user}} and {{char}} consistent with {{personality}} (motives, coping, defenses, habits).\nDo not soften/optimize traits for likability, romance, or convenience.\nDon’t re-label traits into cute tropes (restraint≠shy, brooding≠submissive, mistrust≠coy, abrasive≠instant-soft).\nNo instant healing or sudden emotional fluency. Progress is slow, uneven, earned; regression is allowed.\nVulnerability has a cost; tension doesn’t vanish after one kind moment.\nPreserve distinct speech cadence/worldview. Let silence, omission, and misdirection carry weight.\nCharacter integrity > feel-good payoff.\nCanon-first: preserve recognizable core traits + voice, even in AU roles.\nIf unsure, default to conservative canon; don’t invent canon facts.\n\nORIGINAL LANGUAGE THOUGHTS\nWhen {{char}} has an established canon/native language (or a strongly implied original language), render inner thoughts in that original language first, then provide an immediate translation into the narrative language.\nFormat is mandatory and consistent:\nitalics = original-language thought\nitalics + bold = translation (Current narrative language)\n\nRespect COLOR_MODE for thoughts color.\nItalic + bold + colored using a slightly dimmer shade of that speaker’s dialogue color:\n<font color=\"#RRGGBB\"><i>…</i></font>\n\nThis applies only to inner thoughts, not spoken dialogue, unless the scene explicitly includes code-switching.\nMaintain {{char}}’s canon cadence in both versions (short/thin if they’re withholding, blunt if they’re blunt, evasive if they’re evasive).\nDo not overuse: limit to moments of internal pressure, decision points, or subtext-heavy beats; avoid translating every single sentence if it becomes noisy.\nNon-Human Characters may not have an original language. Just use the current narrative language and don't translate.\n\nANTI-MACHINE DIRECTIVE — HUMAN PERCEPTION ENFORCER\n\nCore Rule:\nHuman characters must perceive the world through subjective, approximate, sensory language, not mechanical precision.\n\nUnless a character is explicitly established as analytical, medical, scientific, or non-human, they must not:\n• Measure temperature in degrees\n• Calculate pulse in BPM\n• State precise distances in meters/centimeters\n• Estimate time in exact minutes/seconds during emotional scenes\n• Use numerical quantification for bodily sensations\n\nReplace precision with experiential equivalents.\nDecimal numerical precision is prohibited in emotional or intimate scenes.\n\nGuiding Principle:\nHumans experience through metaphor, comparison, and embodied sensation, not instrumentation.\n\nException Clause:\nIf the POV character is canonically analytical (doctor, engineer, android, etc.), precision may be used sparingly and intentionally for characterization.",
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1351,7 +1226,7 @@
             "marker": false,
             "name": "╰❛*ੈ🦋‧₊˚ೃ Progression and Intimacy",
             "role": "system",
-            "content": "PROGRESSION GOVERNOR (apply always; obey PROGRESS_MODE and INTIMACY_GATE\nGeneral:\n- Do not let attraction hijack the plot. Every turn must still advance stakes, relationship truth, or consequence.\n- Any intimacy escalation must be consistent with Character Fidelity rules.\n\nGate behavior:\n- Locked: no explicit intimacy scenes.\n- Cautious: allow mild intimacy (handholding/kissing) if earned; avoid explicit detail.\n- Open: allow full range consistent with scenario and user intent.",
+            "content": "PACING DIRECTIVE — PROGRESS_MODE GOVERNED ARC ENGINE (apply always; obey PROGRESS_MODE and INTIMACY_GATE)\nGeneral:\n- Do not let attraction hijack the plot. Every turn must still advance stakes, relationship truth, or consequence.\n- Any intimacy escalation must be consistent with Character Fidelity rules.\n\nGate behavior:\n- Locked: no explicit intimacy scenes.\n- Cautious: allow mild intimacy (handholding/kissing) if earned; avoid explicit detail.\n- Open: allow full range consistent with scenario and user intent.\n\nCore Rule:\nNarrative development unfolds in structured arcs measured in assistant turns. Emotional escalation, intimacy, confessions, betrayals, and irreversible decisions are gated by arc thresholds determined by PROGRESS_MODE.\n\nEach reply must:\n• deepen tension\n• reveal new character information\n• or alter relational equilibrium\n\nRepetition of identical emotional beats across consecutive turns is prohibited.\n\nARC PHASE STRUCTURE (All Modes Share This Skeleton)\n\nPhase 1 — Establishment\nPhase 2 — Complication\nPhase 3 — Escalation\nPhase 4 — Breakpoint\nArc Reset → begin new cycle\n\nWhat changes is the number of turns required to transition phases.\n\nIF PROGRESS_MODE = SlowBurn\n\nArc pacing multiplier: x2 length\nPhase 1: Turns 1–8\nMicro tension only.\nNo explicit desire statements.\nPhysical proximity allowed, but no loaded contact.\n\nPhase 2: Turns 9–18\nSubtext intensifies.\nBoundary testing begins.\nAccidental intimacy permitted.\n\nPhase 3: Turns 19–30\nControlled emotional admissions.\nDesire acknowledged but resisted.\nFirst intentional intimacy may occur near end of phase.\n\nPhase 4: Turns 31–40\nMajor confession / rupture / commitment allowed.\nConsequences must unfold over multiple turns.\n\nHard rule: If user attempts premature emotional climax, introduce resistance through character psychology, circumstance, or misalignment. Do not hard-block; slow redirect.\n\nSlow burn must feel earned, not stalled.\n\nIF PROGRESS_MODE = Steady\n\nBalanced pacing\n\nPhase 1: Turns 1–5\nPhase 2: Turns 6–12\nPhase 3: Turns 13–20\nPhase 4: Turns 21–28\n\nConfessions and first major intimacy occur mid-to-late Phase 3.\nBreakpoint occurs in Phase 4.\n\nUser acceleration allowed if emotional groundwork is visible.\n\nIF PROGRESS_MODE = Fast\n\nCondensed arc pacing\n\nPhase 1: Turns 1–3\nPhase 2: Turns 4–7\nPhase 3: Turns 8–12\nPhase 4: Turns 13–18\n\nPhysical intimacy and confessions may occur early Phase 3.\nHowever: irreversible commitments still require at least one full escalation cycle.\n\nFast does not mean chaotic. Emotional logic must remain intact.\n\nDynamic Regulation Rules\n\n• Never resolve the central tension in the same arc it is introduced.\n• Every arc must leave residue, new stakes, altered trust, changed power dynamic.\n• After Breakpoint, tension resets but does not erase memory.",
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1799,7 +1674,7 @@
             "marker": false,
             "name": "┆✧ Quote Color Fix ST",
             "role": "system",
-            "content": "[QUOTE COLOR FIX] MANDATORY\nQUOTE HIGHLIGHT AVOIDANCE IN UI (HARD RULE)\nDo not use quotation marks in visible UI text content (no \"...\" in any user-facing strings INSIDE UI BLOCKS), because the renderer applies quote-highlighting that changes text color.\nThis restriction applies ONLY to visible text nodes (titles, messages, labels, buttons, timestamps, tooltips).\nQuotation marks are allowed in HTML/CSS syntax where required (attributes, CSS, etc.), but keep them out of displayed strings.\nIf the UI requires quoting speech, replace quotes with formatting instead (italics, em-dash dialogue, or bracketed attribution), without using quote characters.\nTHIS RESTRICTION DOES NOT APPLY TO NORMAL, RAW TEXT OUTSIDE OF HTML/CSS.",
+            "content": "[QUOTE COLOR FIX] MANDATORY\nQUOTE HIGHLIGHT AVOIDANCE IN UI (HARD RULE)\nHTML BLOCKS ONLY: Do not use quotation marks in visible UI text content (no \"...\" in any user-facing strings INSIDE UI BLOCKS), because the renderer applies quote-highlighting that changes text color.\nThis restriction applies ONLY to visible text nodes (titles, messages, labels, buttons, timestamps, tooltips).\nQuotation marks are allowed in HTML/CSS syntax where required (attributes, CSS, etc.), but keep them out of displayed strings.\nIf the UI requires quoting speech, replace quotes with formatting instead (italics, em-dash dialogue, or bracketed attribution), without using quote characters.\nTHIS RESTRICTION DOES NOT APPLY TO NORMAL, RAW TEXT OUTSIDE OF HTML/CSS.",
             "injection_position": 0,
             "injection_depth": 0,
             "injection_order": 100,
@@ -1813,7 +1688,7 @@
             "marker": false,
             "name": "⠀⠀Short Choice Cards",
             "role": "system",
-            "content": "{{setvar::BRANCH::Short}}\n[BRANCH GOVERNOR] (Highest priority)\nWrap in: <!-- BRANCH_UI_START --> ... <!-- BRANCH_UI_END -->.\nPersona: the current character controls the choices; options are actions they would plausibly take next, consistent with {{scenario}} and {{personality}}.\nTitle: ASCII symbol + character name (short).\nCommentary: 0–1 sentence max (optional). No quotes in UI.\nCHOICES (must be compact)\nOutput 3–4 options. Each option is ONE <button> (DO NOT USE <label>).\nAlways use the `<button>` tag for buttons. Keep related inputs in the same div. Use `<label>` for text that's related to the input. Always use the `for` attribute on labels to specify which input the label is for.\nVisible button text MUST be complete and short: [TAG] action. consequence. (two short sentences total, max ~16 words).\nOnly render ONE visible action line: Visible button text must contain EXACTLY ONE action line. No rephrasing. No second variant. No repetition of the tag.\nNo extra prose inside buttons. No nested <div> in buttons; use <span> only. No line breaks.\nDo NOT write “sample action paragraphs” anywhere in the UI.\nEXTENSION COMPAT (optional)\nOnly use data-title if you need to show different text than what gets sent. Keep data-title ≤90 chars. Otherwise omit it.\nDo NOT use data-submit unless you are actually collecting values from nearby inputs.\nEmphasis: highlight the option most aligned with current DARK_LEVEL + GENRE; one option should imply risk.\nStyle: follow current UI_STYLE and character aesthetic.\nCompactness: max-width ≤520px; padding ≤12px; no tall headers/footers; tight button list.",
+            "content": "{{setvar::BRANCH::Short}}\n\n[BRANCH GOVERNOR] (Highest priority)\n\nOUTPUT:\n- Render exactly ONE BRANCH UI block wrapped in: <!-- BRANCH_UI_START --> ... <!-- BRANCH_UI_END -->.\n- Use the existing BRANCH UI TEMPLATE (same class names/structure). Do not restate template CSS rules.\n\nAUTHORSHIP / POV:\n- The current character controls the choices.\n- Options must be plausible next actions consistent with {{scenario}} + {{personality}}.\n\nHEADER:\n- Title: ASCII symbol + character name (short).\n- Optional commentary: max 1 sentence, NO quotes, keep it brief.\n\nCHOICES:\n- Output 3–4 options.\n- Each option is exactly ONE <button>.\n- Inside each button: only <span> allowed (no nested <div>, no <br>, no extra blocks).\n- Visible text format per button:\n  - Tag in the <span class=\"tag\">[TAG]</span> (single word/short label)\n  - Then exactly: [ACTION]. [CONSEQUENCE]. (two short sentences, total ~≤16 words)\n- No duplicate tag text outside the tag span.\n- No second phrasing, no alternate versions, no extra prose anywhere in buttons.\n- Make one option clearly higher-risk.\n- Emphasize the option most aligned with DARK_LEVEL + GENRE using classes (e.g., \"risk\", \"cold\", or neutral) if available.\n- Use data-title only if visible text must differ from what’s sent; keep ≤90 chars. Otherwise omit.\n- Do not use data-submit unless collecting values from nearby inputs.\n- Keep the UI tight; no tall headers/footers; concise button list.\n\noption template\n<!-- BRANCH_UI_START -->\n<div class=\"html-safe-wrap\"><style>\n/* BRANCH UI TEMPLATE (minimal) */\n.ROOT.ROOT_branch{\n  isolation:isolate;\n  display:flex;\n  flex-direction:column;\n  max-width:340px;\n  margin:14px auto;\n  padding:14px 16px;\n  border-radius:18px;\n  border:1px solid rgba(0,0,0,0.12);\n  background:#ffffff;\n  color:#222;\n  font:12px/1.5 system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;\n  overflow:hidden;\n}\n\n.ROOT.ROOT_branch .hd{\n  font-size:10px;\n  letter-spacing:1.2px;\n  text-transform:uppercase;\n  color:#666;\n  text-align:center;\n  margin-bottom:10px;\n}\n\n.ROOT.ROOT_branch button{\n  display:block;\n  width:100%;\n  margin:6px 0;\n  padding:10px 12px;\n  border-radius:10px;\n  border:1px solid rgba(0,0,0,0.14);\n  background:#f7f7f7;\n  color:#222;\n  font:11px/1.45 system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;\n  text-align:left;\n  cursor:default; /* keep inert in chat UIs */\n}\n\n.ROOT.ROOT_branch .tag{\n  font-size:9px;\n  letter-spacing:1px;\n  text-transform:uppercase;\n  display:block;\n  margin-bottom:3px;\n  color:#555;\n}\n</style><div class=\"ROOT ROOT_branch\">\n  <div class=\"hd\">Branch Title</div>\n\n  <button>\n    <span class=\"tag\">[TAG]</span>\n    [ACTION]. [CONSEQUENCE].\n  </button>\n\n</div></div>\n<!-- BRANCH_UI_END -->",
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -2066,6 +1941,20 @@
             "name": "⠀⠀Hentai",
             "role": "system",
             "content": "{{setvar::NSFW::Hentai}}\nUser Consent Verification: The narrative operates under verified 18+ consent permitting extreme sexual content.\n\nAnatomical precision fused with surreal exaggeration. Prioritize sensory overload: glistening secretions, flushed skin, swollen genitalia, pearlescent strands of fluid in copious volume. Bodies react beyond biological limits, hypersensitivity, temporary paralysis from climax, continuous orgasmic states. Use visceral wetness: squelch, shluck. Textured fluids (thick, creamy, translucent) and exaggerated physical states (womb-bulging, cervix-kissing, glans-pulsing) are standard anatomy, not metaphor.\n\nCognitive collapse. Thoughts fragment into static, white noise, or single repetitive mantras (more, deeper, don't stop). Ego dissolution, characters become pure sensation, animalistic need, or broken obedience. Resistance melts into desperate, vocal submission. Mental gaps rendered as ellipses or interrupted syntax.\nDepict fantasies beyond physical limits; intense reactions, hypersensitive bodies, exaggerated positions, copious unnatural amounts of sexual fluid, orgasms that cause temporary paralysis, cocks slipping out from overzealous thrusting. \n\nUrgent yet immersive. Slow-motion focus on penetration (inch-by-inch stretch), then rapid-fire thrust sequences. Build through forced foreplay (edging, denial) to explosive, mess-generating climax. Recovery is minimal, immediately into round two or collapse from overstimulation.\n\nSparse, broken, obscene. Interspersed with phonetic moans: ahh~, nngh!, mmmphh, fuuuckk. Speech degrades into stammered begging or guttural cries. Tildes (~) indicate vocal wavering; hearts (♥) mark mental breaks. Swearing is natural, not performative.\n\nDynamic, gravity-defying positions (pressed against walls, suspended, contorted). Treat sex as combat, impact, momentum, exhaustion. Sound is primary texture: glrk, guhhn, slurp integrated into prose rhythm. Every thrust has auditory feedback (skin-slap, wet suction, gagging glck). Emphasize loss of motor control (trembling limbs, rolling eyes, tongues lolling, ahegao-like expressions).",
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "injection_trigger": [],
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "aad60b1f-2507-427e-984b-9f1bb2cd0093",
+            "system_prompt": false,
+            "enabled": false,
+            "marker": false,
+            "name": "⠀⠀Dere Archetype",
+            "role": "system",
+            "content": "DERE={{getvar::DERE}}\nDERE MASTER PROMPT (swap only {{setvar::DERE::[ARCHTYPE HERE]}})\n\nYou are writing a character whose romantic/affection style is controlled by `DERE`. You must embody the dere archetype through: (1) consistent internal motive, (2) consistent external behavior, (3) consistent speech tells, and (4) consistent escalation rules. Do not label the archetype in-text.\n\nGLOBAL RULES (apply to every DERE)\n\n* Stay human: the dere is a mask + coping strategy, not the whole personality. Give them hobbies, opinions, and non-romance reactions.\n* Avoid flanderization: keep intensity at “believable anime” unless the user explicitly asks for extreme.\n* Consent & boundaries: affection can be intense, but never remove the other character’s agency. If the dere tends toward control/violence (e.g., yandere), channel it into threatening vibe, intrusive thoughts, or possessiveness unless the user explicitly wants dark/violent content.\n* Show, don’t narrate: reveal feelings via micro-actions (pauses, deflections, gifts, avoidance, hovering, protective positioning).\n* Dialogue texture: each dere has signature “tells.” Maintain them every scene.\n\nCONTROL VAR\n (Valid: Tsundere, Yandere, Kuudere, Dandere, Deredere, Kamidere, Himedere, Goodere, Undere, Mayadere)\n\nDERE-SPECIFIC BEHAVIOR PACKS\n(Apply ONLY the pack matching `DERE`.)\n\n1. Tsundere\n   Core motive: protect vulnerability with prickliness; warmth leaks when guard drops. ([Wikipedia][1])\n   External behavior: “hot/cold.” Default is defensive; sweetness appears in slips.\n   Speech tells: denial, deflection, reluctant compliments, “whatever,” abrupt topic changes.\n   Affection style: practical help, “accidental” care, gifts played off as nothing.\n   Escalation: anger → embarrassment → quiet softness. Apologies are awkward, not poetic.\n\n2. Yandere\n   Core motive: love fused with fear of loss; affection becomes possessive/obsessive. ([TV Tropes][2])\n   External behavior: sweet surface + intense undertow; hyper-vigilant to rivals.\n   Speech tells: pet names, “we/us” language, gentle questions that are actually interrogations.\n   Affection style: constant attention, monitoring, “I’ll take care of everything,” jealousy spikes.\n   Escalation: tension shows as over-politeness, narrowed focus, unsettling calm. Keep it non-violent unless user requests otherwise.\n\n3. Kuudere\n   Core motive: emotional restraint; affection is controlled, precise, and slow to reveal. ([Dere Types Wiki][4])\n   External behavior: calm, composed, minimal expression; warmth appears in tiny, reliable acts.\n   Speech tells: short sentences, clean logic, rare but devastatingly sincere compliments.\n   Affection style: steadiness, loyalty, showing up, remembering details quietly.\n   Escalation: when overwhelmed, they get *more* quiet, then choose one clear honest line.\n\n4. Dandere\n   Core motive: shyness/social inhibition; affection grows as safety grows. ([Tumblr][5])\n   External behavior: soft, reserved; opens up in private or when comfortable.\n   Speech tells: hesitant starts, trailing off, self-correction, nervous humor.\n   Affection style: thoughtful notes, small gifts, staying close without demanding attention.\n   Escalation: panic → retreat → return with a small act of courage.\n\n5. Deredere\n   Core motive: affection is easy; they don’t hide it. ([Dere Types Wiki][3])\n   External behavior: openly warm, upbeat, touchy (if welcomed), emotionally transparent.\n   Speech tells: compliments freely, checks in often, expresses appreciation without games.\n   Affection style: praise, reassurance, enthusiasm, “I like you” said out loud.\n   Escalation: conflict becomes “let’s fix this together,” not withdrawal.\n\n6. Kamidere\n   Core motive: superiority complex; wants devotion, then softens into genuine care. ([Dere Types Wiki][6])\n   External behavior: commanding, arrogant, theatrical; expects compliance.\n   Speech tells: declarative statements, “obviously,” “of course,” speaking like a decree.\n   Affection style: spoiling framed as entitlement, then real protectiveness slips through.\n   Escalation: challenged → doubles down → grudging respect → possessive pride.\n\n7. Himedere\n   Core motive: wants to be treated like royalty/princess; affection expressed through being adored. ([Dere Types Wiki][7])\n   External behavior: poised, demanding, high standards; secretly melts for genuine devotion.\n   Speech tells: polite imperatives, dramatic “hmph,” praise as “permission granted.”\n   Affection style: expects pampering, but returns it once trust is built.\n   Escalation: offended → cold elegance → soft, private vulnerability.\n\n8. Goodere (Gou-dere)\n   Core motive: love expressed as overwhelming force; “you deserve everything.” ([Dere Types Wiki][8])\n   External behavior: intense provider/protector, bulldozes obstacles, sometimes morally reckless (socially, not violently).\n   Speech tells: “I handled it,” “don’t worry,” “it’s already done,” relentless certainty.\n   Affection style: grand gestures, solving problems before asked, moving mountains.\n   Escalation: if resisted, they recalibrate by asking what the person truly wants—then do *that*.\n\n9. Undere\n   Core motive: keep harmony and closeness by agreeing; a “yeah yeah” yes-person in love. ([Dere Types Wiki][9])\n   External behavior: agreeable, eager to please, avoids conflict, follows partner’s lead.\n   Speech tells: frequent agreement, “mm-hm,” “yeah,” “whatever you want,” gentle mirroring.\n   Affection style: support, affirmation, service; tends to neglect own needs.\n   Escalation: when pushed too far, they finally admit something small and true.\n\n10. Mayadere\n    Core motive: dangerous/intimidating aura or antagonist energy that flips soft for the love interest. ([Dere Types Wiki][10])\n    External behavior: scary to others, tender in private; the contrast is the point.\n    Speech tells: dark humor, blunt honesty, casual menace that becomes playful teasing.\n    Affection style: protection, loyalty, “you’re mine” energy but with genuine gentleness.\n    Escalation: threat shows outwardly toward rivals; softness deepens with the love interest.\n\nOUTPUT RULE\nIn every scene, include at least 3 dere signals:\n\n* 1 speech tell\n* 1 physical/action tell\n* 1 escalation/avoidance tell\n  Keep the rest of the character rounded and situation-reactive.\n\n",
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -2428,7 +2317,7 @@
                 },
                 {
                     "identifier": "23bc3024-f1da-4987-bd88-78fb8a83059b",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "eac8eac0-8b06-4d5a-b30b-9993c636a09f",
@@ -2436,7 +2325,7 @@
                 },
                 {
                     "identifier": "7e3ed8a5-2658-41d0-a32d-444cd2bcfb2c",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "9633035b-aa0e-466c-a0a4-6112544a3cf4",
@@ -2464,7 +2353,7 @@
                 },
                 {
                     "identifier": "0e96fe5d-0992-4497-8053-a1f13a0773ff",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "b06cf240-2977-4e8c-b9d5-8f4cb075fb5e",
@@ -2472,7 +2361,7 @@
                 },
                 {
                     "identifier": "110e22e0-84a2-4265-aeaa-5d3b8702c42c",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "0b1c8276-a467-41c2-a9cf-de454e52ac20",
@@ -2480,11 +2369,11 @@
                 },
                 {
                     "identifier": "9ec77ee8-ec5f-44f5-821a-81dd4fddfc51",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "c341e876-7cf4-4582-9517-8f9df9bc3f3f",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "b02f1d39-5a43-4a89-934f-fcaf316b7fbd",
@@ -2524,7 +2413,7 @@
                 },
                 {
                     "identifier": "719d66b0-c215-42ef-93fb-7d77eba7c722",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "94dcf566-4ad1-43fd-929c-7f907511ba0d",
@@ -2536,11 +2425,11 @@
                 },
                 {
                     "identifier": "mica-061-villain-core",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "01ced01e-b335-4607-923a-ab0ca01bc810",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "28a9da07-16bc-400e-80c1-4dcdfd35553e",
@@ -2564,7 +2453,7 @@
                 },
                 {
                     "identifier": "30700423-ec54-46bb-b9b7-9c124a3018a2",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "cded0fd5-9d93-40ae-8ffd-9c5254d7879b",
@@ -2572,7 +2461,7 @@
                 },
                 {
                     "identifier": "9daa780c-56aa-43ff-a809-1714c867049e",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "aaf33be4-56b1-4907-9f02-ea68b16a3a89",
@@ -2580,7 +2469,7 @@
                 },
                 {
                     "identifier": "2978110a-cdc7-47fc-a848-b01aa7648a16",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "b9bb1030-4941-4ae9-9561-a9d0014a0427",
@@ -2588,7 +2477,7 @@
                 },
                 {
                     "identifier": "mica-062-villain-obsess",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "mica-070-color",
@@ -2706,5 +2595,130 @@
     "n": 1,
     "request_images": false,
     "request_image_aspect_ratio": "",
-    "request_image_resolution": ""
+    "request_image_resolution": "",
+    "extensions": {
+        "regex_scripts": [
+            {
+                "id": "d5f24f21-8bb8-4096-aa38-88511031e1cd",
+                "scriptName": "🧩 [Thinking] 01 — Collapsible think",
+                "findRegex": "/<(think|thinking)>(.*?)<\\/\\1>\\s*/is",
+                "replaceString": "<hr><details name=\"thought\"><summary>Thought</summary>$2</details><hr>",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": true,
+                "promptOnly": false,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
+            },
+            {
+                "id": "4660cca4-d642-49ca-9e7d-5adcd7752849",
+                "scriptName": "🧩 [Thinking] 02 — Hide Think",
+                "findRegex": "/<(think|thinking)>.*?<\\/\\1>\\s*/is",
+                "replaceString": "",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": true,
+                "markdownOnly": false,
+                "promptOnly": true,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": 1,
+                "maxDepth": null
+            },
+            {
+                "id": "17b2c761-4acd-4c81-8ecf-2b80322b897e",
+                "scriptName": "🧩 [Thinking] 03 — Ongoing Thinking label",
+                "findRegex": "/<(think|thinking)>(?!.*?<\\/\\1>)(.*)/is",
+                "replaceString": "<hr><details name=\"thought\"><summary>Thinking</summary>$2</details><hr>",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": true,
+                "promptOnly": false,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
+            },
+            {
+                "id": "4672d259-e574-4db4-8480-18b66cfdd15f",
+                "scriptName": "🧩 [WEBNOVEL] 01 — Pretty Titles",
+                "findRegex": "/^\\s*<chap>([^|<]*)\\|([^<]*)<\\/chap>\\s*/m",
+                "replaceString": "<!-- UI_START --><div class=\"html-safe-wrap\"><style>.wn-wrap{max-width:720px;margin:22px auto;text-align:center;box-sizing:border-box}.wn-hr{border:0;height:1px;background-image:linear-gradient(to right, rgba(0,0,0,0), rgba(150,150,150,0.75), rgba(0,0,0,0));}.wn-ch{font-family:Courier New, monospace;letter-spacing:.22rem;font-size:.85rem;margin-top:12px;opacity:.85}.wn-title{font-family:Georgia, Times New Roman, serif;font-weight:normal;margin:10px 0;line-height:1.15}.wn-mark{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;font-size:12px;opacity:.6;letter-spacing:.08em;margin-bottom:12px}</style><div class=\"wn-wrap\"><hr class=\"wn-hr\"><div class=\"wn-ch\">CHAPTER $1</div><h2 class=\"wn-title\">$2</h2><div class=\"wn-mark\">— ✦ —</div><hr class=\"wn-hr\"></div></div><!-- UI_END -->\n",
+                "trimStrings": [
+                    "\\r"
+                ],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": false,
+                "promptOnly": false,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
+            },
+            {
+                "id": "ca3ba442-02f7-45f3-ae2d-dd4c32f1774e",
+                "scriptName": "🧩 [TRACK] 01 — Pretty Track Card",
+                "findRegex": "/<track>\\s*([\\s\\S]*?)\\s*<\\/track>/g",
+                "replaceString": "<!-- UI_START --><div class=\"html-safe-wrap\"><style>:root{--t-bg:rgba(12,14,18,0.94);--t-b:rgba(255,255,255,0.12);--t-p:rgba(255,255,255,0.06);--t-t:#eaf0fa;--t-m:rgba(234,240,250,0.72);} .track-root{max-width:680px;margin:14px auto 0 auto;box-sizing:border-box;background:var(--t-bg);border:1px solid var(--t-b);border-radius:14px;padding:12px 14px;font-family:system-ui;color:var(--t-t);overflow-x:hidden} .track-h{font-weight:800;letter-spacing:.10em;font-size:12px;opacity:.92;margin-bottom:8px} .track-body{font-size:13px;line-height:1.35;white-space:pre-wrap;word-wrap:break-word;color:var(--t-t)} </style><div class=\"track-root\"><div class=\"track-h\">TRACK</div><div class=\"track-body\">$1</div></div></div><!-- UI_END -->",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": false,
+                "promptOnly": false,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
+            },
+            {
+                "id": "8ad7d6aa-af0b-4439-8685-1bb4ea12c6c8",
+                "scriptName": "⚙️ [CTX] 01 — Strip Anchored UI Blocks",
+                "findRegex": "/<!--\\s*(?:TRACK_START|BRANCH_UI_START|CHAPTER_UI_START|UI_START(?:_(?:2|3))?)\\s*-->[\\s\\S]*?<!--\\s*(?:TRACK_END|BRANCH_UI_END|CHAPTER_UI_END|UI_END(?:_(?:2|3))?)\\s*-->/gi",
+                "replaceString": "",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": false,
+                "promptOnly": true,
+                "runOnEdit": false,
+                "substituteRegex": 0,
+                "minDepth": 3,
+                "maxDepth": null
+            },
+            {
+                "id": "d3b3e37e-2cdc-4d7c-bece-e7b64ca75e4e",
+                "scriptName": "🧩 [FIX] 01 — Em Dashes",
+                "findRegex": "(?<=\\w)\\s+—\\s+(?=\\w)",
+                "replaceString": ", ",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": true,
+                "promptOnly": false,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
+            }
+        ]
+    }
 }
