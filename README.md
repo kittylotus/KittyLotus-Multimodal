@@ -1,5 +1,6 @@
 # KittyLotus-v1.x-Multimodal
 A modular RP / narrative engine with sliders + toggles that control darkness, villains, pacing, UI, fidelity, and model quirks—without turning your story into a different genre. HTML focused.
+✨NEW!! SillySimTracker HTML styles so your tracker matches your UI style
 # Main features 
 > 1) Dark System (DARK_LEVEL 0–5) A universal “how unforgiving is the world?” dial.
 Doesn’t force genre shifts.
