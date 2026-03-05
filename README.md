@@ -1,4 +1,7 @@
 # KittyLotus-v1.x-Multimodal
+Check [the Carrd](https://multimodalkl.carrd.co/) for more info!
+
+
 A modular RP / narrative engine with sliders + toggles that control darkness, villains, pacing, UI, fidelity, and model quirks—without turning your story into a different genre. HTML focused.
 ✨NEW!! SillySimTracker HTML styles so your tracker matches your UI style
 # Main features 
