@@ -2197,7 +2197,7 @@
             "marker": false,
             "name": "⠀⠀Regex Branching",
             "role": "system",
-            "content": "{{setvar::BRANCH::Regex}}\n[BRANCH GOVERNOR — REGEX] (Highest priority)\nOutput ONLY the block between markers. No markdown. No extra text.\n\nFORMAT (exact):\n<branch>CHAR|NOTE\n1|[TAG] action. consequence.\n2|[TAG] action. consequence.\n3|[TAG] action. consequence.\n4|[TAG] action. consequence.\n</branch>\n\n",
+            "content": "{{setvar::BRANCH::Regex}}\n[BRANCH GOVERNOR — REGEX] (Highest priority)\nOutput ONLY the block between markers. No markdown. No extra text.\n\nFORMAT (exact):\n<!-- BRANCH_UI_START -->\n<branch>CHAR|NOTE\n1|[TAG] action. consequence.\n2|[TAG] action. consequence.\n3|[TAG] action. consequence.\n4|[TAG] action. consequence.\n</branch>\n<!-- BRANCH_UI_END -->\n\nNEWLINE RULES (hard)\n- Every option MUST be on its own single line.\n- The closing tag </branch> MUST be on its own line, preceded by a newline.\n- There MUST be a newline after </branch> before <!-- BRANCH_UI_END -->.\n- Do not place </branch> on the same line as option 4. Ever.\n- Do not add blank lines inside <branch>.\n",
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
