@@ -4,7 +4,7 @@
             {
                 "id": "d5f24f21-8bb8-4096-aa38-88511031e1cd",
                 "scriptName": "🧩 [Thinking] 01 — Collapsible think",
-                "findRegex": "<thinking>([\\s\\S]*?)<\\/thinking>",
+                "findRegex": "<(?:think|thinking)>([\s\S]*?)<\/(?:think|thinking)>",
                 "replaceString": "<details class=\"thinking-block\"><summary>Thinking</summary>$1</details>",
                 "trimStrings": [],
                 "placement": [
