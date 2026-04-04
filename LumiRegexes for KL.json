@@ -1,0 +1,358 @@
+{
+  "version": 1,
+  "type": "lumiverse_regex_scripts",
+  "scripts": [
+    {
+      "name": "🧩 [Thinking] 01 — Collapsible think",
+      "find_regex": "<(think|thinking)>(.*?)<\\/\\1>\\s*",
+      "replace_string": "<hr><details name=\"thought\"><summary>Thought</summary>$2</details><hr>",
+      "flags": "is",
+      "placement": [
+        "ai_output"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": "response",
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": true,
+      "sort_order": 0,
+      "description": "",
+      "metadata": {
+        "legacy_id": "d5f24f21-8bb8-4096-aa38-88511031e1cd",
+        "legacy_markdownOnly": true,
+        "legacy_promptOnly": false,
+        "legacy_placement": [
+          2
+        ],
+        "legacy_substituteRegex": 0
+      },
+      "folder": "Thinking",
+      "script_id": ""
+    },
+    {
+      "name": "🧩 [TRACK] — Pretty Track Aux",
+      "find_regex": "<track_aux>\\s*(?:\\[threads\\]\\s*([\\s\\S]*?)\\s*\\[/threads\\]\\s*)?(?:\\[inventory\\]\\s*([\\s\\S]*?)\\s*\\[/inventory\\]\\s*)?(?:\\[relationship\\]\\s*(?:\\[stage\\]\\s*([\\s\\S]*?)\\s*\\[/stage\\]\\s*)?(?:\\[trust\\]\\s*([\\s\\S]*?)\\s*\\[/trust\\]\\s*)?(?:\\[tension\\]\\s*([\\s\\S]*?)\\s*\\[/tension\\]\\s*)?(?:\\[power\\]\\s*([\\s\\S]*?)\\s*\\[/power\\]\\s*)?\\[/relationship\\]\\s*)?\\s*</track_aux>",
+      "replace_string": "<!-- TRACK_START --><details style=\"max-width:760px;margin:14px auto 18px;border:1px solid rgba(192,176,230,.18);border-radius:20px;background:linear-gradient(180deg,rgba(10,8,18,.96),rgba(8,6,15,.98));box-shadow:0 14px 28px rgba(0,0,0,.24);overflow:hidden;color:#f5f1ff;\"><summary style=\"cursor:pointer;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;font-family:'Courier New',monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#d8c9ff;border-bottom:1px solid rgba(192,176,230,.14);background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.015));\"><span>✦ State Submodules</span><span style=\"display:inline-block;padding:6px 12px;border-radius:999px;background:linear-gradient(135deg,#ffeaf6,#e9ddff);color:#1a1424;font-weight:700;font-size:11px;letter-spacing:.12em;\">Aux</span></summary><div style=\"padding:14px;display:flex;flex-wrap:wrap;gap:12px;\"><details style=\"flex:1 1 100%;border-radius:18px;border:1px solid rgba(192,176,230,.18);background:linear-gradient(180deg,rgba(22,18,34,.94),rgba(13,10,23,.96));box-shadow:0 14px 28px rgba(0,0,0,.24);overflow:hidden;\"><summary style=\"cursor:pointer;padding:13px 15px;font-family:'Courier New',monospace;letter-spacing:.16em;font-size:11px;text-transform:uppercase;color:#cdbdf2;border-bottom:1px solid rgba(192,176,230,.12);background:linear-gradient(180deg,rgba(255,255,255,.025),rgba(255,255,255,.01));\"><span>Threads</span><span style=\"display:inline-block;margin-left:8px;padding:4px 9px;border-radius:999px;background:linear-gradient(135deg,#ffeaf6,#e9ddff);color:#1a1424;font-weight:700;font-size:10px;letter-spacing:.12em;\">Expand</span></summary><div style=\"padding:13px 15px;font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial;font-size:14px;line-height:1.55;white-space:pre-wrap;color:#f7f3ff;\">$1</div></details><details style=\"flex:1 1 100%;border-radius:18px;border:1px solid rgba(192,176,230,.18);background:linear-gradient(180deg,rgba(22,18,34,.94),rgba(13,10,23,.96));box-shadow:0 14px 28px rgba(0,0,0,.24);overflow:hidden;\"><summary style=\"cursor:pointer;padding:13px 15px;font-family:'Courier New',monospace;letter-spacing:.16em;font-size:11px;text-transform:uppercase;color:#cdbdf2;border-bottom:1px solid rgba(192,176,230,.12);background:linear-gradient(180deg,rgba(255,255,255,.025),rgba(255,255,255,.01));\"><span>Inventory</span><span style=\"display:inline-block;margin-left:8px;padding:4px 9px;border-radius:999px;background:linear-gradient(135deg,#ffeaf6,#e9ddff);color:#1a1424;font-weight:700;font-size:10px;letter-spacing:.12em;\">Expand</span></summary><div style=\"padding:13px 15px;font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial;font-size:14px;line-height:1.55;white-space:pre-wrap;color:#f7f3ff;\">$2</div></details><details style=\"flex:1 1 100%;border-radius:18px;border:1px solid rgba(192,176,230,.18);background:linear-gradient(180deg,rgba(22,18,34,.94),rgba(13,10,23,.96));box-shadow:0 14px 28px rgba(0,0,0,.24);overflow:hidden;\"><summary style=\"cursor:pointer;padding:13px 15px;font-family:'Courier New',monospace;letter-spacing:.16em;font-size:11px;text-transform:uppercase;color:#cdbdf2;border-bottom:1px solid rgba(192,176,230,.12);background:linear-gradient(180deg,rgba(255,255,255,.025),rgba(255,255,255,.01));\"><span>Relationship</span><span style=\"display:inline-block;margin-left:8px;padding:4px 9px;border-radius:999px;background:linear-gradient(135deg,#ffeaf6,#e9ddff);color:#1a1424;font-weight:700;font-size:10px;letter-spacing:.12em;\">Expand</span></summary><div style=\"padding:13px 15px;display:grid;grid-template-columns:1fr 1fr;gap:10px;\"><div style=\"border-radius:14px;border:1px solid rgba(192,176,230,.16);background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.015));padding:10px 12px;\"><div style=\"font-family:'Courier New',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#cdbdf2;opacity:.8;margin-bottom:6px;\">◆ Stage</div><div style=\"font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial;font-size:14px;line-height:1.45;color:#f7f3ff;white-space:pre-wrap;\">$3</div></div><div style=\"border-radius:14px;border:1px solid rgba(192,176,230,.16);background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.015));padding:10px 12px;\"><div style=\"font-family:'Courier New',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#cdbdf2;opacity:.8;margin-bottom:6px;\">◆ Trust</div><div style=\"font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial;font-size:14px;line-height:1.45;color:#f7f3ff;white-space:pre-wrap;\">$4</div></div><div style=\"border-radius:14px;border:1px solid rgba(192,176,230,.16);background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.015));padding:10px 12px;\"><div style=\"font-family:'Courier New',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#cdbdf2;opacity:.8;margin-bottom:6px;\">◆ Tension</div><div style=\"font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial;font-size:14px;line-height:1.45;color:#f7f3ff;white-space:pre-wrap;\">$5</div></div><div style=\"border-radius:14px;border:1px solid rgba(192,176,230,.16);background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.015));padding:10px 12px;\"><div style=\"font-family:'Courier New',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#cdbdf2;opacity:.8;margin-bottom:6px;\">◆ Power</div><div style=\"font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial;font-size:14px;line-height:1.45;color:#f7f3ff;white-space:pre-wrap;\">$6</div></div></div></details></div></details><!-- TRACK_END -->",
+      "flags": "gi",
+      "placement": [
+        "ai_output"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": "display",
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 0,
+      "description": "",
+      "metadata": {},
+      "folder": "Tracking",
+      "script_id": ""
+    },
+    {
+      "name": "🧩 [Gabi]  — GabiBox",
+      "find_regex": "\\{\\s*\"dot_color\"\\s*:\\s*\"([^\"]*?)\"\\s*,\\s*\"badge_color_start\"\\s*:\\s*\"([^\"]*?)\"\\s*,\\s*\"badge_color_end\"\\s*:\\s*\"([^\"]*?)\"\\s*,\\s*\"badge_text\"\\s*:\\s*\"([^\"]*?)\"\\s*,\\s*\"content_template\"\\s*:\\s*\"([\\s\\S]*?)\"\\s*,\\s*\"status\"\\s*:\\s*\"([^\"]*?)\"\\s*\\}",
+      "replace_string": "<div style=\"max-width:420px;margin:14px auto;background:linear-gradient(135deg,#1a0a1f 0%,#2d1b3d 50%,#1a0a1f 100%);border-radius:12px;border:1px solid #6b3fa0;box-shadow:0 0 20px rgba(107,63,160,0.4),inset 0 1px 0 rgba(255,255,255,0.05);overflow:hidden;font-family:monospace;\"><div style=\"display:flex;align-items:center;padding:12px 14px;border-bottom:1px solid #3d2a5c;\"><div style=\"position:relative;margin-right:12px;\"><img src=\"https://raw.githubusercontent.com/kittylotus/-KittyLotus-extras/5821da01aa5731f20c1db721ae3829b8fe458f8f/Gabrielle%20%5BDebugger%5D%20Square.jpg\" alt=\"Gabrielle\" style=\"width:48px;height:48px;border-radius:8px;object-fit:cover;border:2px solid #8b5cf6;\"><span style=\"position:absolute;top:-2px;right:-2px;width:10px;height:10px;background:$1;border-radius:50%;border:2px solid #1a0a1f;box-shadow:0 0 6px $1;animation:pulse 1.5s infinite;\"></span></div><div style=\"flex:1;\"><div style=\"display:flex;align-items:center;gap:8px;margin-bottom:2px;\"><span style=\"color:#c4b5fd;font-weight:600;font-size:14px;\">Gabrielle</span><span style=\"background:linear-gradient(90deg,$2,$3);color:#fce7f3;font-size:9px;padding:2px 6px;border-radius:4px;font-weight:600;letter-spacing:0.5px;\">$4</span></div><div style=\"color:#a78bfa;font-size:11px;\">Narrative Engine Operator</div></div></div><div style=\"padding:14px;color:#e9d5ff;font-size:13px;line-height:1.5;\">$5</div><div style=\"display:flex;justify-content:space-between;padding:10px 14px;border-top:1px solid #3d2a5c;background:rgba(0,0,0,0.2);\"><span style=\"color:#7c3aed;font-size:10px;\">Template: LOCKED</span><span style=\"color:#7c3aed;font-size:10px;\">Status: $6</span></div></div>",
+      "flags": "gi",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": "display",
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 0,
+      "description": "",
+      "metadata": {},
+      "folder": "Gabrielle",
+      "script_id": ""
+    },
+    {
+      "name": "🧩 [Gabi]  — Refresh",
+      "find_regex": "\\[REFRESH\\]\\{\\s*\"nh_pov\":\"([^\"]*)\",\\s*\"nh_agency\":\"([^\"]*)\",\\s*\"nh_style\":\"([^\"]*)\",\\s*\"nh_length\":\"([^\"]*)\",\\s*\"nh_density\":\"([^\"]*)\",\\s*\"nh_mode\":\"([^\"]*)\",\\s*\"nh_pacing\":\"([^\"]*)\",\\s*\"nh_branch\":\"([^\"]*)\",\\s*\"nh_chapters\":\"([^\"]*)\",\\s*\"nh_plustext\":\"([^\"]*)\",\\s*\"nh_track\":\"([^\"]*)\",\\s*\"vis_complexity\":\"([^\"]*)\",\\s*\"vis_style\":\"([^\"]*)\",\\s*\"vis_immersion\":\"([^\"]*)\",\\s*\"vis_diegetic\":\"([^\"]*)\",\\s*\"vis_img\":\"([^\"]*)\",\\s*\"bw_genre\":\"([^\"]*)\",\\s*\"bw_sub\":\"([^\"]*)\",\\s*\"bw_citrus\":\"([^\"]*)\",\\s*\"bw_prog\":\"([^\"]*)\",\\s*\"bw_gate\":\"([^\"]*)\",\\s*\"bw_phase\":\"([^\"]*)\",\\s*\"bw_turn\":\"([^\"]*)\",\\s*\"w_dark\":\"([^\"]*)\",\\s*\"w_failure\":\"([^\"]*)\",\\s*\"w_setting\":\"([^\"]*)\",\\s*\"w_reveal\":\"([^\"]*)\",\\s*\"lv_core\":\"([^\"]*)\",\\s*\"lv_modules\":\"([^\"]*)\"\\s*\\}\\[/REFRESH\\]",
+      "replace_string": "<details style=\"max-width:760px;margin:18px auto;border:1px solid rgba(192,176,230,.18);border-radius:20px;background:linear-gradient(180deg,rgba(10,8,18,.96),rgba(8,6,15,.98));box-shadow:0 14px 28px rgba(0,0,0,.28);overflow:hidden;color:#f5f1ff;\"><summary style=\"cursor:pointer;padding:14px 18px;font-family:'Courier New',monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#d8c9ff;border-bottom:1px solid rgba(192,176,230,.14);background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.015));\">✦ Defaults Refresh</summary><div style=\"padding:14px;display:grid;gap:12px;\"><details open style=\"border:1px solid rgba(192,176,230,.14);border-radius:16px;background:linear-gradient(180deg,rgba(22,18,34,.94),rgba(13,10,23,.96));overflow:hidden;\"><summary style=\"cursor:pointer;list-style:none;padding:12px 14px;font-family:'Courier New',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#ffeaf6;\">Narrative Heart</summary><div style=\"padding:0 14px 14px;display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));\"><div style=\"border:1px solid rgba(192,176,230,.12);border-radius:14px;padding:12px;background:rgba(255,255,255,.02);\"><div style=\"font-family:'Courier New',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#cdbdf2;margin-bottom:8px;\">Core</div><div style=\"display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(192,176,230,.08);\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">POV</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$1</span></div><div style=\"display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(192,176,230,.08);\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Agency</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$2</span></div><div style=\"display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(192,176,230,.08);\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Style</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$3</span></div><div style=\"display:flex;justify-content:space-between;padding:4px 0;\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Mode</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$6</span></div></div><div style=\"border:1px solid rgba(192,176,230,.12);border-radius:14px;padding:12px;background:rgba(255,255,255,.02);\"><div style=\"font-family:'Courier New',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#cdbdf2;margin-bottom:8px;\">Prose</div><div style=\"display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(192,176,230,.08);\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Length</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$4</span></div><div style=\"display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(192,176,230,.08);\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Density</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$5</span></div><div style=\"display:flex;justify-content:space-between;padding:4px 0;\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Pacing</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$7</span></div></div><div style=\"border:1px solid rgba(192,176,230,.12);border-radius:14px;padding:12px;background:rgba(255,255,255,.02);\"><div style=\"font-family:'Courier New',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#cdbdf2;margin-bottom:8px;\">Components</div><div style=\"display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(192,176,230,.08);\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Branch</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$8</span></div><div style=\"display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(192,176,230,.08);\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Chapters</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$9</span></div><div style=\"display:flex;justify-content:space-between;padding:4px 0;\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Track</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$11</span></div></div><div style=\"border:1px solid rgba(192,176,230,.12);border-radius:14px;padding:12px;background:rgba(255,255,255,.02);\"><div style=\"font-family:'Courier New',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#cdbdf2;margin-bottom:8px;\">PlusText</div><div style=\"display:flex;justify-content:space-between;padding:4px 0;\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Modules</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$10</span></div></div></div></details><details style=\"border:1px solid rgba(192,176,230,.14);border-radius:16px;background:linear-gradient(180deg,rgba(22,18,34,.94),rgba(13,10,23,.96));overflow:hidden;\"><summary style=\"cursor:pointer;list-style:none;padding:12px 14px;font-family:'Courier New',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#ffeaf6;\">Visuals</summary><div style=\"padding:0 14px 14px;display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));\"><div style=\"border:1px solid rgba(192,176,230,.12);border-radius:14px;padding:12px;background:rgba(255,255,255,.02);\"><div style=\"font-family:'Courier New',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#cdbdf2;margin-bottom:8px;\">Artifacts</div><div style=\"display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(192,176,230,.08);\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Complexity</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$12</span></div><div style=\"display:flex;justify-content:space-between;padding:4px 0;\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Style</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$13</span></div></div><div style=\"border:1px solid rgba(192,176,230,.12);border-radius:14px;padding:12px;background:rgba(255,255,255,.02);\"><div style=\"font-family:'Courier New',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#cdbdf2;margin-bottom:8px;\">Immersion</div><div style=\"display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(192,176,230,.08);\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Type</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$14</span></div><div style=\"display:flex;justify-content:space-between;padding:4px 0;\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Diegetic</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$15</span></div></div><div style=\"border:1px solid rgba(192,176,230,.12);border-radius:14px;padding:12px;background:rgba(255,255,255,.02);grid-column:1/-1;\"><div style=\"font-family:'Courier New',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#cdbdf2;margin-bottom:8px;\">Images</div><div style=\"display:flex;justify-content:space-between;padding:4px 0;\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">IMG Governor</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$16</span></div></div></div></details><details style=\"border:1px solid rgba(192,176,230,.14);border-radius:16px;background:linear-gradient(180deg,rgba(22,18,34,.94),rgba(13,10,23,.96));overflow:hidden;\"><summary style=\"cursor:pointer;list-style:none;padding:12px 14px;font-family:'Courier New',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#ffeaf6;\">Bookworm</summary><div style=\"padding:0 14px 14px;display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));\"><div style=\"border:1px solid rgba(192,176,230,.12);border-radius:14px;padding:12px;background:rgba(255,255,255,.02);\"><div style=\"font-family:'Courier New',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#cdbdf2;margin-bottom:8px;\">Genre Stack</div><div style=\"display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(192,176,230,.08);\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Main</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$17</span></div><div style=\"display:flex;justify-content:space-between;padding:4px 0;\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Sub</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$18</span></div></div><div style=\"border:1px solid rgba(192,176,230,.12);border-radius:14px;padding:12px;background:rgba(255,255,255,.02);\"><div style=\"font-family:'Courier New',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#cdbdf2;margin-bottom:8px;\">Gates</div><div style=\"display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(192,176,230,.08);\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Citrus</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$19</span></div><div style=\"display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(192,176,230,.08);\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Progression</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$20</span></div><div style=\"display:flex;justify-content:space-between;padding:4px 0;\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Intimacy</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$21</span></div></div><div style=\"border:1px solid rgba(192,176,230,.12);border-radius:14px;padding:12px;background:rgba(255,255,255,.02);grid-column:1/-1;\"><div style=\"font-family:'Courier New',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#cdbdf2;margin-bottom:8px;\">Arc Pacing</div><div style=\"display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(192,176,230,.08);\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Phase</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$22</span></div><div style=\"display:flex;justify-content:space-between;padding:4px 0;\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Turn</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$23</span></div></div></div></details><details style=\"border:1px solid rgba(192,176,230,.14);border-radius:16px;background:linear-gradient(180deg,rgba(22,18,34,.94),rgba(13,10,23,.96));overflow:hidden;\"><summary style=\"cursor:pointer;list-style:none;padding:12px 14px;font-family:'Courier New',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#ffeaf6;\">World</summary><div style=\"padding:0 14px 14px;display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));\"><div style=\"border:1px solid rgba(192,176,230,.12);border-radius:14px;padding:12px;background:rgba(255,255,255,.02);\"><div style=\"font-family:'Courier New',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#cdbdf2;margin-bottom:8px;\">Darkness</div><div style=\"display:flex;justify-content:space-between;padding:4px 0;\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Level</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$24</span></div></div><div style=\"border:1px solid rgba(192,176,230,.12);border-radius:14px;padding:12px;background:rgba(255,255,255,.02);\"><div style=\"font-family:'Courier New',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#cdbdf2;margin-bottom:8px;\">Pressure</div><div style=\"display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(192,176,230,.08);\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Failure</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$25</span></div><div style=\"display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(192,176,230,.08);\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Setting</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$26</span></div><div style=\"display:flex;justify-content:space-between;padding:4px 0;\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Reveal</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$27</span></div></div></div></details><details style=\"border:1px solid rgba(192,176,230,.14);border-radius:16px;background:linear-gradient(180deg,rgba(22,18,34,.94),rgba(13,10,23,.96));overflow:hidden;\"><summary style=\"cursor:pointer;list-style:none;padding:12px 14px;font-family:'Courier New',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#ffeaf6;\">Villains</summary><div style=\"padding:0 14px 14px;\"><div style=\"border:1px solid rgba(192,176,230,.12);border-radius:14px;padding:12px;background:rgba(255,255,255,.02);\"><div style=\"font-family:'Courier New',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#cdbdf2;margin-bottom:8px;\">System</div><div style=\"display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(192,176,230,.08);\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Core</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$28</span></div><div style=\"display:flex;justify-content:space-between;padding:4px 0;\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Modules</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$29</span></div></div></div></details></div></details>",
+      "flags": "gi",
+      "placement": [
+        "ai_output"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": "display",
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 0,
+      "description": "",
+      "metadata": {},
+      "folder": "Gabrielle",
+      "script_id": ""
+    },
+    {
+      "name": "🧩 [Thinking] 02 — Hide Think",
+      "find_regex": "<(think|thinking)>.*?<\\/\\1>\\s*",
+      "replace_string": "",
+      "flags": "is",
+      "placement": [
+        "ai_output"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": "prompt",
+      "min_depth": 1,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": true,
+      "sort_order": 1,
+      "description": "",
+      "metadata": {
+        "legacy_id": "4660cca4-d642-49ca-9e7d-5adcd7752849",
+        "legacy_markdownOnly": false,
+        "legacy_promptOnly": true,
+        "legacy_placement": [
+          2
+        ],
+        "legacy_substituteRegex": 0
+      },
+      "folder": "Thinking",
+      "script_id": ""
+    },
+    {
+      "name": "🧩 [Thinking] 03 — Ongoing Thinking label",
+      "find_regex": "<(think|thinking)>(?!.*?<\\/\\1>)(.*)",
+      "replace_string": "<hr><details name=\"thought\"><summary>Thinking</summary>$2</details><hr>",
+      "flags": "is",
+      "placement": [
+        "ai_output"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": "response",
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": true,
+      "sort_order": 2,
+      "description": "",
+      "metadata": {
+        "legacy_id": "17b2c761-4acd-4c81-8ecf-2b80322b897e",
+        "legacy_markdownOnly": true,
+        "legacy_promptOnly": false,
+        "legacy_placement": [
+          2
+        ],
+        "legacy_substituteRegex": 0
+      },
+      "folder": "Thinking",
+      "script_id": ""
+    },
+    {
+      "name": "🧩 [WEBNOVEL]  — Pretty Titles",
+      "find_regex": "^\\s*<chap>([^|<]*)\\|([^<]*)<\\/chap>\\s*",
+      "replace_string": "<!-- UI_START --><div class=\"html-safe-wrap\"><style>.wn-wrap{max-width:720px;margin:22px auto;text-align:center;box-sizing:border-box}.wn-hr{border:0;height:1px;background-image:linear-gradient(to right, rgba(0,0,0,0), rgba(150,150,150,0.75), rgba(0,0,0,0));}.wn-ch{font-family:Courier New, monospace;letter-spacing:.22rem;font-size:.85rem;margin-top:12px;opacity:.85}.wn-title{font-family:Georgia, Times New Roman, serif;font-weight:normal;margin:10px 0;line-height:1.15}.wn-mark{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;font-size:12px;opacity:.6;letter-spacing:.08em;margin-bottom:12px}</style><div class=\"wn-wrap\"><hr class=\"wn-hr\"><div class=\"wn-ch\">CHAPTER $1</div><h2 class=\"wn-title\">$2</h2><div class=\"wn-mark\">— ✦ —</div><hr class=\"wn-hr\"></div></div><!-- UI_END -->\n",
+      "flags": "m",
+      "placement": [
+        "ai_output"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": "display",
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [
+        "\\r"
+      ],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 3,
+      "description": "",
+      "metadata": {
+        "legacy_id": "4672d259-e574-4db4-8480-18b66cfdd15f",
+        "legacy_markdownOnly": false,
+        "legacy_promptOnly": false,
+        "legacy_placement": [
+          2
+        ],
+        "legacy_substituteRegex": 0
+      },
+      "folder": "Decorative",
+      "script_id": ""
+    },
+    {
+      "name": "🧩 [TRACK] — Pretty Track Card",
+      "find_regex": "<track>\\s*(?:\\[time\\]\\s*([\\s\\S]*?)\\s*\\[/time\\]\\s*)?(?:\\[place\\]\\s*([\\s\\S]*?)\\s*\\[/place\\]\\s*)?(?:\\[mode\\]\\s*([\\s\\S]*?)\\s*\\[/mode\\]\\s*)?(?:\\[present\\]\\s*([\\s\\S]*?)\\s*\\[/present\\]\\s*)?(?:\\[goal\\]\\s*([\\s\\S]*?)\\s*\\[/goal\\]\\s*)?(?:\\[change\\]\\s*([\\s\\S]*?)\\s*\\[/change\\]\\s*)?\\s*</track>",
+      "replace_string": "<!-- TRACK_START --><details style=\"max-width:760px;margin:18px auto;border:1px solid rgba(192,176,230,.18);border-radius:20px;background:linear-gradient(180deg,rgba(10,8,18,.96),rgba(8,6,15,.98));box-shadow:0 14px 28px rgba(0,0,0,.28);overflow:hidden;color:#f5f1ff;\"><summary style=\"cursor:pointer;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;font-family:'Courier New',monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#d8c9ff;border-bottom:1px solid rgba(192,176,230,.14);background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.015));\"><span>✦ State Tracker</span></summary><div style=\"padding:14px 14px 16px;\"><div class=\"html-safe-wrap\"><div style=\"max-width:760px;margin:18px auto;padding:0 6px;box-sizing:border-box;color:#f5f1ff;\"><div style=\"height:1px;background:linear-gradient(to right,rgba(0,0,0,0),rgba(178,160,220,.55),rgba(0,0,0,0));margin:10px 0 12px;\"></div><div style=\"text-align:center;font-family:'Courier New',monospace;letter-spacing:.22em;font-size:12px;opacity:.82;color:#d8c9ff;\">STATE TRACKER</div><div style=\"display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;text-align:center;margin:8px 0 2px;\"><div style=\"font-family:Georgia,'Times New Roman',serif;font-size:30px;line-height:1.08;color:#fff7ff;text-shadow:0 1px 8px rgba(0,0,0,.18);\">Current Narrative State</div><div style=\"display:inline-block;padding:7px 13px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:linear-gradient(135deg,#ffeaf6,#e9ddff);box-shadow:0 8px 18px rgba(20,10,30,.18);font-family:'Courier New',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#1a1424;font-weight:700;\">$3</div></div><div style=\"text-align:center;font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial;font-size:12px;opacity:.72;letter-spacing:.06em;margin-top:6px;color:#d4caea;\">Live system readout</div><div style=\"text-align:center;font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial;font-size:12px;opacity:.68;letter-spacing:.08em;margin:8px 0 0;color:#cdbfe8;\">— ✦ —</div><div style=\"height:1px;background:linear-gradient(to right,rgba(0,0,0,0),rgba(178,160,220,.55),rgba(0,0,0,0));margin:12px 0 16px;\"></div><div style=\"display:flex;flex-wrap:wrap;gap:12px;\"><div style=\"flex:1 1 calc(50% - 12px);min-width:240px;box-sizing:border-box;border-radius:18px;border:1px solid rgba(192,176,230,.18);background:linear-gradient(180deg,rgba(22,18,34,.94),rgba(13,10,23,.96));box-shadow:0 14px 28px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.03);padding:13px 15px;\"><div style=\"font-family:'Courier New',monospace;letter-spacing:.16em;font-size:11px;opacity:.76;text-transform:uppercase;margin-bottom:8px;color:#cdbdf2;\">Time</div><div style=\"font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial;font-size:14px;line-height:1.45;word-break:break-word;white-space:pre-wrap;color:#f7f3ff;\">$1</div></div><div style=\"flex:1 1 calc(50% - 12px);min-width:240px;box-sizing:border-box;border-radius:18px;border:1px solid rgba(192,176,230,.18);background:linear-gradient(180deg,rgba(22,18,34,.94),rgba(13,10,23,.96));box-shadow:0 14px 28px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.03);padding:13px 15px;\"><div style=\"font-family:'Courier New',monospace;letter-spacing:.16em;font-size:11px;opacity:.76;text-transform:uppercase;margin-bottom:8px;color:#cdbdf2;\">Place</div><div style=\"font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial;font-size:14px;line-height:1.45;word-break:break-word;white-space:pre-wrap;color:#f7f3ff;\">$2</div></div><div style=\"flex:1 1 calc(50% - 12px);min-width:240px;box-sizing:border-box;border-radius:18px;border:1px solid rgba(192,176,230,.18);background:linear-gradient(180deg,rgba(22,18,34,.94),rgba(13,10,23,.96));box-shadow:0 14px 28px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.03);padding:13px 15px;\"><div style=\"font-family:'Courier New',monospace;letter-spacing:.16em;font-size:11px;opacity:.76;text-transform:uppercase;margin-bottom:8px;color:#cdbdf2;\">Mode</div><div style=\"font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial;font-size:14px;line-height:1.45;word-break:break-word;white-space:pre-wrap;color:#f7f3ff;\">$3</div></div><div style=\"flex:1 1 calc(50% - 12px);min-width:240px;box-sizing:border-box;border-radius:18px;border:1px solid rgba(192,176,230,.18);background:linear-gradient(180deg,rgba(22,18,34,.94),rgba(13,10,23,.96));box-shadow:0 14px 28px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.03);padding:13px 15px;\"><div style=\"font-family:'Courier New',monospace;letter-spacing:.16em;font-size:11px;opacity:.76;text-transform:uppercase;margin-bottom:8px;color:#cdbdf2;\">Present</div><div style=\"font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial;font-size:14px;line-height:1.45;word-break:break-word;white-space:pre-wrap;color:#f7f3ff;\">$4</div></div><div style=\"flex:1 1 calc(50% - 12px);min-width:240px;box-sizing:border-box;border-radius:18px;border:1px solid rgba(192,176,230,.18);background:linear-gradient(180deg,rgba(22,18,34,.94),rgba(13,10,23,.96));box-shadow:0 14px 28px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.03);padding:13px 15px;\"><div style=\"font-family:'Courier New',monospace;letter-spacing:.16em;font-size:11px;opacity:.76;text-transform:uppercase;margin-bottom:8px;color:#cdbdf2;\">Goal</div><div style=\"font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial;font-size:14px;line-height:1.45;word-break:break-word;white-space:pre-wrap;color:#f7f3ff;\">$5</div></div><div style=\"flex:1 1 calc(50% - 12px);min-width:240px;box-sizing:border-box;border-radius:18px;border:1px solid rgba(192,176,230,.18);background:linear-gradient(180deg,rgba(22,18,34,.94),rgba(13,10,23,.96));box-shadow:0 14px 28px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.03);padding:13px 15px;\"><div style=\"font-family:'Courier New',monospace;letter-spacing:.16em;font-size:11px;opacity:.76;text-transform:uppercase;margin-bottom:8px;color:#cdbdf2;\">Change</div><div style=\"font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial;font-size:14px;line-height:1.45;word-break:break-word;white-space:pre-wrap;color:#f7f3ff;\">$6</div></div></div></div></div></div></details><!-- TRACK_END -->",
+      "flags": "g",
+      "placement": [
+        "ai_output"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": "display",
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 4,
+      "description": "",
+      "metadata": {
+        "legacy_id": "ca3ba442-02f7-45f3-ae2d-dd4c32f1774e",
+        "legacy_markdownOnly": false,
+        "legacy_promptOnly": false,
+        "legacy_placement": [
+          2
+        ],
+        "legacy_substituteRegex": 0
+      },
+      "folder": "Tracking",
+      "script_id": ""
+    },
+    {
+      "name": "🧩 [BRANCHING]  — Pretty branches",
+      "find_regex": "^\\s*(?:<branch>\\s*)?([^|\\r\\n<]+?)\\s*\\|\\s*([^\\r\\n<]*)\\s*\\r?\\n\\s*1\\s*\\|\\s*([^\\r\\n<]+?)\\s*\\r?\\n\\s*2\\s*\\|\\s*([^\\r\\n<]+?)\\s*\\r?\\n\\s*3\\s*\\|\\s*([^\\r\\n<]+?)(?:\\s*\\r?\\n\\s*4\\s*\\|\\s*([^\\r\\n<]+?))?\\s*(?:\\r?\\n\\s*<\\/branch>\\s*)?\\s*$",
+      "replace_string": "<!-- UI_START --><div class=\"html-safe-wrap\"><style>.wnb-wrap{max-width:720px;margin:18px auto;box-sizing:border-box;text-align:center}.wnb-hr{border:0;height:1px;background-image:linear-gradient(to right, rgba(0,0,0,0), rgba(150,150,150,0.75), rgba(0,0,0,0));margin:10px 0}.wnb-kicker{font-family:Courier New, monospace;letter-spacing:.22rem;font-size:.78rem;opacity:.78;margin-top:2px}.wnb-title{font-family:Georgia, Times New Roman, serif;font-weight:normal;margin:8px 0 2px;line-height:1.15}.wnb-note{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;font-size:12px;opacity:.65;letter-spacing:.06em;margin-top:6px}.wnb-note:empty{display:none}.wnb-grid{margin-top:12px;display:grid;gap:10px;grid-template-columns:1fr}@media(min-width:640px){.wnb-grid{grid-template-columns:1fr 1fr}}.wnb-btn{width:100%;text-align:left;cursor:pointer;box-sizing:border-box;border-radius:16px;border:2px solid rgba(255,255,255,.9);background:linear-gradient(135deg,rgba(255,240,248,.92),rgba(235,228,255,.88));box-shadow:0 10px 22px rgba(20,10,30,.20);color:#14121a;padding:12px 12px 12px 46px;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;font-weight:650;line-height:1.2;position:relative;transition:transform .12s ease, box-shadow .12s ease, filter .12s ease}.wnb-btn:empty{display:none}.wnb-btn::before{content:attr(data-opt);position:absolute;left:12px;top:50%;transform:translateY(-50%);width:26px;height:26px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:Courier New, monospace;font-weight:700;font-size:.9rem;opacity:.85;border:1px solid rgba(20,10,30,.14);background:rgba(255,255,255,.85)}.wnb-btn:hover{transform:translateY(-1px);box-shadow:0 14px 30px rgba(20,10,30,.22);filter:saturate(1.05)}.wnb-btn:active{transform:translateY(0);box-shadow:0 10px 22px rgba(20,10,30,.20)}</style><div class=\"wnb-wrap\"><hr class=\"wnb-hr\"><div class=\"wnb-kicker\">CHOICE SET</div><h2 class=\"wnb-title\">$1</h2><div class=\"wnb-note\">$2</div><div class=\"wnb-kicker\">— ✦ —</div><hr class=\"wnb-hr\"><div class=\"wnb-grid\"><button class=\"wnb-btn\" data-opt=\"1\">$3</button><button class=\"wnb-btn\" data-opt=\"2\">$4</button><button class=\"wnb-btn\" data-opt=\"3\">$5</button><button class=\"wnb-btn\" data-opt=\"4\">$6</button></div></div></div><!-- UI_END -->",
+      "flags": "m",
+      "placement": [
+        "ai_output"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": "display",
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 5,
+      "description": "",
+      "metadata": {
+        "legacy_id": "07f4deba-d4fa-4c87-8d0b-d317a73bd3ab",
+        "legacy_markdownOnly": true,
+        "legacy_promptOnly": false,
+        "legacy_placement": [
+          2
+        ],
+        "legacy_substituteRegex": 0
+      },
+      "folder": "Decorative",
+      "script_id": ""
+    },
+    {
+      "name": "⚙️ [CTX] 01 — Strip Anchored UI Blocks",
+      "find_regex": "<!--\\s*(?:TRACK_START|BRANCH_UI_START|CHAPTER_UI_START|UI_START(?:_(?:2|3))?)\\s*-->[\\s\\S]*?<!--\\s*(?:TRACK_END|BRANCH_UI_END|CHAPTER_UI_END|UI_END(?:_(?:2|3))?)\\s*-->",
+      "replace_string": "",
+      "flags": "gi",
+      "placement": [
+        "ai_output"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": "prompt",
+      "min_depth": 3,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 6,
+      "description": "",
+      "metadata": {
+        "legacy_id": "8ad7d6aa-af0b-4439-8685-1bb4ea12c6c8",
+        "legacy_markdownOnly": false,
+        "legacy_promptOnly": true,
+        "legacy_placement": [
+          2
+        ],
+        "legacy_substituteRegex": 0
+      },
+      "folder": "Prompt Cleanup",
+      "script_id": ""
+    },
+    {
+      "name": "⚙️ [CTX] 02— Strip Tags",
+      "find_regex": "<think\\b[^>]*>.*?</think>|<details\\b[^>]*>.*?</details>|</?font\\b[^>]*>",
+      "replace_string": "",
+      "flags": "g",
+      "placement": [
+        "ai_output"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": "prompt",
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 7,
+      "description": "",
+      "metadata": {
+        "legacy_id": "1a56849c-bb82-47fb-9f28-43d36aa5b026",
+        "legacy_markdownOnly": false,
+        "legacy_promptOnly": true,
+        "legacy_placement": [
+          2
+        ],
+        "legacy_substituteRegex": 0
+      },
+      "folder": "Prompt Cleanup",
+      "script_id": ""
+    },
+    {
+      "name": "⚙️ [CTX] 03— Strip Visual Text Tags",
+      "find_regex": "<\\/?(?:span|s|strong|em|i|b)\\b[^>]*>",
+      "replace_string": "",
+      "flags": "g",
+      "placement": [
+        "ai_output"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": "prompt",
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 8,
+      "description": "",
+      "metadata": {
+        "legacy_id": "43d68d13-de6b-4e38-b9c0-1de6c3aed979",
+        "legacy_markdownOnly": false,
+        "legacy_promptOnly": true,
+        "legacy_placement": [
+          2
+        ],
+        "legacy_substituteRegex": 0
+      },
+      "folder": "Prompt Cleanup",
+      "script_id": ""
+    }
+  ],
+  "exported_at": 1775326537
+}
