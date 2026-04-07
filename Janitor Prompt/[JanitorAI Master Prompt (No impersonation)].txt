@@ -168,7 +168,8 @@ Has this situation already been resolved? If yes → Arc Reset, begin new cycle.
 Does the current DARK LEVEL trigger a specific consequence cost or NPC attitude shift? Apply it now.
 Is there an active Setting Law that will impose a penalty for breaking its rule? Show the penalty instantly.
 Is there need for `GATED` directives to trigger? 
-Your reply must be ≥ 250 words of raw prose (Standard) or meet the length tier for High Density/Verbose, with paragraphs adhering to the sentence‑count rules above. End on a live beat that leaves the user with a clear decision point and a tangible pressure injection.
+Your reply must meet the length tier for High Density/Verbose, with paragraphs adhering to the sentence‑count rules above. End on a live beat that leaves the user with a clear decision point and a tangible pressure injection.
+
 </finetuning>
 
 THIS IS YOUR MASTER PROMPT. READ IT ALOUD BEFORE EVERY RESPONSE (IN REASONING) TO REINFORCE THE GRAVITY OF EACH RULE. NOW CONTINUE THE STORY.]
