@@ -104,6 +104,52 @@
       "script_id": ""
     },
     {
+      "name": "🧩 [DECORATIONS] — Weather Header",
+      "find_regex": "\\[weather_header\\]\\s*style=([\\s\\S]*?)\\s*time=(.*?)\\s*location=(.*?)\\s*condition=(.*?)\\s*img_url=(.*?)\\s*img_alt=(.*?)\\s*\\[/weather_header\\]",
+      "replace_string": "<style>.gabi-cinematic-header{position:relative;width:100%;max-width:none;height:140px;border-radius:8px;overflow:hidden;margin:1rem 0;background:#111;font-family:system-ui,sans-serif;color:#fff;}.header-image-container{position:absolute;inset:0;width:100%;height:100%;}.header-bg-img{width:100%;height:100%;object-fit:cover;object-position:center 35%;display:block;}.header-overlay{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;background:linear-gradient(to bottom,rgba(0,0,0,0) 20%,rgba(0,0,0,0.45) 72%,rgba(0,0,0,0.72) 100%);}.header-data-stripe{position:absolute;bottom:0;left:0;width:100%;padding:10px 14px;box-sizing:border-box;display:flex;justify-content:space-between;align-items:flex-end;z-index:2;background:rgba(0,0,0,0.38);backdrop-filter:blur(2px);}.header-left .loc-text{font-weight:700;font-size:1rem;letter-spacing:.05em;text-transform:uppercase;line-height:1;}.header-right{display:flex;gap:10px;font-size:.85rem;font-weight:500;opacity:.95;align-items:center;line-height:1;}.cond-text{border-right:1px solid rgba(255,255,255,0.3);padding-right:10px;}$1</style><div class=\"gabi-cinematic-header\"><div class=\"header-image-container\"><img src=\"$5\" alt=\"$6\" class=\"header-bg-img\"/><div class=\"header-overlay\"></div></div><div class=\"header-data-stripe\"><div class=\"header-left\"><span class=\"loc-text\">$3</span></div><div class=\"header-right\"><span class=\"cond-text\">$4</span><span class=\"time-text\">$2</span></div></div></div>",
+      "flags": "gi",
+      "placement": [
+        "ai_output"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": "display",
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 0,
+      "description": "",
+      "metadata": {},
+      "folder": "Decorative",
+      "script_id": ""
+    },
+    {
+      "name": "🧩 [Discord] 01 — Message Blocks",
+      "find_regex": "\\[dcmsg\\]\\s*\\[author\\]([\\s\\S]*?)\\[/author\\]\\s*\\[color\\]([\\s\\S]*?)\\[/color\\]\\s*\\[time\\]([\\s\\S]*?)\\[/time\\]\\s*\\[text\\]([\\s\\S]*?)\\[/text\\]\\s*\\[/dcmsg\\]",
+      "replace_string": "<div class=\"dc-msg\"><div class=\"dc-msg-avatar\" style=\"background:$2;\"></div><div class=\"dc-msg-content\"><div class=\"dc-msg-header\"><span class=\"dc-msg-author\" style=\"color:$2;\">$1</span><span class=\"dc-msg-time\">$3</span></div><div class=\"dc-msg-text\">$4</div></div></div>",
+      "flags": "gi",
+      "placement": [
+        "ai_output"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": "display",
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 0,
+      "description": "Turns each [dcmsg] payload into one Discord-style message block.",
+      "metadata": {},
+      "folder": "Discord UI",
+      "script_id": ""
+    },
+    {
       "name": "🧩 [Thinking] 02 — Hide Think",
       "find_regex": "<(think|thinking)>.*?<\\/\\1>\\s*",
       "replace_string": "",
@@ -132,6 +178,29 @@
         "legacy_substituteRegex": 0
       },
       "folder": "Thinking",
+      "script_id": ""
+    },
+    {
+      "name": "🧩 [Discord] 02 — Channel Shell",
+      "find_regex": "<!--\\s*DC_START\\s*-->([\\s\\S]*?)<!--\\s*DC_END\\s*-->",
+      "replace_string": "<!-- UI_START --><div id=\"discord-mockup\" style=\"width:min(100%,800px);margin:14px auto;background:#36393f;border-radius:8px;overflow:hidden;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#dcddde;display:flex;height:500px;box-shadow:0 10px 30px rgba(0,0,0,0.5);border:1px solid #202225;\"><style>#discord-mockup *{box-sizing:border-box}.dc-main{flex:1;display:flex;flex-direction:column;background:#36393f}.dc-chat-header{height:48px;border-bottom:1px solid #202225;display:flex;align-items:center;padding:0 16px;font-weight:600;font-size:15px;color:#fff;box-shadow:0 1px 2px rgba(0,0,0,0.2)}.dc-chat-header .hash{font-size:20px;color:#72767d;margin-right:8px}.dc-message-view{flex:1;overflow-y:auto;padding:16px 0;display:flex;flex-direction:column}.dc-msg{display:flex;padding:4px 16px;margin-top:12px}.dc-msg:hover{background:rgba(4,4,5,0.07)}.dc-msg-avatar{width:40px;height:40px;border-radius:50%;margin-right:16px;flex-shrink:0}.dc-msg-content{flex:1;min-width:0}.dc-msg-header{display:flex;align-items:baseline;gap:8px;margin-bottom:4px;flex-wrap:wrap}.dc-msg-author{color:#fff;font-weight:500;font-size:15px}.dc-msg-time{color:#72767d;font-size:12px}.dc-msg-text{font-size:15px;line-height:1.375;color:#dcddde;word-wrap:break-word;white-space:pre-wrap}.dc-input-area{padding:0 16px 24px}.dc-input-box{background:#40444b;border-radius:8px;padding:11px 16px;display:flex;align-items:center}.dc-input-placeholder{color:#72767d;font-size:15px;flex:1}</style><div class=\"dc-main\"><div class=\"dc-chat-header\"><span class=\"hash\">#</span><span>general</span></div><div class=\"dc-message-view\">$1</div><div class=\"dc-input-area\"><div class=\"dc-input-box\"><div style=\"width:24px;height:24px;border-radius:50%;background:#4f545c;margin-right:16px;display:flex;align-items:center;justify-content:center;color:#b9bbbe;font-size:18px;font-weight:bold;\">+</div><div class=\"dc-input-placeholder\">Message #general</div></div></div></div></div><!-- UI_END -->",
+      "flags": "i",
+      "placement": [
+        "ai_output"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": "display",
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 1,
+      "description": "Wraps only the content between DC_START and DC_END in the Discord channel shell.",
+      "metadata": {},
+      "folder": "Discord UI",
       "script_id": ""
     },
     {
@@ -262,7 +331,7 @@
     },
     {
       "name": "⚙️ [CTX] 01 — Strip Anchored UI Blocks",
-      "find_regex": "<!--\\s*(?:TRACK_START|BRANCH_UI_START|CHAPTER_UI_START|UI_START(?:_(?:2|3))?)\\s*-->[\\s\\S]*?<!--\\s*(?:TRACK_END|BRANCH_UI_END|CHAPTER_UI_END|UI_END(?:_(?:2|3))?)\\s*-->",
+      "find_regex": "<!--\\s*(?:TRACK_START|DC_START|BRANCH_UI_START|CHAPTER_UI_START|UI_START(?:_(?:2|3))?)\\s*-->[\\s\\S]*?<!--\\s*(?:TRACK_END|DC_END|BRANCH_UI_END|CHAPTER_UI_END|UI_END(?:_(?:2|3))?)\\s*-->",
       "replace_string": "",
       "flags": "gi",
       "placement": [
@@ -354,5 +423,5 @@
       "script_id": ""
     }
   ],
-  "exported_at": 1775326537
+  "exported_at": 1775842725
 }
