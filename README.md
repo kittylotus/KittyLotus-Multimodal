@@ -6,6 +6,8 @@
 ┆       → Darker plot controls + villain archetypes + world consistency and pressure. HTML focus.
 ‧₊˚ೃ . Check [the Carrd](https://multimodalkl.carrd.co/) for more info!
 
+# SCROLL DOWN FOR PICS
+
 # ╰❛*ੈ✩ Main features ‧₊˚ೃ .
 | Brought to you by Kitty and the Engine Operator, Gabrielle |
 ## *ૢ✧  Dark System (DARK_LEVEL 0–5) → A universal “how unforgiving is the world?” dial.
