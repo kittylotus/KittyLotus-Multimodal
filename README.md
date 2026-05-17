@@ -1,4 +1,3 @@
-<img width="796" height="610" alt="Screenshot 2026-05-17 080630" src="https://github.com/user-attachments/assets/4aac3a86-fe37-43fe-adca-5331270b65c9" />
 <img width="300" height="300" alt="Gabi" src="https://github.com/user-attachments/assets/e37133e3-b489-4420-b066-c8e2690284c2" />
 
 
