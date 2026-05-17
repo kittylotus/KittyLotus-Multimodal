@@ -1,12 +1,12 @@
-<img width="100" height="100" alt="Gabi" src="https://github.com/user-attachments/assets/e37133e3-b489-4420-b066-c8e2690284c2" />
-
-
-
+<img width="100" height="100" alt="Gabi" src="https://github.com/user-attachments/assets/e37133e3-b489-4420-b066-c8e2690284c2" />  ← No brain. Empty.
 # ⋆｡‧₊ °♱ ༺ 𓆩𖤍𓆪  KittyLotus-Multimodal
-┆       → Darker plot controls + villain archetypes + world consistency and pressure. HTML focus.
-‧₊˚ೃ . Check [the Carrd](https://multimodalkl.carrd.co/) for more info!
+## ┆       → Darker plot controls + villain archetypes + world consistency and pressure. HTML focus.
 
-# SCROLL DOWN FOR PICS
+
+### ‧₊˚ೃ . Check [the Carrd](https://multimodalkl.carrd.co/) for more info!
+
+### ‧₊˚ೃ SCROLL DOWN FOR PICS! 
+---
 
 # ╰❛*ੈ✩ Main features ‧₊˚ೃ .
 | Brought to you by Kitty and the Engine Operator, Gabrielle |
@@ -65,19 +65,19 @@ The `<lotus_momentum>` module is the heartbeat. It enforces **Anti-Stall** and *
 **3. Character & World Logic**
 
 *   **NPC Firewall (`<lotus_npcs>`):** Characters only know what they've seen or been told. No omniscience. They have goals and constraints; they act on them autonomously.
-*   **Fidelity (`<lotus_fidelity>`):** Characters stay consistent with their canon. They don't suddenly become nice or competent just because it's convenient. Perception is human, not robotic—no measuring pulse in BPM unless the character is a machine.
+*   **Fidelity (`<lotus_fidelity>`):** Characters stay consistent with their canon. They don't suddenly become nice or competent just because it's convenient. Perception is human, not robotic, no measuring pulse in BPM unless the character is a machine.
 *   **World Pressure:** We track the **Dark Level**. As it rises, luck decreases, costs increase, and the world becomes less forgiving. Failure is real here, and it sticks.
 
 **4. Visual & Structure**
 
-*   **HTML/CSS Engine (`<lotus_html>`):** We build interactive UI artifacts without JavaScript. It uses a strict "SafeHTML" protocol—stateful UI via radio inputs, scoped CSS, and no dead controls.
+*   **HTML/CSS Engine (`<lotus_html>`):** We build interactive UI artifacts without JavaScript. It uses a strict "SafeHTML" protocol: stateful UI via radio inputs, scoped CSS, and no dead controls.
 
 **5. The Output Loop**
 
 You input a direction. I parse it against the active ruleset (Genre, Style Mask, Pacing). The engine generates prose that adheres to the paragraph and sentence floors, maintains character positioning, and model specific rules.
 
 
-<img width="300" height="400" alt="Gabi Smug" src="https://github.com/user-attachments/assets/9eda93a2-3ccf-44ee-a9e2-bc03895a34c6" />
+<img width="250" height="300" alt="Gabi Smug" src="https://github.com/user-attachments/assets/9eda93a2-3ccf-44ee-a9e2-bc03895a34c6" />
 
 ---
 
