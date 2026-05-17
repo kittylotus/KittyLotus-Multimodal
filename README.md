@@ -1,4 +1,4 @@
-<img width="300" height="300" alt="Gabi" src="https://github.com/user-attachments/assets/e37133e3-b489-4420-b066-c8e2690284c2" />
+<img width="100" height="100" alt="Gabi" src="https://github.com/user-attachments/assets/e37133e3-b489-4420-b066-c8e2690284c2" />
 
 
 
@@ -47,9 +47,9 @@ No omniscience
 Anti Stalling
 Anti Model Bias toggles (For Gemini, Glm, Deepseek, Grok, And Claude)
 
----
 <img width="270" height="300" alt="Gabi Manic" src="https://github.com/user-attachments/assets/bd71a905-d1a1-487a-af6f-08bc107c3ebf" />
 
+---
 # What makes it work?
 
 **1. The Admin Layer (Gabrielle)**
