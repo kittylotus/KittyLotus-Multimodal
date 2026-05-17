@@ -11,6 +11,9 @@
 - [Regex HTML examples](https://github.com/kittylotus/KittyLotus-Multimodal/tree/main#regexes)
 - [Simtrakcer Skins ](https://github.com/kittylotus/KittyLotus-Multimodal/tree/main#-simtracker-skins)
 
+
+### ‧₊˚ೃ . Read [The Wiki](https://github.com/kittylotus/KittyLotus-Multimodal/wiki/Engine-Quickstart-Guide) if you're lost on what Toggles do!
+
 ---
 
 # ╰❛*ੈ✩ Main features ‧₊˚ೃ .
