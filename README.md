@@ -1,3 +1,4 @@
+<img width="796" height="610" alt="Screenshot 2026-05-17 080630" src="https://github.com/user-attachments/assets/4aac3a86-fe37-43fe-adca-5331270b65c9" />
 <img width="300" height="300" alt="Gabi" src="https://github.com/user-attachments/assets/e37133e3-b489-4420-b066-c8e2690284c2" />
 
 
@@ -98,7 +99,7 @@ You input a direction. I parse it against the active ruleset (Genre, Style Mask,
 
 
 ### Motives Ledger
-<img width="718" height="555" alt="Motives" src="https://github.com/user-attachments/assets/94c39856-f3ed-4ea0-975a-d22ed83c5f2d" />
+<img width="796" height="610" alt="Motives" src="https://github.com/user-attachments/assets/cf0b616f-7b84-4a6d-8de3-1a19c6bb74a6" />
 
 
 
