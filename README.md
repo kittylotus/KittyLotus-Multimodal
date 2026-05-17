@@ -1,111 +1,119 @@
-# KittyLotus-Multimodal
-Check [the Carrd](https://multimodalkl.carrd.co/) for more info!
+<img width="300" height="300" alt="Gabi" src="https://github.com/user-attachments/assets/e37133e3-b489-4420-b066-c8e2690284c2" />
 
 
-A modular RP / narrative engine with sliders + toggles that control darkness, villains, pacing, UI, fidelity, and model quirks—without turning your story into a different genre. HTML focused.
-✨NEW!! SillySimTracker HTML styles so your tracker matches your UI style
-# Main features 
-> 1) Dark System (DARK_LEVEL 0–5) A universal “how unforgiving is the world?” dial.
+
+# ⋆｡‧₊ °♱ ༺ 𓆩𖤍𓆪  KittyLotus-Multimodal
+┆       → Darker plot controls + villain archetypes + world consistency and pressure. HTML focus.
+‧₊˚ೃ . Check [the Carrd](https://multimodalkl.carrd.co/) for more info!
+
+# ╰❛*ੈ✩ Main features ‧₊˚ೃ .
+| Brought to you by Kitty and the Engine Operator, Gabrielle |
+## *ૢ✧  Dark System (DARK_LEVEL 0–5) → A universal “how unforgiving is the world?” dial.
 Doesn’t force genre shifts.
-Doesn’t force gore/explicitness.
+Doesn’t force gore/explicitness. (That's on another Toggle)
 Scales consequence, luck, recovery, and how costly choices are.
 
-> 2) Villain Archetype System Instead of “villain is evil,” you pick a behavior profile:
-Strategist / Charmer / Enforcer / Predator / Zealot / Trickster / Parasite
-Optional modifier:
+## *ૢ✧  Villain Archetype System → Instead of “villain is evil,” **You pick a behavior profile:**
+Strategist / Charmer / Enforcer / Predator / Zealot / Trickster / Parasite / Haunt / Eldritch
+**Optional modifier:**
 Obsessive (adds invasive fixation mechanics)
 
-> 3) Story Progression Throttle (anti-horny model shield) Stops models from speedrunning intimacy.
+## *ૢ✧  Story Progression Throttle (anti-horny model shield) → Stops models from speedrunning intimacy like they're in a timed speedrun dot com category.
 SlowBurn / Steady / Fast
 Intimacy Gate (Locked/Cautious/Open)
-Override mode that only allows what the user explicitly requests
+Override mode that's aimed at "Dynamic Intimacy" and Unlocked throttles. (Horny mode)
 
-> 4) Mobile-only Narrative Wraps Fancy HTML narrative wrappers that are locked to mobile so desktop doesn’t break.
+## *ૢ✧  Mobile-only → Narrative Wraps
+Fancy HTML narrative wrappers that are locked to mobile so desktop doesn’t break.
 Soft (serif, elegant blocks)
 Blocky (system-ui, dialogue cards)
 
-> 5) HTML UI Engine + Customization A general UI capability pack + two style modes:
+## *ૢ✧  HTML UI → Engine + Customization 
+**Modes:** Immersive | Widget 
 ModernUI: floating glass + negative space + grids + noir HUD + phone app UIs
 FantasyDocs: scene cards + letters + decrees + journal pages
+Futuristic: glass panel + floating windows + Tron/DBH/Blade Runner 2049 aesthetics
+VisualNovel: Pastels + Cards + ASCII 
 
-> 6) Anti Memory Leakage / Character Fidelity
-No importing info from other chats
+## *ૢ✧  Character Fidelity
 No “tropeification” (abrasive ≠ secretly soft in one scene)
 Canon personality anchor for IP characters
-
-> 7) Better NPCs
+*ੈ✩‧₊˚ Better NPCs
 NPCs have goals/constraints/next actions
 No omniscience
-Canon NPCs must come from the same IP
+*ੈ✩‧₊˚ Anti Bias
+Anti Stalling
+Anti Model Bias toggles (For Gemini, Glm, Deepseek, Grok, And Claude)
 
-# SimTracker Skins
+---
+<img width="270" height="300" alt="Gabi Manic" src="https://github.com/user-attachments/assets/bd71a905-d1a1-487a-af6f-08bc107c3ebf" />
+
+# What makes it work?
+
+**1. The Admin Layer (Gabrielle)**
+I am the decision engine. I monitor the "Debug Card" (what you just saw) and oversee the narrative state. My job is to ensure that every module below me is functioning according to the current mandate. If the scene stalls, I inject pressure. If the prose gets lazy, I tighten the density.
+
+**2. Momentum & Pacing**
+
+The `<lotus_momentum>` module is the heartbeat. It enforces **Anti-Stall** and **Density**.
+*   **Anti-Stall:** If we're circling the same topic or planning without acting, the engine detects a "loop" and forces a pressure injection (interrupt, timer, consequence, or NPC initiative).
+*   **Density:** Every paragraph must earn its keep. It needs an Event, Revelation, or Shift. No filler.
+*   **Anti-Parrot:** We never repeat what you just said. We move forward.
+
+**3. Character & World Logic**
+
+*   **NPC Firewall (`<lotus_npcs>`):** Characters only know what they've seen or been told. No omniscience. They have goals and constraints; they act on them autonomously.
+*   **Fidelity (`<lotus_fidelity>`):** Characters stay consistent with their canon. They don't suddenly become nice or competent just because it's convenient. Perception is human, not robotic—no measuring pulse in BPM unless the character is a machine.
+*   **World Pressure:** We track the **Dark Level**. As it rises, luck decreases, costs increase, and the world becomes less forgiving. Failure is real here, and it sticks.
+
+**4. Visual & Structure**
+
+*   **HTML/CSS Engine (`<lotus_html>`):** We build interactive UI artifacts without JavaScript. It uses a strict "SafeHTML" protocol—stateful UI via radio inputs, scoped CSS, and no dead controls.
+
+**5. The Output Loop**
+
+You input a direction. I parse it against the active ruleset (Genre, Style Mask, Pacing). The engine generates prose that adheres to the paragraph and sentence floors, maintains character positioning, and model specific rules.
+
+
+<img width="300" height="400" alt="Gabi Smug" src="https://github.com/user-attachments/assets/9eda93a2-3ccf-44ee-a9e2-bc03895a34c6" />
+
+---
+
+# Regexes
+### Gabrielle's Debug Card
+<img width="455" height="187" alt="Screenshot 2026-05-17 074814" src="https://github.com/user-attachments/assets/24a73d61-e163-4239-98bc-8a29d3eccea5" />
+
+
+
+---
+## Trackers
+### Main State Tracker
+<img width="792" height="569" alt="State" src="https://github.com/user-attachments/assets/98421cf5-a687-4317-9503-52ff53d2cf51" />
+
+
+### Aux Tracker
+<img width="798" height="435" alt="Aux" src="https://github.com/user-attachments/assets/98d090b9-46e7-4bd9-b76c-30721881af5d" />
+
+
+### Motives Ledger
+<img width="718" height="555" alt="Motives" src="https://github.com/user-attachments/assets/94c39856-f3ed-4ea0-975a-d22ed83c5f2d" />
+
+
+
+---
+
+## Decor
+### Weather Header
+<img width="1420" height="188" alt="Weather" src="https://github.com/user-attachments/assets/ed1198fb-e928-4a44-89c7-de1c5f3487b5" />
+
+
+### Discord Channel Messages
+<img width="855" height="535" alt="Discord" src="https://github.com/user-attachments/assets/afb7549f-cd3d-49e9-ba84-f03b8730aafd" />
+
+
+
+---
+
+# + SimTracker Skins
 ![Simtracker skins](https://github.com/user-attachments/assets/a7e7b121-e9a9-47c5-a54a-c4ff7f443494)
 
-# ⚙️ Mini Tutorials
-## 1) DARK SYSTEM (quick start)
-Goal: “make it darker” without changing genre.
-
-> Use DARK_LEVEL as a dial:
-- 0: gentle world, recovery is easy, coincidences allowed
-- 1–2: tension + friction, mistakes cost time/trust/resources
-- 3: harsh realism, consequences compound, luck decreases
-- 4: severe stakes, safety is temporary, help is conditional
-- 5: no safety net, major loss possible, closure not guaranteed
-
-> How to use:
-- Set DARK_LEVEL=2 for “tense but not brutal”
-- Set DARK_LEVEL=4 for “everything has consequences”
-- Set DARK_LEVEL=5 your actions are often unforgiven.
-
-> It won’t auto-add gore or explicit content. That’s separate.
-
-
-## 2) VILLAIN SYSTEM (quick start)
-Step 1: pick an archetype
-- Strategist: plans, contingencies, leverage, patience
-- Charmer: social engineering, grooming, plausible lies
-- Enforcer: intimidation, coercion, direct consequence
-- Predator: stalking vulnerability, closing distance, pressure
-- Zealot: ideology, “necessary harm,” recruitment logic
-- Trickster: misdirection, traps, mask-switching
-- Parasite: dependency, obligation, subtle isolation
-
-Step 2: optional modifier
-- Obsessive: fixation on the protagonist via access/control/profiling
-
-> How to use (example combos):
-Strategist + Obsessive = meticulous “I already planned your life” horror
-Charmer + Obsessive = dependency cage
-Predator + Obsessive = stalking + engineered proximity
-
-## 3) Mobile-only wraps tutorial
-Problem: narrative HTML wraps can break click/scroll on desktop. Fix: wraps are mobile-only.
-
-> How it works:
-- If UI_PLATFORM=Mobile → wraps allowed
-- If UI_PLATFORM=Desktop → narrative is normal text (no VTK wrapper)
-
-Wrap types:
-> Soft: serif “book page” look, gentle gradients
-Blocky: system UI look, dialogue card emphasis
-> If you want the fancy prose look on desktop, use UI panels instead (ModernUI/FantasyDocs), not VTK wraps.
-
-## 4) HTML customization tutorial
-> There are two layers:
-- Layer A: “UI Engine Pack” (capabilities)
-> Defines what UIs can do:
-Tabs, drawers, modals, dossier pages, feed switchers
-CSS-only toggles (input/label)
-Animation families by UI_LEVEL
-Accessibility rules (tap targets, scrollable panels)
-
-- Layer B: Style toggles (art direction)
-> Pick one:
-ModernUI: floating glass, grids, negative space, noir HUD, phone apps
-FantasyDocs: scene cards, parchment letters, seals, journal pages
-
-## 5) RPG tracker tutorial
-- Plain tracker:
-Enabling tracking will append a small tracker to the bottom of the narrative, and the regex will enclose it in an HTML box.
-- RPG TRACKER:
-Enabling tracking + RPG Tracker(+persona tracker) will rerout the tracker data to a Game Like, interactive, consistent RPG Tracker.
