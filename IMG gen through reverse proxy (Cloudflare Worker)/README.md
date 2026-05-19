@@ -1,4 +1,4 @@
-# Loom Utility: Anchor-Driven Image Artifact Generator
+# Anchor-Driven Image Artifact Generator
 
 A reusable image artifact pipeline for Lumiverse-style chat presets. The model emits compact `<vision>` or `<vision_raw>` tags, regex turns them into image renders, and a Cloudflare Worker proxies the image provider so the chat receives a real image response instead of a temporary provider URL.
 
