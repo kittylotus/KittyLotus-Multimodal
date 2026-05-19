@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "type": "lumiverse_regex_scripts",
+  "scripts": [
+    {
+      "name": "Loom Vision Generator — IMG_STYLE_NEG Variable",
+      "find_regex": "<vision>([\\s\\S]*?)<\\/vision>",
+      "replace_string": "<div class=\"html-safe-wrap\"><style>.loom-vs-rt-{{lastMessageId}}{max-width:380px;margin:15px auto;background:#0d0810;border:1px solid #3a2535;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.6)}.loom-vs-img-{{lastMessageId}}{width:100%;background:#000;line-height:0;display:flex;align-items:center;justify-content:center}.loom-vs-img-{{lastMessageId}} img{width:100%!important;height:auto!important;max-height:none!important;object-fit:cover;display:block}</style><div class=\"loom-vs-rt-{{lastMessageId}}\"><div class=\"loom-vs-img-{{lastMessageId}}\"><img src=\"https://YOUR-WORKER-SUBDOMAIN.workers.dev/?prompt=$1&model=z-image-turbo&size=1024x1024&seed=9999&negative_prompt={{getvar::IMG_STYLE_NEG}}\" alt=\"Vision Generation\" style=\"cursor:pointer;\" onclick=\"tavo.utils.openUrl(this.src)\"></div></div></div>",
+      "flags": "gi",
+      "placement": ["ai_output"],
+      "scope": "global",
+      "scope_id": null,
+      "target": "response",
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "raw",
+      "disabled": true,
+      "sort_order": 0,
+      "description": "Advanced pack. Replace YOUR-WORKER-SUBDOMAIN before use. Confirm your regex environment resolves IMG_STYLE_NEG in replacement strings.",
+      "metadata": {},
+      "folder": "Loom Image Artifacts",
+      "script_id": ""
+    },
+    {
+      "name": "Loom Raw Vision URL — IMG_STYLE_NEG Variable",
+      "find_regex": "<vision_raw>([\\s\\S]*?)<\\/vision_raw>",
+      "replace_string": "https://YOUR-WORKER-SUBDOMAIN.workers.dev/?prompt=$1&model=z-image-turbo&size=1024x1024&seed=9999&negative_prompt={{getvar::IMG_STYLE_NEG}}",
+      "flags": "gi",
+      "placement": ["ai_output"],
+      "scope": "global",
+      "scope_id": null,
+      "target": "response",
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "raw",
+      "disabled": true,
+      "sort_order": 0,
+      "description": "Advanced pack. Replace YOUR-WORKER-SUBDOMAIN before use. Confirm your regex environment resolves IMG_STYLE_NEG in replacement strings.",
+      "metadata": {},
+      "folder": "Loom Image Artifacts",
+      "script_id": ""
+    }
+  ]
+}
