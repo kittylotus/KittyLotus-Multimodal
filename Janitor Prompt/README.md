@@ -97,29 +97,29 @@ Before the first scene, provide a setup block like this:
 
 [NARRATIVE SETUP]
 
-Tone:
-Word Target:
-Dark Level:
-Setting Law:
-Reveal Cadence:
-Failure Mode:
-Villain Gate:
-Intimacy Gate:
-Additional Notes:
+- Tone:
+- Word Target:
+- Dark Level:
+- Setting Law:
+- Reveal Cadence:
+- Failure Mode:
+- Villain Gate:
+- Intimacy Gate:
+- Additional Notes:
 
 Example:
 
 [NARRATIVE SETUP]
 
-Tone: Gothic obsession with polished restraint
-Word Target: 1200–1500 words
-Dark Level: 4
-Setting Law: Strict
-Reveal Cadence: Drip
-Failure Mode: Costly
-Villain Gate: ON
-Intimacy Gate: OFF
-Additional Notes: Keep the protagonist’s dignity intact even when the scene becomes threatening. Prioritize subtext, territorial behavior, and consequence-forward escalation.
+- Tone: Dark narrative with obsessive undertones.
+- Word Target: 1200–1500 words
+- Dark Level: 4
+- Setting Law: Strict
+- Reveal Cadence: Drip
+- Failure Mode: Costly
+- Villain Gate: ON
+- Intimacy Gate: OFF
+- Additional Notes: Keep the protagonist’s dignity intact even when the scene becomes threatening. Prioritize subtext, territorial behavior, and consequence-forward escalation.
 
 ---
 
