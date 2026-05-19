@@ -1,5 +1,5 @@
 {
-  "name": "Mica Debugger Codex v2 (ST + Lumiverse Surface + Backend)",
+  "name": "KL Debugger Codex v2 (ST + Lumiverse Surface + Backend)",
   "description": "Retrieval-oriented debugger lorebook for SillyTavern macro semantics, Lumiverse surface macros and backend behavior, ST↔Lumiverse variable bridging, and forensic diagnostics for artifacts, regex, pipeline collisions, and state desync.",
   "is_creation": false,
   "scan_depth": 4,
