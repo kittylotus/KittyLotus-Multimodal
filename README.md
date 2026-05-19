@@ -122,5 +122,15 @@ You input a direction. I parse it against the active ruleset (Genre, Style Mask,
 ### Discord Channel Messages
 <img width="855" height="535" alt="Discord" src="https://github.com/user-attachments/assets/afb7549f-cd3d-49e9-ba84-f03b8730aafd" />
 
+### ANTISLOPINATOR 3000
+<img width="382" height="39" alt="Antislopinator" src="https://github.com/user-attachments/assets/d71200d2-25ee-4a22-9a33-532a1981fad9" />
+
+### Slowburn plus pro MAXX
+<img width="482" height="38" alt="SBPPM" src="https://github.com/user-attachments/assets/ea2e4c6d-3420-482e-aaf9-e010f2ba9348" />
+
+### Chance Encounters
+<img width="388" height="71" alt="Gambling" src="https://github.com/user-attachments/assets/29392201-6d10-4caf-968c-71e5ca6d73c4" />
+
+
 
 
