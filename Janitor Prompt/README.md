@@ -96,6 +96,7 @@ If a gate is not relevant, leave it off. The engine should not force those modul
 Before the first scene, provide a setup block like this:
 
 [NARRATIVE SETUP]
+
 Tone:
 Word Target:
 Dark Level:
@@ -109,6 +110,7 @@ Additional Notes:
 Example:
 
 [NARRATIVE SETUP]
+
 Tone: Gothic obsession with polished restraint
 Word Target: 1200–1500 words
 Dark Level: 4
