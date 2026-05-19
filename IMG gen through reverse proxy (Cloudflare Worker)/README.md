@@ -89,3 +89,5 @@ For interacting characters, front-load the camera logic so face anchors do not m
 ## Credits / terminology
 
 “Anchor” here means a reusable visual identity tag block stored in variables or lorebook content. “Gear” means optional outfit, prop, or scene-specific visual add-ons stored separately from the core anchor.
+
+This was made in collab with Ria (@songbirdtori). Thanks Ria!
