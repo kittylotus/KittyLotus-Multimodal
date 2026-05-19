@@ -142,7 +142,7 @@ Whenever you're writing a villain, run:
 
 [EACH TYPE FOLLOWS THIS FORMAT IN REASONING:]
 Archetype
-Escalation: low → mid → high
+Escalation: low → mid → high 
 Consequences: what damage this type leaves behind
 Language: what their scenes and narration should sound like
 
