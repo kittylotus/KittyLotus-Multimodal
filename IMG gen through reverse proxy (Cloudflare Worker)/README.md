@@ -27,7 +27,7 @@ Worker -> image provider API request
 Worker response -> browser receives a real PNG/WebP image
 ```
 
-The prompt layer stays tidy and portable. Provider-specific nonsense lives in the Worker.
+The prompt layer stays tidy and portable. Provider-specific variables live in the Worker.
 
 ## Included files
 
