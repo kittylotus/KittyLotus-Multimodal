@@ -359,6 +359,23 @@
                 "substituteRegex": 0,
                 "minDepth": null,
                 "maxDepth": null
+            },
+            {
+                "id": "01c754bb-bd55-45e1-acf0-dabfc5abb897",
+                "scriptName": "⚙️ [CTX] 04 — Strip Aged Payload Blocks",
+                "findRegex": "/<payload>\\s*[\\s\\S]*?\\s*<\\/payload>\\s*/gi",
+                "replaceString": "",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": false,
+                "promptOnly": true,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": 4,
+                "maxDepth": null
             }
         ]
     },
