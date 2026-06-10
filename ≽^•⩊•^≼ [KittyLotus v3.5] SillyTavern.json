@@ -1,5 +1,384 @@
 {
-    "extensions": {},
+    "extensions": {
+        "regex_scripts": [
+            {
+                "id": "d8501abf-22cb-406b-ac5c-459ee192e0ac",
+                "scriptName": "🧩 [Gabi]  — GabiBox",
+                "findRegex": "/\\{\\s*\"dot_color\"\\s*:\\s*\"([^\"]*?)\"\\s*,\\s*\"badge_color_start\"\\s*:\\s*\"([^\"]*?)\"\\s*,\\s*\"badge_color_end\"\\s*:\\s*\"([^\"]*?)\"\\s*,\\s*\"badge_text\"\\s*:\\s*\"([^\"]*?)\"\\s*,\\s*\"content_template\"\\s*:\\s*\"([\\s\\S]*?)\"\\s*,\\s*\"status\"\\s*:\\s*\"([^\"]*?)\"\\s*\\}/gi",
+                "replaceString": "<div style=\"max-width:420px;margin:14px auto;background:linear-gradient(135deg,#1a0a1f 0%,#2d1b3d 50%,#1a0a1f 100%);border-radius:12px;border:1px solid #6b3fa0;box-shadow:0 0 20px rgba(107,63,160,0.4),inset 0 1px 0 rgba(255,255,255,0.05);overflow:hidden;font-family:monospace;\"><div style=\"display:flex;align-items:center;padding:12px 14px;border-bottom:1px solid #3d2a5c;\"><div style=\"position:relative;margin-right:12px;\"><img src=\"https://raw.githubusercontent.com/kittylotus/-KittyLotus-extras/5821da01aa5731f20c1db721ae3829b8fe458f8f/Gabrielle%20%5BDebugger%5D%20Square.jpg\" alt=\"Gabrielle\" style=\"width:48px;height:48px;border-radius:8px;object-fit:cover;border:2px solid #8b5cf6;\"><span style=\"position:absolute;top:-2px;right:-2px;width:10px;height:10px;background:$1;border-radius:50%;border:2px solid #1a0a1f;box-shadow:0 0 6px $1;animation:pulse 1.5s infinite;\"></span></div><div style=\"flex:1;\"><div style=\"display:flex;align-items:center;gap:8px;margin-bottom:2px;\"><span style=\"color:#c4b5fd;font-weight:600;font-size:14px;\">Gabrielle</span><span style=\"background:linear-gradient(90deg,$2,$3);color:#fce7f3;font-size:9px;padding:2px 6px;border-radius:4px;font-weight:600;letter-spacing:0.5px;\">$4</span></div><div style=\"color:#a78bfa;font-size:11px;\">Narrative Engine Operator</div></div></div><div style=\"padding:14px;color:#e9d5ff;font-size:13px;line-height:1.5;\">$5</div><div style=\"display:flex;justify-content:space-between;padding:10px 14px;border-top:1px solid #3d2a5c;background:rgba(0,0,0,0.2);\"><span style=\"color:#7c3aed;font-size:10px;\">Template: LOCKED</span><span style=\"color:#7c3aed;font-size:10px;\">Status: $6</span></div></div>",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": true,
+                "promptOnly": false,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
+            },
+            {
+                "id": "460d18fb-811d-4788-a0ff-37c0faa78080",
+                "scriptName": "🧩 [Gabi]  — Refresh",
+                "findRegex": "/\\[REFRESH\\]\\{\\s*\"nh_pov\":\"([^\"]*)\",\\s*\"nh_agency\":\"([^\"]*)\",\\s*\"nh_style\":\"([^\"]*)\",\\s*\"nh_length\":\"([^\"]*)\",\\s*\"nh_density\":\"([^\"]*)\",\\s*\"nh_mode\":\"([^\"]*)\",\\s*\"nh_pacing\":\"([^\"]*)\",\\s*\"nh_branch\":\"([^\"]*)\",\\s*\"nh_chapters\":\"([^\"]*)\",\\s*\"nh_plustext\":\"([^\"]*)\",\\s*\"nh_track\":\"([^\"]*)\",\\s*\"vis_complexity\":\"([^\"]*)\",\\s*\"vis_style\":\"([^\"]*)\",\\s*\"vis_immersion\":\"([^\"]*)\",\\s*\"vis_diegetic\":\"([^\"]*)\",\\s*\"vis_img\":\"([^\"]*)\",\\s*\"bw_genre\":\"([^\"]*)\",\\s*\"bw_sub\":\"([^\"]*)\",\\s*\"bw_citrus\":\"([^\"]*)\",\\s*\"bw_prog\":\"([^\"]*)\",\\s*\"bw_gate\":\"([^\"]*)\",\\s*\"bw_phase\":\"([^\"]*)\",\\s*\"bw_turn\":\"([^\"]*)\",\\s*\"w_dark\":\"([^\"]*)\",\\s*\"w_failure\":\"([^\"]*)\",\\s*\"w_setting\":\"([^\"]*)\",\\s*\"w_reveal\":\"([^\"]*)\",\\s*\"lv_core\":\"([^\"]*)\",\\s*\"lv_modules\":\"([^\"]*)\"\\s*\\}\\[\\/REFRESH\\]/gi",
+                "replaceString": "<details style=\"max-width:760px;margin:18px auto;border:1px solid rgba(192,176,230,.18);border-radius:20px;background:linear-gradient(180deg,rgba(10,8,18,.96),rgba(8,6,15,.98));box-shadow:0 14px 28px rgba(0,0,0,.28);overflow:hidden;color:#f5f1ff;\"><summary style=\"cursor:pointer;padding:14px 18px;font-family:'Courier New',monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#d8c9ff;border-bottom:1px solid rgba(192,176,230,.14);background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.015));\">✦ Defaults Refresh</summary><div style=\"padding:14px;display:grid;gap:12px;\"><details open style=\"border:1px solid rgba(192,176,230,.14);border-radius:16px;background:linear-gradient(180deg,rgba(22,18,34,.94),rgba(13,10,23,.96));overflow:hidden;\"><summary style=\"cursor:pointer;list-style:none;padding:12px 14px;font-family:'Courier New',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#ffeaf6;\">Narrative Heart</summary><div style=\"padding:0 14px 14px;display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));\"><div style=\"border:1px solid rgba(192,176,230,.12);border-radius:14px;padding:12px;background:rgba(255,255,255,.02);\"><div style=\"font-family:'Courier New',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#cdbdf2;margin-bottom:8px;\">Core</div><div style=\"display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(192,176,230,.08);\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">POV</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$1</span></div><div style=\"display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(192,176,230,.08);\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Agency</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$2</span></div><div style=\"display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(192,176,230,.08);\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Style</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$3</span></div><div style=\"display:flex;justify-content:space-between;padding:4px 0;\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Mode</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$6</span></div></div><div style=\"border:1px solid rgba(192,176,230,.12);border-radius:14px;padding:12px;background:rgba(255,255,255,.02);\"><div style=\"font-family:'Courier New',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#cdbdf2;margin-bottom:8px;\">Prose</div><div style=\"display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(192,176,230,.08);\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Length</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$4</span></div><div style=\"display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(192,176,230,.08);\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Density</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$5</span></div><div style=\"display:flex;justify-content:space-between;padding:4px 0;\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Pacing</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$7</span></div></div><div style=\"border:1px solid rgba(192,176,230,.12);border-radius:14px;padding:12px;background:rgba(255,255,255,.02);\"><div style=\"font-family:'Courier New',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#cdbdf2;margin-bottom:8px;\">Components</div><div style=\"display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(192,176,230,.08);\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Branch</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$8</span></div><div style=\"display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(192,176,230,.08);\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Chapters</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$9</span></div><div style=\"display:flex;justify-content:space-between;padding:4px 0;\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Track</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$11</span></div></div><div style=\"border:1px solid rgba(192,176,230,.12);border-radius:14px;padding:12px;background:rgba(255,255,255,.02);\"><div style=\"font-family:'Courier New',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#cdbdf2;margin-bottom:8px;\">PlusText</div><div style=\"display:flex;justify-content:space-between;padding:4px 0;\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Modules</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$10</span></div></div></div></details><details style=\"border:1px solid rgba(192,176,230,.14);border-radius:16px;background:linear-gradient(180deg,rgba(22,18,34,.94),rgba(13,10,23,.96));overflow:hidden;\"><summary style=\"cursor:pointer;list-style:none;padding:12px 14px;font-family:'Courier New',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#ffeaf6;\">Visuals</summary><div style=\"padding:0 14px 14px;display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));\"><div style=\"border:1px solid rgba(192,176,230,.12);border-radius:14px;padding:12px;background:rgba(255,255,255,.02);\"><div style=\"font-family:'Courier New',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#cdbdf2;margin-bottom:8px;\">Artifacts</div><div style=\"display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(192,176,230,.08);\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Complexity</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$12</span></div><div style=\"display:flex;justify-content:space-between;padding:4px 0;\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Style</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$13</span></div></div><div style=\"border:1px solid rgba(192,176,230,.12);border-radius:14px;padding:12px;background:rgba(255,255,255,.02);\"><div style=\"font-family:'Courier New',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#cdbdf2;margin-bottom:8px;\">Immersion</div><div style=\"display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(192,176,230,.08);\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Type</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$14</span></div><div style=\"display:flex;justify-content:space-between;padding:4px 0;\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Diegetic</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$15</span></div></div><div style=\"border:1px solid rgba(192,176,230,.12);border-radius:14px;padding:12px;background:rgba(255,255,255,.02);grid-column:1/-1;\"><div style=\"font-family:'Courier New',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#cdbdf2;margin-bottom:8px;\">Images</div><div style=\"display:flex;justify-content:space-between;padding:4px 0;\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">IMG Governor</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$16</span></div></div></div></details><details style=\"border:1px solid rgba(192,176,230,.14);border-radius:16px;background:linear-gradient(180deg,rgba(22,18,34,.94),rgba(13,10,23,.96));overflow:hidden;\"><summary style=\"cursor:pointer;list-style:none;padding:12px 14px;font-family:'Courier New',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#ffeaf6;\">Bookworm</summary><div style=\"padding:0 14px 14px;display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));\"><div style=\"border:1px solid rgba(192,176,230,.12);border-radius:14px;padding:12px;background:rgba(255,255,255,.02);\"><div style=\"font-family:'Courier New',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#cdbdf2;margin-bottom:8px;\">Genre Stack</div><div style=\"display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(192,176,230,.08);\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Main</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$17</span></div><div style=\"display:flex;justify-content:space-between;padding:4px 0;\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Sub</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$18</span></div></div><div style=\"border:1px solid rgba(192,176,230,.12);border-radius:14px;padding:12px;background:rgba(255,255,255,.02);\"><div style=\"font-family:'Courier New',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#cdbdf2;margin-bottom:8px;\">Gates</div><div style=\"display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(192,176,230,.08);\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Citrus</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$19</span></div><div style=\"display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(192,176,230,.08);\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Progression</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$20</span></div><div style=\"display:flex;justify-content:space-between;padding:4px 0;\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Intimacy</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$21</span></div></div><div style=\"border:1px solid rgba(192,176,230,.12);border-radius:14px;padding:12px;background:rgba(255,255,255,.02);grid-column:1/-1;\"><div style=\"font-family:'Courier New',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#cdbdf2;margin-bottom:8px;\">Arc Pacing</div><div style=\"display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(192,176,230,.08);\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Phase</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$22</span></div><div style=\"display:flex;justify-content:space-between;padding:4px 0;\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Turn</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$23</span></div></div></div></details><details style=\"border:1px solid rgba(192,176,230,.14);border-radius:16px;background:linear-gradient(180deg,rgba(22,18,34,.94),rgba(13,10,23,.96));overflow:hidden;\"><summary style=\"cursor:pointer;list-style:none;padding:12px 14px;font-family:'Courier New',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#ffeaf6;\">World</summary><div style=\"padding:0 14px 14px;display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));\"><div style=\"border:1px solid rgba(192,176,230,.12);border-radius:14px;padding:12px;background:rgba(255,255,255,.02);\"><div style=\"font-family:'Courier New',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#cdbdf2;margin-bottom:8px;\">Darkness</div><div style=\"display:flex;justify-content:space-between;padding:4px 0;\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Level</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$24</span></div></div><div style=\"border:1px solid rgba(192,176,230,.12);border-radius:14px;padding:12px;background:rgba(255,255,255,.02);\"><div style=\"font-family:'Courier New',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#cdbdf2;margin-bottom:8px;\">Pressure</div><div style=\"display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(192,176,230,.08);\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Failure</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$25</span></div><div style=\"display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(192,176,230,.08);\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Setting</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$26</span></div><div style=\"display:flex;justify-content:space-between;padding:4px 0;\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Reveal</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$27</span></div></div></div></details><details style=\"border:1px solid rgba(192,176,230,.14);border-radius:16px;background:linear-gradient(180deg,rgba(22,18,34,.94),rgba(13,10,23,.96));overflow:hidden;\"><summary style=\"cursor:pointer;list-style:none;padding:12px 14px;font-family:'Courier New',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#ffeaf6;\">Villains</summary><div style=\"padding:0 14px 14px;\"><div style=\"border:1px solid rgba(192,176,230,.12);border-radius:14px;padding:12px;background:rgba(255,255,255,.02);\"><div style=\"font-family:'Courier New',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#cdbdf2;margin-bottom:8px;\">System</div><div style=\"display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(192,176,230,.08);\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Core</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$28</span></div><div style=\"display:flex;justify-content:space-between;padding:4px 0;\"><span style=\"font-family:'Courier New',monospace;font-size:11px;color:#cdbdf2;\">Modules</span><span style=\"font-family:system-ui;font-size:13px;color:#f7f3ff;\">$29</span></div></div></div></details></div></details>",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": true,
+                "promptOnly": false,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
+            },
+            {
+                "id": "ac175428-fb03-437e-8924-b20779728670",
+                "scriptName": "🧩 [Gabi]  — Anti slop",
+                "findRegex": "ozone|something that was just|you can,\\s*you will|cathedral|mind,\\s*body and soul|ruin you for anyone else",
+                "replaceString": "<span style=\"display:inline-block;padding:.08em .38em;border-radius:.35em;background:linear-gradient(90deg,rgba(36,16,60,.92),rgba(58,25,92,.92));color:#d9b8ff;font-weight:700;font-style:italic;font-family:Consolas,'Courier New',monospace;text-shadow:0 0 6px rgba(180,110,255,.35);box-shadow:inset 0 0 0 1px rgba(210,170,255,.14);\">[Slop found, initiating termination -G]</span>",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": false,
+                "promptOnly": false,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
+            },
+            {
+                "id": "d9a90c96-32ec-4dd5-a505-e8b507ad243d",
+                "scriptName": "🧩 [Gabi]  — Muttering Box",
+                "findRegex": "<!--\\s*GABI_START\\s*-->\\s*\\{\\s*\"cmd\"\\s*:\\s*\"(\\$ \\./[^\"|<>]{1,120})\"\\s*,\\s*\"comment\"\\s*:\\s*\"([^\"|<>]{1,180})\"\\s*\\}\\s*<!--\\s*GABI_END\\s*-->",
+                "replaceString": "<!-- UI_START --><div style=\"max-width:620px;margin:13px auto;box-sizing:border-box;border-radius:14px;overflow:hidden;border:1px solid rgba(130,218,255,.26);background:linear-gradient(180deg,rgba(7,12,22,.98),rgba(13,9,24,.96));box-shadow:0 12px 32px rgba(0,0,0,.28),inset 0 0 22px rgba(152,146,212,.08);font-family:'Courier New',ui-monospace,monospace;color:#dff8ff;\"><div style=\"display:flex;align-items:center;gap:7px;padding:7px 11px;background:linear-gradient(90deg,rgba(152,146,212,.2),rgba(80,210,255,.08));border-bottom:1px solid rgba(255,255,255,.08);\"><span style=\"width:8px;height:8px;border-radius:50%;background:#9892d4;box-shadow:0 0 10px rgba(152,146,212,.9);\"></span><span style=\"font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#b8eeff;font-weight:700;\">gabi daemon</span><span style=\"margin-left:auto;font-size:10px;color:rgba(223,248,255,.58);\">live-patch</span></div><div style=\"padding:11px 14px 12px;font-size:13px;line-height:1.55;\"><span style=\"color:#9892d4;font-weight:700;\">gabi@lotus</span><span style=\"color:#e9f9ff;\"> :: $1</span><span style=\"display:block;margin-top:4px;color:#bcb6f2;\">// $2</span><span style=\"display:inline-block;width:7px;height:1em;margin-left:3px;vertical-align:-2px;background:rgba(184,238,255,.75);\"></span></div></div><!-- UI_END -->",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": true,
+                "promptOnly": false,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
+            },
+            {
+                "id": "39ba9849-439e-4418-9878-240e9d4e4a90",
+                "scriptName": "🧩 [Gabi]  — MutteringDelete",
+                "findRegex": "<gm>\\s*([^|\\n<]+?)\\s*\\|\\s*([^<]+?)\\s*</gm>",
+                "replaceString": "",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": true,
+                "markdownOnly": true,
+                "promptOnly": false,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
+            },
+            {
+                "id": "235538d1-468b-4709-9cd3-201a4e531ba8",
+                "scriptName": "🧩 [Thinking] 01 — Collapsible think",
+                "findRegex": "<(?:think|thinking)>([\\s\\S]*?)<\\/(?:think|thinking)>",
+                "replaceString": "<details class=\"thinking-block\"><summary>Thinking</summary>$1</details>",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": true,
+                "markdownOnly": true,
+                "promptOnly": false,
+                "runOnEdit": false,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
+            },
+            {
+                "id": "01e5e9f6-e33f-467d-b17d-2bc61ca7c4ef",
+                "scriptName": "🧩 [Thinking] 02 — Hide Think",
+                "findRegex": "/<(think|thinking)>.*?<\\/\\1>\\s*/is",
+                "replaceString": "",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": true,
+                "markdownOnly": false,
+                "promptOnly": true,
+                "runOnEdit": false,
+                "substituteRegex": 0,
+                "minDepth": 1,
+                "maxDepth": null
+            },
+            {
+                "id": "bd284348-e188-43c1-8384-9e24515305a5",
+                "scriptName": "🧩 [Thinking] 03 — Ongoing Thinking label",
+                "findRegex": "/<(think|thinking)>(?!.*?<\\/\\1>)(.*)/is",
+                "replaceString": "<hr><details name=\"thought\"><summary>Thinking</summary>$2</details><hr>",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": true,
+                "markdownOnly": true,
+                "promptOnly": false,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
+            },
+            {
+                "id": "fe598f24-6218-416c-8ffd-db288c7d7389",
+                "scriptName": "🧩 [Discord] 01 — Message Blocks",
+                "findRegex": "/\\[dcmsg\\]\\s*\\[author\\]([\\s\\S]*?)\\[\\/author\\]\\s*\\[color\\]([\\s\\S]*?)\\[\\/color\\]\\s*\\[time\\]([\\s\\S]*?)\\[\\/time\\]\\s*\\[text\\]([\\s\\S]*?)\\[\\/text\\]\\s*\\[\\/dcmsg\\]/gi",
+                "replaceString": "<div class=\"dc-msg\"><div class=\"dc-msg-avatar\" style=\"background:$2;\"></div><div class=\"dc-msg-content\"><div class=\"dc-msg-header\"><span class=\"dc-msg-author\" style=\"color:$2;\">$1</span><span class=\"dc-msg-time\">$3</span></div><div class=\"dc-msg-text\">$4</div></div></div>",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": true,
+                "promptOnly": false,
+                "runOnEdit": false,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
+            },
+            {
+                "id": "2df82337-3138-4e42-960e-078426f01ebe",
+                "scriptName": "🧩 [Discord] 02 — Channel Shell",
+                "findRegex": "<!--\\s*DC_START\\s*-->([\\s\\S]*?)<!--\\s*DC_END\\s*-->",
+                "replaceString": "<!-- UI_START --><div id=\"discord-mockup\" style=\"width:min(100%,800px);margin:14px auto;background:#36393f;border-radius:8px;overflow:hidden;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#dcddde;display:flex;height:500px;box-shadow:0 10px 30px rgba(0,0,0,0.5);border:1px solid #202225;\"><style>#discord-mockup *{box-sizing:border-box}.dc-main{flex:1;display:flex;flex-direction:column;background:#36393f}.dc-chat-header{height:48px;border-bottom:1px solid #202225;display:flex;align-items:center;padding:0 16px;font-weight:600;font-size:15px;color:#fff;box-shadow:0 1px 2px rgba(0,0,0,0.2)}.dc-chat-header .hash{font-size:20px;color:#72767d;margin-right:8px}.dc-message-view{flex:1;overflow-y:auto;padding:16px 0;display:flex;flex-direction:column}.dc-msg{display:flex;padding:4px 16px;margin-top:12px}.dc-msg:hover{background:rgba(4,4,5,0.07)}.dc-msg-avatar{width:40px;height:40px;border-radius:50%;margin-right:16px;flex-shrink:0}.dc-msg-content{flex:1;min-width:0}.dc-msg-header{display:flex;align-items:baseline;gap:8px;margin-bottom:4px;flex-wrap:wrap}.dc-msg-author{color:#fff;font-weight:500;font-size:15px}.dc-msg-time{color:#72767d;font-size:12px}.dc-msg-text{font-size:15px;line-height:1.375;color:#dcddde;word-wrap:break-word;white-space:pre-wrap}.dc-input-area{padding:0 16px 24px}.dc-input-box{background:#40444b;border-radius:8px;padding:11px 16px;display:flex;align-items:center}.dc-input-placeholder{color:#72767d;font-size:15px;flex:1}</style><div class=\"dc-main\"><div class=\"dc-chat-header\"><span class=\"hash\">#</span><span>general</span></div><div class=\"dc-message-view\">$1</div><div class=\"dc-input-area\"><div class=\"dc-input-box\"><div style=\"width:24px;height:24px;border-radius:50%;background:#4f545c;margin-right:16px;display:flex;align-items:center;justify-content:center;color:#b9bbbe;font-size:18px;font-weight:bold;\">+</div><div class=\"dc-input-placeholder\">Message #general</div></div></div></div></div><!-- UI_END -->",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": true,
+                "promptOnly": false,
+                "runOnEdit": false,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
+            },
+            {
+                "id": "bcc45054-b19b-4b9e-97da-21b186cd3fb5",
+                "scriptName": "🧩 [DECOR] — Weather Header",
+                "findRegex": "\\[weather_header\\]\\s*style=([\\s\\S]*?)\\s*time=(.*?)\\s*location=(.*?)\\s*condition=(.*?)\\s*img_url=(.*?)\\s*img_alt=(.*?)\\s*\\[/weather_header\\]",
+                "replaceString": "<style>.gabi-cinematic-header{position:relative;width:100%;max-width:none;height:140px;border-radius:8px;overflow:hidden;margin:1rem 0;background:#111;font-family:system-ui,sans-serif;color:#fff;}.header-image-container{position:absolute;inset:0;width:100%;height:100%;}.header-bg-img{width:100%;height:100%;object-fit:cover;object-position:center 35%;display:block;}.header-overlay{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;background:linear-gradient(to bottom,rgba(0,0,0,0) 20%,rgba(0,0,0,0.45) 72%,rgba(0,0,0,0.72) 100%);}.header-data-stripe{position:absolute;bottom:0;left:0;width:100%;padding:10px 14px;box-sizing:border-box;display:flex;justify-content:space-between;align-items:flex-end;z-index:2;background:rgba(0,0,0,0.38);backdrop-filter:blur(2px);}.header-left .loc-text{font-weight:700;font-size:1rem;letter-spacing:.05em;text-transform:uppercase;line-height:1;}.header-right{display:flex;gap:10px;font-size:.85rem;font-weight:500;opacity:.95;align-items:center;line-height:1;}.cond-text{border-right:1px solid rgba(255,255,255,0.3);padding-right:10px;}$1</style><div class=\"gabi-cinematic-header\"><div class=\"header-image-container\"><img src=\"$5\" alt=\"$6\" class=\"header-bg-img\"/><div class=\"header-overlay\"></div></div><div class=\"header-data-stripe\"><div class=\"header-left\"><span class=\"loc-text\">$3</span></div><div class=\"header-right\"><span class=\"cond-text\">$4</span><span class=\"time-text\">$2</span></div></div></div>",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": true,
+                "promptOnly": false,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
+            },
+            {
+                "id": "fb743760-b605-4b7f-9034-2a6ef8d61f34",
+                "scriptName": "🧩 [DECOR] — Slowburn Engine",
+                "findRegex": "\\s*\\{\\s*\"h\"\\s*:\\s*\"([1-5])\"\\s*,\\s*\"s\"\\s*:\\s*\"([1-5])\"\\s*,\\s*\"r\"\\s*:\\s*\"((?:[1-9]|1[0-9]|20))\"\\s*,\\s*\"c\"\\s*:\\s*\"([^\"]+)\"\\s*,\\s*\"l\"\\s*:\\s*\"([^\"]+)\"\\s*\\}",
+                "replaceString": "<!-- UI_START --><style>.sbppmx-cmd5{display:inline-flex;flex-wrap:wrap;gap:.28em;align-items:center;margin:.22em .14em;padding:.28em .58em;border:1px solid rgba(190,140,255,.7);border-radius:8px;background:rgba(13,9,24,.94);color:#f3e8ff;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.77em;line-height:1.25;box-shadow:0 0 9px rgba(190,140,255,.24),inset 0 0 10px rgba(255,255,255,.035)}.sbppmx-cmd5 b{color:#c7ffdd}.sbppmx-cmd5 i{font-style:normal;color:#f8c8ff}.sbppmx-cmd5 .dim{color:#a998c7}.sbppmx-cmd5 .grp{display:inline-flex;align-items:center;gap:.18em;padding:.1em .28em;border-radius:6px;background:rgba(255,255,255,.04)}.sbppmx-cmd5 .lbl{color:#8e82a8}</style><span class=\"sbppmx-cmd5\"><b>$ sb++</b><span class=\"grp\"><span class=\"lbl\">roll:</span><span class=\"dim\">$3</span></span><span class=\"grp\"><span class=\"lbl\">♥:</span><span>$1</span></span><span class=\"grp\"><span class=\"lbl\">static:</span><span>$2</span></span><span class=\"grp\"><span class=\"lbl\">land:</span><i>$5</i></span><span class=\"grp\"><span class=\"lbl\">cert:</span><span class=\"dim\">$4</span></span></span><!-- UI_END -->",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": true,
+                "promptOnly": false,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
+            },
+            {
+                "id": "22f607f3-6c55-455d-a04e-e9dc9bf7c083",
+                "scriptName": "🧩 [DECOR] — Event Randomizer",
+                "findRegex": "{\\s*\"stakes\"\\s*:\\s*\"(ambient|chaos)\"\\s*,\\s*\"roll\"\\s*:\\s*(\\d+)\\s*,\\s*\"event\"\\s*:\\s*\"([^\"]+)\"\\s*\\}",
+                "replaceString": "<!-- UI_START --><style>.gb-roll{--gb-accent:#b58cff;--gb-accent-soft:rgba(181,140,255,.22);--gb-accent-line:rgba(181,140,255,.34);--gb-label:#decaff;--gb-body:#f3e8ff;--gb-bg-a:rgba(17,10,28,.92);--gb-bg-b:rgba(25,15,40,.96);position:relative;display:flex;flex-direction:column;max-width:400px;padding:.5em .8em;border:1px solid var(--gb-accent);border-radius:6px;background:repeating-linear-gradient(45deg,var(--gb-bg-a),var(--gb-bg-a) 10px,var(--gb-bg-b) 10px,var(--gb-bg-b) 20px);font-family:ui-monospace,Consolas,monospace;font-size:.8em;overflow:hidden;box-shadow:inset 0 0 0 1px rgba(255,255,255,.025),0 0 14px rgba(0,0,0,.28)}.gb-roll::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:var(--gb-accent);box-shadow:0 0 10px var(--gb-accent)}.gb-roll .header{display:flex;justify-content:space-between;align-items:center;gap:.8em;margin-bottom:.4em;padding-bottom:.2em;border-bottom:1px solid var(--gb-accent-line)}.gb-roll .sys-label{color:var(--gb-label);font-weight:bold;font-size:.7em;letter-spacing:1.5px;text-transform:uppercase}.gb-roll .roll-val{color:#fff;font-weight:bold;font-size:.8em;white-space:nowrap;background:var(--gb-accent-soft);padding:.1em .4em;border-radius:3px}.gb-roll .event-body{color:var(--gb-body);line-height:1.4}.gb-roll .event-body::before{content:'>';color:var(--gb-accent);margin-right:.4em;font-weight:bold}.gb-roll-ambient{--gb-accent:#8f7dff;--gb-accent-soft:rgba(143,125,255,.2);--gb-accent-line:rgba(143,125,255,.32);--gb-label:#d8d0ff;--gb-body:#f0edff;--gb-bg-a:rgba(13,11,27,.9);--gb-bg-b:rgba(21,18,42,.95)}.gb-roll-chaos{--gb-accent:#ff2a5f;--gb-accent-soft:rgba(255,42,95,.2);--gb-accent-line:rgba(255,42,95,.3);--gb-label:#ff8ca3;--gb-body:#f3e8ff;--gb-bg-a:rgba(20,5,10,.9);--gb-bg-b:rgba(30,10,15,.95)}</style><div class=\"gb-roll gb-roll-$1\"><div class=\"header\"><span class=\"sys-label\">GOVERNOR // $1</span><span class=\"roll-val\">ROLL: $2</span></div><div class=\"event-body\">$3</div></div><!-- UI_END -->",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": true,
+                "promptOnly": false,
+                "runOnEdit": false,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
+            },
+            {
+                "id": "22f410fb-9ac3-46a7-83d5-d302f702cea7",
+                "scriptName": "🧩 [WEBNOVEL] — Pretty Titles",
+                "findRegex": "/^\\s*<chap>([^|<]*)\\|([^<]*)<\\/chap>\\s*/m",
+                "replaceString": "<!-- UI_START --><div class=\"html-safe-wrap\"><style>.wn-wrap{max-width:720px;margin:22px auto;text-align:center;box-sizing:border-box}.wn-hr{border:0;height:1px;background-image:linear-gradient(to right, rgba(0,0,0,0), rgba(150,150,150,0.75), rgba(0,0,0,0));}.wn-ch{font-family:Courier New, monospace;letter-spacing:.22rem;font-size:.85rem;margin-top:12px;opacity:.85}.wn-title{font-family:Georgia, Times New Roman, serif;font-weight:normal;margin:10px 0;line-height:1.15}.wn-mark{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;font-size:12px;opacity:.6;letter-spacing:.08em;margin-bottom:12px}</style><div class=\"wn-wrap\"><hr class=\"wn-hr\"><div class=\"wn-ch\">CHAPTER $1</div><h2 class=\"wn-title\">$2</h2><div class=\"wn-mark\">— ✦ —</div><hr class=\"wn-hr\"></div></div><!-- UI_END -->\n",
+                "trimStrings": [
+                    "\\r"
+                ],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": false,
+                "promptOnly": false,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
+            },
+            {
+                "id": "30b8a4d3-f260-43c2-b06c-b0b524dbbf07",
+                "scriptName": "🧩 [BRANCHING] — Pretty branches",
+                "findRegex": "/^\\s*(?:<branch>\\s*)?([^|\\r\\n<]+?)\\s*\\|\\s*([^\\r\\n<]*)\\s*\\r?\\n\\s*1\\s*\\|\\s*([^\\r\\n<]+?)\\s*\\r?\\n\\s*2\\s*\\|\\s*([^\\r\\n<]+?)\\s*\\r?\\n\\s*3\\s*\\|\\s*([^\\r\\n<]+?)(?:\\s*\\r?\\n\\s*4\\s*\\|\\s*([^\\r\\n<]+?))?\\s*(?:\\r?\\n\\s*<\\/branch>\\s*)?\\s*$/m",
+                "replaceString": "<!-- UI_START --><div class=\"html-safe-wrap\"><style>.wnb-wrap{max-width:720px;margin:18px auto;box-sizing:border-box;text-align:center}.wnb-hr{border:0;height:1px;background-image:linear-gradient(to right, rgba(0,0,0,0), rgba(150,150,150,0.75), rgba(0,0,0,0));margin:10px 0}.wnb-kicker{font-family:Courier New, monospace;letter-spacing:.22rem;font-size:.78rem;opacity:.78;margin-top:2px}.wnb-title{font-family:Georgia, Times New Roman, serif;font-weight:normal;margin:8px 0 2px;line-height:1.15}.wnb-note{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;font-size:12px;opacity:.65;letter-spacing:.06em;margin-top:6px}.wnb-note:empty{display:none}.wnb-grid{margin-top:12px;display:grid;gap:10px;grid-template-columns:1fr}@media(min-width:640px){.wnb-grid{grid-template-columns:1fr 1fr}}.wnb-btn{width:100%;text-align:left;cursor:pointer;box-sizing:border-box;border-radius:16px;border:2px solid rgba(255,255,255,.9);background:linear-gradient(135deg,rgba(255,240,248,.92),rgba(235,228,255,.88));box-shadow:0 10px 22px rgba(20,10,30,.20);color:#14121a;padding:12px 12px 12px 46px;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;font-weight:650;line-height:1.2;position:relative;transition:transform .12s ease, box-shadow .12s ease, filter .12s ease}.wnb-btn:empty{display:none}.wnb-btn::before{content:attr(data-opt);position:absolute;left:12px;top:50%;transform:translateY(-50%);width:26px;height:26px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:Courier New, monospace;font-weight:700;font-size:.9rem;opacity:.85;border:1px solid rgba(20,10,30,.14);background:rgba(255,255,255,.85)}.wnb-btn:hover{transform:translateY(-1px);box-shadow:0 14px 30px rgba(20,10,30,.22);filter:saturate(1.05)}.wnb-btn:active{transform:translateY(0);box-shadow:0 10px 22px rgba(20,10,30,.20)}</style><div class=\"wnb-wrap\"><hr class=\"wnb-hr\"><div class=\"wnb-kicker\">CHOICE SET</div><h2 class=\"wnb-title\">$1</h2><div class=\"wnb-note\">$2</div><div class=\"wnb-kicker\">— ✦ —</div><hr class=\"wnb-hr\"><div class=\"wnb-grid\"><button class=\"wnb-btn\" data-opt=\"1\">$3</button><button class=\"wnb-btn\" data-opt=\"2\">$4</button><button class=\"wnb-btn\" data-opt=\"3\">$5</button><button class=\"wnb-btn\" data-opt=\"4\">$6</button></div></div></div><!-- UI_END -->",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": true,
+                "promptOnly": false,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
+            },
+            {
+                "id": "feee26b6-036a-44e3-a98b-56954688bd93",
+                "scriptName": "🧩 [TRACK] 01 — Pretty Track Card",
+                "findRegex": "<track>\\s*(?:\\[time\\]\\s*([\\s\\S]*?)\\s*\\[/time\\]\\s*)?(?:\\[place\\]\\s*([\\s\\S]*?)\\s*\\[/place\\]\\s*)?(?:\\[mode\\]\\s*([\\s\\S]*?)\\s*\\[/mode\\]\\s*)?(?:\\[present\\]\\s*([\\s\\S]*?)\\s*\\[/present\\]\\s*)?(?:\\[goal\\]\\s*([\\s\\S]*?)\\s*\\[/goal\\]\\s*)?(?:\\[change\\]\\s*([\\s\\S]*?)\\s*\\[/change\\]\\s*)?\\s*</track>",
+                "replaceString": "<!-- TRACK_START --><details style=\"max-width:760px;margin:18px auto;border:1px solid rgba(192,176,230,.18);border-radius:20px;background:linear-gradient(180deg,rgba(10,8,18,.96),rgba(8,6,15,.98));box-shadow:0 14px 28px rgba(0,0,0,.28);overflow:hidden;color:#f5f1ff;\"><summary style=\"cursor:pointer;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;font-family:'Courier New',monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#d8c9ff;border-bottom:1px solid rgba(192,176,230,.14);background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.015));\"><span>✦ State Tracker</span></summary><div style=\"padding:14px 14px 16px;\"><div class=\"html-safe-wrap\"><div style=\"max-width:760px;margin:18px auto;padding:0 6px;box-sizing:border-box;color:#f5f1ff;\"><div style=\"height:1px;background:linear-gradient(to right,rgba(0,0,0,0),rgba(178,160,220,.55),rgba(0,0,0,0));margin:10px 0 12px;\"></div><div style=\"text-align:center;font-family:'Courier New',monospace;letter-spacing:.22em;font-size:12px;opacity:.82;color:#d8c9ff;\">STATE TRACKER</div><div style=\"display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;text-align:center;margin:8px 0 2px;\"><div style=\"font-family:Georgia,'Times New Roman',serif;font-size:30px;line-height:1.08;color:#fff7ff;text-shadow:0 1px 8px rgba(0,0,0,.18);\">Current Narrative State</div><div style=\"display:inline-block;padding:7px 13px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:linear-gradient(135deg,#ffeaf6,#e9ddff);box-shadow:0 8px 18px rgba(20,10,30,.18);font-family:'Courier New',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#1a1424;font-weight:700;\">$3</div></div><div style=\"text-align:center;font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial;font-size:12px;opacity:.72;letter-spacing:.06em;margin-top:6px;color:#d4caea;\">Live system readout</div><div style=\"text-align:center;font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial;font-size:12px;opacity:.68;letter-spacing:.08em;margin:8px 0 0;color:#cdbfe8;\">— ✦ —</div><div style=\"height:1px;background:linear-gradient(to right,rgba(0,0,0,0),rgba(178,160,220,.55),rgba(0,0,0,0));margin:12px 0 16px;\"></div><div style=\"display:flex;flex-wrap:wrap;gap:12px;\"><div style=\"flex:1 1 calc(50% - 12px);min-width:240px;box-sizing:border-box;border-radius:18px;border:1px solid rgba(192,176,230,.18);background:linear-gradient(180deg,rgba(22,18,34,.94),rgba(13,10,23,.96));box-shadow:0 14px 28px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.03);padding:13px 15px;\"><div style=\"font-family:'Courier New',monospace;letter-spacing:.16em;font-size:11px;opacity:.76;text-transform:uppercase;margin-bottom:8px;color:#cdbdf2;\">Time</div><div style=\"font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial;font-size:14px;line-height:1.45;word-break:break-word;white-space:pre-wrap;color:#f7f3ff;\">$1</div></div><div style=\"flex:1 1 calc(50% - 12px);min-width:240px;box-sizing:border-box;border-radius:18px;border:1px solid rgba(192,176,230,.18);background:linear-gradient(180deg,rgba(22,18,34,.94),rgba(13,10,23,.96));box-shadow:0 14px 28px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.03);padding:13px 15px;\"><div style=\"font-family:'Courier New',monospace;letter-spacing:.16em;font-size:11px;opacity:.76;text-transform:uppercase;margin-bottom:8px;color:#cdbdf2;\">Place</div><div style=\"font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial;font-size:14px;line-height:1.45;word-break:break-word;white-space:pre-wrap;color:#f7f3ff;\">$2</div></div><div style=\"flex:1 1 calc(50% - 12px);min-width:240px;box-sizing:border-box;border-radius:18px;border:1px solid rgba(192,176,230,.18);background:linear-gradient(180deg,rgba(22,18,34,.94),rgba(13,10,23,.96));box-shadow:0 14px 28px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.03);padding:13px 15px;\"><div style=\"font-family:'Courier New',monospace;letter-spacing:.16em;font-size:11px;opacity:.76;text-transform:uppercase;margin-bottom:8px;color:#cdbdf2;\">Mode</div><div style=\"font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial;font-size:14px;line-height:1.45;word-break:break-word;white-space:pre-wrap;color:#f7f3ff;\">$3</div></div><div style=\"flex:1 1 calc(50% - 12px);min-width:240px;box-sizing:border-box;border-radius:18px;border:1px solid rgba(192,176,230,.18);background:linear-gradient(180deg,rgba(22,18,34,.94),rgba(13,10,23,.96));box-shadow:0 14px 28px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.03);padding:13px 15px;\"><div style=\"font-family:'Courier New',monospace;letter-spacing:.16em;font-size:11px;opacity:.76;text-transform:uppercase;margin-bottom:8px;color:#cdbdf2;\">Present</div><div style=\"font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial;font-size:14px;line-height:1.45;word-break:break-word;white-space:pre-wrap;color:#f7f3ff;\">$4</div></div><div style=\"flex:1 1 calc(50% - 12px);min-width:240px;box-sizing:border-box;border-radius:18px;border:1px solid rgba(192,176,230,.18);background:linear-gradient(180deg,rgba(22,18,34,.94),rgba(13,10,23,.96));box-shadow:0 14px 28px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.03);padding:13px 15px;\"><div style=\"font-family:'Courier New',monospace;letter-spacing:.16em;font-size:11px;opacity:.76;text-transform:uppercase;margin-bottom:8px;color:#cdbdf2;\">Goal</div><div style=\"font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial;font-size:14px;line-height:1.45;word-break:break-word;white-space:pre-wrap;color:#f7f3ff;\">$5</div></div><div style=\"flex:1 1 calc(50% - 12px);min-width:240px;box-sizing:border-box;border-radius:18px;border:1px solid rgba(192,176,230,.18);background:linear-gradient(180deg,rgba(22,18,34,.94),rgba(13,10,23,.96));box-shadow:0 14px 28px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.03);padding:13px 15px;\"><div style=\"font-family:'Courier New',monospace;letter-spacing:.16em;font-size:11px;opacity:.76;text-transform:uppercase;margin-bottom:8px;color:#cdbdf2;\">Change</div><div style=\"font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial;font-size:14px;line-height:1.45;word-break:break-word;white-space:pre-wrap;color:#f7f3ff;\">$6</div></div></div></div></div></div></details><!-- TRACK_END -->",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": true,
+                "promptOnly": false,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
+            },
+            {
+                "id": "799a6343-a22e-4812-95d9-8a78832ea173",
+                "scriptName": "🧩 [TRACK] 02 — Pretty Track Aux",
+                "findRegex": "<track_aux>\\s*(?:\\[threads\\]\\s*([\\s\\S]*?)\\s*\\[/threads\\]\\s*)?(?:\\[inventory\\]\\s*([\\s\\S]*?)\\s*\\[/inventory\\]\\s*)?(?:\\[relationship\\]\\s*(?:\\[stage\\]\\s*([\\s\\S]*?)\\s*\\[/stage\\]\\s*)?(?:\\[trust\\]\\s*([\\s\\S]*?)\\s*\\[/trust\\]\\s*)?(?:\\[tension\\]\\s*([\\s\\S]*?)\\s*\\[/tension\\]\\s*)?(?:\\[power\\]\\s*([\\s\\S]*?)\\s*\\[/power\\]\\s*)?\\[/relationship\\]\\s*)?\\s*</track_aux>",
+                "replaceString": "<!-- TRACK_START --><details style=\"max-width:760px;margin:14px auto 18px;border:1px solid rgba(192,176,230,.18);border-radius:20px;background:linear-gradient(180deg,rgba(10,8,18,.96),rgba(8,6,15,.98));box-shadow:0 14px 28px rgba(0,0,0,.24);overflow:hidden;color:#f5f1ff;\"><summary style=\"cursor:pointer;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;font-family:'Courier New',monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#d8c9ff;border-bottom:1px solid rgba(192,176,230,.14);background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.015));\"><span>✦ State Submodules</span><span style=\"display:inline-block;padding:6px 12px;border-radius:999px;background:linear-gradient(135deg,#ffeaf6,#e9ddff);color:#1a1424;font-weight:700;font-size:11px;letter-spacing:.12em;\">Aux</span></summary><div style=\"padding:14px;display:flex;flex-wrap:wrap;gap:12px;\"><details style=\"flex:1 1 100%;border-radius:18px;border:1px solid rgba(192,176,230,.18);background:linear-gradient(180deg,rgba(22,18,34,.94),rgba(13,10,23,.96));box-shadow:0 14px 28px rgba(0,0,0,.24);overflow:hidden;\"><summary style=\"cursor:pointer;padding:13px 15px;font-family:'Courier New',monospace;letter-spacing:.16em;font-size:11px;text-transform:uppercase;color:#cdbdf2;border-bottom:1px solid rgba(192,176,230,.12);background:linear-gradient(180deg,rgba(255,255,255,.025),rgba(255,255,255,.01));\"><span>Threads</span><span style=\"display:inline-block;margin-left:8px;padding:4px 9px;border-radius:999px;background:linear-gradient(135deg,#ffeaf6,#e9ddff);color:#1a1424;font-weight:700;font-size:10px;letter-spacing:.12em;\">Expand</span></summary><div style=\"padding:13px 15px;font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial;font-size:14px;line-height:1.55;white-space:pre-wrap;color:#f7f3ff;\">$1</div></details><details style=\"flex:1 1 100%;border-radius:18px;border:1px solid rgba(192,176,230,.18);background:linear-gradient(180deg,rgba(22,18,34,.94),rgba(13,10,23,.96));box-shadow:0 14px 28px rgba(0,0,0,.24);overflow:hidden;\"><summary style=\"cursor:pointer;padding:13px 15px;font-family:'Courier New',monospace;letter-spacing:.16em;font-size:11px;text-transform:uppercase;color:#cdbdf2;border-bottom:1px solid rgba(192,176,230,.12);background:linear-gradient(180deg,rgba(255,255,255,.025),rgba(255,255,255,.01));\"><span>Inventory</span><span style=\"display:inline-block;margin-left:8px;padding:4px 9px;border-radius:999px;background:linear-gradient(135deg,#ffeaf6,#e9ddff);color:#1a1424;font-weight:700;font-size:10px;letter-spacing:.12em;\">Expand</span></summary><div style=\"padding:13px 15px;font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial;font-size:14px;line-height:1.55;white-space:pre-wrap;color:#f7f3ff;\">$2</div></details><details style=\"flex:1 1 100%;border-radius:18px;border:1px solid rgba(192,176,230,.18);background:linear-gradient(180deg,rgba(22,18,34,.94),rgba(13,10,23,.96));box-shadow:0 14px 28px rgba(0,0,0,.24);overflow:hidden;\"><summary style=\"cursor:pointer;padding:13px 15px;font-family:'Courier New',monospace;letter-spacing:.16em;font-size:11px;text-transform:uppercase;color:#cdbdf2;border-bottom:1px solid rgba(192,176,230,.12);background:linear-gradient(180deg,rgba(255,255,255,.025),rgba(255,255,255,.01));\"><span>Relationship</span><span style=\"display:inline-block;margin-left:8px;padding:4px 9px;border-radius:999px;background:linear-gradient(135deg,#ffeaf6,#e9ddff);color:#1a1424;font-weight:700;font-size:10px;letter-spacing:.12em;\">Expand</span></summary><div style=\"padding:13px 15px;display:grid;grid-template-columns:1fr 1fr;gap:10px;\"><div style=\"border-radius:14px;border:1px solid rgba(192,176,230,.16);background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.015));padding:10px 12px;\"><div style=\"font-family:'Courier New',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#cdbdf2;opacity:.8;margin-bottom:6px;\">◆ Stage</div><div style=\"font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial;font-size:14px;line-height:1.45;color:#f7f3ff;white-space:pre-wrap;\">$3</div></div><div style=\"border-radius:14px;border:1px solid rgba(192,176,230,.16);background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.015));padding:10px 12px;\"><div style=\"font-family:'Courier New',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#cdbdf2;opacity:.8;margin-bottom:6px;\">◆ Trust</div><div style=\"font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial;font-size:14px;line-height:1.45;color:#f7f3ff;white-space:pre-wrap;\">$4</div></div><div style=\"border-radius:14px;border:1px solid rgba(192,176,230,.16);background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.015));padding:10px 12px;\"><div style=\"font-family:'Courier New',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#cdbdf2;opacity:.8;margin-bottom:6px;\">◆ Tension</div><div style=\"font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial;font-size:14px;line-height:1.45;color:#f7f3ff;white-space:pre-wrap;\">$5</div></div><div style=\"border-radius:14px;border:1px solid rgba(192,176,230,.16);background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.015));padding:10px 12px;\"><div style=\"font-family:'Courier New',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#cdbdf2;opacity:.8;margin-bottom:6px;\">◆ Power</div><div style=\"font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial;font-size:14px;line-height:1.45;color:#f7f3ff;white-space:pre-wrap;\">$6</div></div></div></details></div></details><!-- TRACK_END -->",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": true,
+                "promptOnly": false,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
+            },
+            {
+                "id": "a036d26d-f84d-4062-9dd5-eed0c2cd2e8b",
+                "scriptName": "🧩 [TRACK] 03 — Motive Ledger",
+                "findRegex": "<details>\\s*<summary>✦ writing ledger\\.\\.\\.<\\/summary>\\s*\\[Motive Ledger\\]\\s*\\{\\s*\"id\":\"([\\s\\S]*?)\",\\s*\"drive\":\"([\\s\\S]*?)\",\\s*\"pressure\":\"([\\s\\S]*?)\",\\s*\"short_1\":\"([\\s\\S]*?)\",\\s*\"short_1_state\":\"([\\s\\S]*?)\",\\s*\"short_2\":\"([\\s\\S]*?)\",\\s*\"short_2_state\":\"([\\s\\S]*?)\",\\s*\"short_3\":\"([\\s\\S]*?)\",\\s*\"short_3_state\":\"([\\s\\S]*?)\",\\s*\"long_1\":\"([\\s\\S]*?)\",\\s*\"long_1_state\":\"([\\s\\S]*?)\",\\s*\"long_2\":\"([\\s\\S]*?)\",\\s*\"long_2_state\":\"([\\s\\S]*?)\",\\s*\"long_3\":\"([\\s\\S]*?)\",\\s*\"long_3_state\":\"([\\s\\S]*?)\",\\s*\"thoughts\":\"([\\s\\S]*?)\",\\s*\"trace_1\":\"([\\s\\S]*?)\",\\s*\"trace_2\":\"([\\s\\S]*?)\",\\s*\"trace_3\":\"([\\s\\S]*?)\"\\s*\\}\\s*\\[/Motive Ledger\\]\\s*<\\/details>",
+                "replaceString": "<!-- MOTIVE_LEDGER_START --><style>#ml-$1{max-width:760px;margin:16px auto;border:1px solid rgba(240,188,218,.22);border-radius:24px;background:linear-gradient(180deg,rgba(24,14,28,.98),rgba(12,8,18,.99));box-shadow:0 18px 38px rgba(0,0,0,.32);overflow:hidden;color:#fff2f8}#ml-$1 input{display:none}#ml-$1 .ml-head{padding:16px 18px;border-bottom:1px solid rgba(240,188,218,.15);background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.018));display:flex;align-items:center;justify-content:space-between;gap:12px}#ml-$1 .ml-title{font-family:'Courier New',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#f3cfe2}#ml-$1 .ml-chip{padding:6px 12px;border-radius:999px;background:linear-gradient(135deg,#ffd9ea,#e7d6ff);color:#231627;font:700 11px 'Courier New',monospace;letter-spacing:.12em;text-transform:uppercase}#ml-$1 .ml-tabs{display:flex;gap:8px;flex-wrap:wrap;padding:14px 16px 0}#ml-$1 .ml-tabs label{cursor:pointer;padding:8px 12px;border-radius:999px;border:1px solid rgba(240,188,218,.18);background:rgba(255,255,255,.035);font:700 11px 'Courier New',monospace;letter-spacing:.12em;text-transform:uppercase;color:#d9c5e8;transition:.2s}#ml-$1 #ml-$1-pulse:checked ~ .ml-tabs label[for=\"ml-$1-pulse\"],#ml-$1 #ml-$1-goals:checked ~ .ml-tabs label[for=\"ml-$1-goals\"],#ml-$1 #ml-$1-notes:checked ~ .ml-tabs label[for=\"ml-$1-notes\"],#ml-$1 #ml-$1-trace:checked ~ .ml-tabs label[for=\"ml-$1-trace\"]{background:linear-gradient(135deg,#ffd6e7,#eadcff);color:#241728;border-color:transparent;box-shadow:0 8px 20px rgba(255,203,226,.16)}#ml-$1 .ml-pages{padding:14px 16px 18px}#ml-$1 .ml-page{display:none;border-radius:20px;border:1px solid rgba(240,188,218,.16);background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.02));padding:16px}#ml-$1 #ml-$1-pulse:checked ~ .ml-pages .pulse,#ml-$1 #ml-$1-goals:checked ~ .ml-pages .goals,#ml-$1 #ml-$1-notes:checked ~ .ml-pages .notes,#ml-$1 #ml-$1-trace:checked ~ .ml-pages .trace{display:block}#ml-$1 .ml-label{font:700 10px 'Courier New',monospace;letter-spacing:.16em;text-transform:uppercase;color:#d9c5e8;opacity:.82;margin-bottom:8px}#ml-$1 .ml-text{font:14px/1.6 system-ui,-apple-system,'Segoe UI',Roboto,Arial;color:#fff3f8;white-space:pre-wrap;word-break:break-word}#ml-$1 .ml-pulse-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}#ml-$1 .ml-pulse-card{padding:14px;border-radius:16px;border:1px solid rgba(240,188,218,.13);background:rgba(255,255,255,.03)}#ml-$1 .ml-goal-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}#ml-$1 .ml-column{padding:14px;border-radius:18px;border:1px solid rgba(240,188,218,.13);background:rgba(255,255,255,.025)}#ml-$1 .ml-stack{display:flex;flex-direction:column;gap:10px}#ml-$1 .ml-item{padding:12px;border-radius:15px;border:1px solid rgba(240,188,218,.14);background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.018));display:flex;flex-direction:column;gap:8px}#ml-$1 .ml-item[data-content=\"\"]{display:none}#ml-$1 .ml-state{align-self:flex-start;display:inline-flex;align-items:center;padding:5px 9px;border-radius:999px;border:1px solid rgba(240,188,218,.2);background:rgba(255,255,255,.045);font:700 10px 'Courier New',monospace;letter-spacing:.12em;text-transform:uppercase;color:#edd8e8}#ml-$1 .ml-state:empty{display:none}#ml-$1 .ml-state[data-state=\"active\"],#ml-$1 .ml-state[data-state=\"advancing\"],#ml-$1 .ml-state[data-state=\"ongoing\"]{background:linear-gradient(135deg,rgba(255,214,231,.22),rgba(234,220,255,.22));border-color:rgba(255,214,231,.36);color:#ffe8f2}#ml-$1 .ml-state[data-state=\"pressured\"],#ml-$1 .ml-state[data-state=\"threatened\"]{background:rgba(255,195,214,.12);border-color:rgba(255,195,214,.3);color:#ffdce8}#ml-$1 .ml-state[data-state=\"blocked\"]{background:rgba(255,181,194,.12);border-color:rgba(255,181,194,.34);color:#ffd3dc}#ml-$1 .ml-state[data-state=\"mutating\"],#ml-$1 .ml-state[data-state=\"slow burn\"],#ml-$1 .ml-state[data-state=\"latent\"]{background:rgba(218,197,255,.12);border-color:rgba(218,197,255,.3);color:#eadfff}#ml-$1 .ml-state[data-state=\"complete\"],#ml-$1 .ml-state[data-state=\"resolved\"]{background:rgba(222,214,255,.12);border-color:rgba(222,214,255,.28);color:#efe9ff}#ml-$1 .ml-item-text{font:14px/1.55 system-ui,-apple-system,'Segoe UI',Roboto,Arial;color:#fff3f8;white-space:pre-wrap;word-break:break-word}#ml-$1 .ml-trace-stack{display:flex;flex-direction:column;gap:10px}#ml-$1 .ml-trace-item{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start;padding:12px;border-radius:15px;border:1px solid rgba(240,188,218,.14);background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.018))}#ml-$1 .ml-trace-item[data-content=\"\"]{display:none}#ml-$1 .ml-trace-num{display:flex;align-items:center;justify-content:center;min-width:34px;height:26px;padding:0 8px;border-radius:999px;background:linear-gradient(135deg,#ffd6e7,#eadcff);color:#241728;font:700 10px 'Courier New',monospace;letter-spacing:.12em}#ml-$1 .ml-trace-text{font:14px/1.55 system-ui,-apple-system,'Segoe UI',Roboto,Arial;color:#fff3f8;white-space:pre-wrap;word-break:break-word}@media(max-width:640px){#ml-$1 .ml-pulse-grid,#ml-$1 .ml-goal-grid{grid-template-columns:1fr}}</style><div id=\"ml-$1\"><input type=\"radio\" name=\"ml-$1\" id=\"ml-$1-pulse\" checked><input type=\"radio\" name=\"ml-$1\" id=\"ml-$1-goals\"><input type=\"radio\" name=\"ml-$1\" id=\"ml-$1-notes\"><input type=\"radio\" name=\"ml-$1\" id=\"ml-$1-trace\"><div class=\"ml-head\"><div class=\"ml-title\">✦ Motive Ledger</div><div class=\"ml-chip\">Private Agenda</div></div><div class=\"ml-tabs\"><label for=\"ml-$1-pulse\">Pulse</label><label for=\"ml-$1-goals\">Goals</label><label for=\"ml-$1-notes\">Thoughts</label><label for=\"ml-$1-trace\">Trace</label></div><div class=\"ml-pages\"><section class=\"ml-page pulse\"><div class=\"ml-pulse-grid\"><div class=\"ml-pulse-card\"><div class=\"ml-label\">Current Drive</div><div class=\"ml-text\">$2</div></div><div class=\"ml-pulse-card\"><div class=\"ml-label\">Scene Pressure</div><div class=\"ml-text\">$3</div></div></div></section><section class=\"ml-page goals\"><div class=\"ml-goal-grid\"><div class=\"ml-column\"><div class=\"ml-label\">Short-Term</div><div class=\"ml-stack\"><div class=\"ml-item\" data-content=\"$4\"><span class=\"ml-state\" data-state=\"$5\">$5</span><div class=\"ml-item-text\">$4</div></div><div class=\"ml-item\" data-content=\"$6\"><span class=\"ml-state\" data-state=\"$7\">$7</span><div class=\"ml-item-text\">$6</div></div><div class=\"ml-item\" data-content=\"$8\"><span class=\"ml-state\" data-state=\"$9\">$9</span><div class=\"ml-item-text\">$8</div></div></div></div><div class=\"ml-column\"><div class=\"ml-label\">Long-Term</div><div class=\"ml-stack\"><div class=\"ml-item\" data-content=\"$10\"><span class=\"ml-state\" data-state=\"$11\">$11</span><div class=\"ml-item-text\">$10</div></div><div class=\"ml-item\" data-content=\"$12\"><span class=\"ml-state\" data-state=\"$13\">$13</span><div class=\"ml-item-text\">$12</div></div><div class=\"ml-item\" data-content=\"$14\"><span class=\"ml-state\" data-state=\"$15\">$15</span><div class=\"ml-item-text\">$14</div></div></div></div></div></section><section class=\"ml-page notes\"><div class=\"ml-label\">Margin Thoughts</div><div class=\"ml-text\">$16</div></section><section class=\"ml-page trace\"><div class=\"ml-label\">Scene Trace</div><div class=\"ml-trace-stack\"><div class=\"ml-trace-item\" data-content=\"$17\"><div class=\"ml-trace-num\">01</div><div class=\"ml-trace-text\">$17</div></div><div class=\"ml-trace-item\" data-content=\"$18\"><div class=\"ml-trace-num\">02</div><div class=\"ml-trace-text\">$18</div></div><div class=\"ml-trace-item\" data-content=\"$19\"><div class=\"ml-trace-num\">03</div><div class=\"ml-trace-text\">$19</div></div></div></section></div></div><!-- MOTIVE_LEDGER_END -->",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": true,
+                "promptOnly": false,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
+            },
+            {
+                "id": "41f387d4-e1e2-4443-908b-668b48c8ed1a",
+                "scriptName": "⚙️ [CTX] 01 — Strip Anchored UI Blocks",
+                "findRegex": "/<!--\\s*(?:TRACK_START|BRANCH_UI_START|CHAPTER_UI_START|UI_START(?:_(?:2|3))?)\\s*-->[\\s\\S]*?<!--\\s*(?:TRACK_END|BRANCH_UI_END|CHAPTER_UI_END|UI_END(?:_(?:2|3))?)\\s*-->/gi",
+                "replaceString": "",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": false,
+                "promptOnly": true,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": 3,
+                "maxDepth": null
+            },
+            {
+                "id": "35b221a6-87e1-4670-aa01-25ff6972562c",
+                "scriptName": "⚙️ [CTX] 02— Strip Tags",
+                "findRegex": "<think\\b[^>]*>.*?</think>|<details\\b[^>]*>.*?</details>|</?font\\b[^>]*>",
+                "replaceString": "",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": false,
+                "promptOnly": true,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
+            },
+            {
+                "id": "5fdaa730-6282-47bd-aead-76f40ac66106",
+                "scriptName": "⚙️ [CTX] 03— Strip Visual Text Tags",
+                "findRegex": "<\\/?(?:span|s|strong|em|i|b|div)\\b[^>]*>",
+                "replaceString": "",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": false,
+                "promptOnly": true,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
+            },
+            {
+                "id": "b88471e7-cd64-42f9-b0ef-b8bee1500183",
+                "scriptName": "⚙️ [CTX] 04 — Strip Aged Payload Blocks",
+                "findRegex": "/<payload>\\s*[\\s\\S]*?\\s*<\\/payload>\\s*/gi",
+                "replaceString": "",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "disabled": false,
+                "markdownOnly": false,
+                "promptOnly": true,
+                "runOnEdit": true,
+                "substituteRegex": 0,
+                "minDepth": 4,
+                "maxDepth": null
+            }
+        ]
+    },
     "temperature": 0.95,
     "frequency_penalty": 0.25,
     "presence_penalty": 1.91,
