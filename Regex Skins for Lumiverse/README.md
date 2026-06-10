@@ -1,3 +1,5 @@
+Works as is! just import the desired skin on the regex tab. Skins override the Default Purple, so you can just slot them over it; you can also delete the default purple folder if you so desire
+
 # Default look 
 <img width="802" height="291" alt="Screenshot 2026-06-10 000937" src="https://github.com/user-attachments/assets/71294b83-05ab-423d-8428-e5d809551262" />
 <img width="806" height="444" alt="Screenshot 2026-06-10 000944" src="https://github.com/user-attachments/assets/e12a8eac-0aec-4efc-9fc6-d9b57ca4a850" />
