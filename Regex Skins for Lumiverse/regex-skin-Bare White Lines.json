@@ -1,0 +1,501 @@
+{
+  "version": 1,
+  "type": "lumiverse_regex_scripts",
+  "scripts": [
+    {
+      "name": "🎨 [Skin: Bare White Lines] Radius Card",
+      "find_regex": "@@RX_RADIUS_CARD@@",
+      "replace_string": "0px",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 840,
+      "description": "Minimal square editorial white skin with slightly more opaque translucent fill, top and bottom line treatment, and outlined white pills for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Bare White Lines",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Bare White Lines] Radius Inner",
+      "find_regex": "@@RX_RADIUS_INNER@@",
+      "replace_string": "0px",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 841,
+      "description": "Minimal square editorial white skin with slightly more opaque translucent fill, top and bottom line treatment, and outlined white pills for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Bare White Lines",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Bare White Lines] Radius Pill",
+      "find_regex": "@@RX_RADIUS_PILL@@",
+      "replace_string": "0px",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 842,
+      "description": "Minimal square editorial white skin with slightly more opaque translucent fill, top and bottom line treatment, and outlined white pills for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Bare White Lines",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Bare White Lines] BG Main",
+      "find_regex": "@@RX_BG_MAIN@@",
+      "replace_string": "linear-gradient(180deg,rgba(255,255,255,.01),rgba(255,255,255,.0))3",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 843,
+      "description": "Minimal square editorial white skin with slightly more opaque translucent fill, top and bottom line treatment, and outlined white pills for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Bare White Lines",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Bare White Lines] BG Inner",
+      "find_regex": "@@RX_BG_INNER@@",
+      "replace_string": "linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.02))",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 844,
+      "description": "Minimal square editorial white skin with slightly more opaque translucent fill, top and bottom line treatment, and outlined white pills for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Bare White Lines",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Bare White Lines] BG Header",
+      "find_regex": "@@RX_BG_HEADER@@",
+      "replace_string": "linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.035))",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 845,
+      "description": "Minimal square editorial white skin with slightly more opaque translucent fill, top and bottom line treatment, and outlined white pills for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Bare White Lines",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Bare White Lines] BG Soft",
+      "find_regex": "@@RX_BG_SOFT@@",
+      "replace_string": "linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.028))",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 846,
+      "description": "Minimal square editorial white skin with slightly more opaque translucent fill, top and bottom line treatment, and outlined white pills for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Bare White Lines",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Bare White Lines] Border Main",
+      "find_regex": "@@RX_BORDER_MAIN@@",
+      "replace_string": "transparent",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 847,
+      "description": "Minimal square editorial white skin with slightly more opaque translucent fill, top and bottom line treatment, and outlined white pills for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Bare White Lines",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Bare White Lines] Border Soft",
+      "find_regex": "@@RX_BORDER_SOFT@@",
+      "replace_string": "rgba(255,255,255,.18)",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 848,
+      "description": "Minimal square editorial white skin with slightly more opaque translucent fill, top and bottom line treatment, and outlined white pills for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Bare White Lines",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Bare White Lines] Accent A",
+      "find_regex": "@@RX_ACCENT_A@@",
+      "replace_string": "#ffffff",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 849,
+      "description": "Minimal square editorial white skin with slightly more opaque translucent fill, top and bottom line treatment, and outlined white pills for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Bare White Lines",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Bare White Lines] Accent B",
+      "find_regex": "@@RX_ACCENT_B@@",
+      "replace_string": "#f2f2f2",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 850,
+      "description": "Minimal square editorial white skin with slightly more opaque translucent fill, top and bottom line treatment, and outlined white pills for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Bare White Lines",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Bare White Lines] Text Main",
+      "find_regex": "@@RX_TEXT_MAIN@@",
+      "replace_string": "#ffffff",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 851,
+      "description": "Minimal square editorial white skin with slightly more opaque translucent fill, top and bottom line treatment, and outlined white pills for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Bare White Lines",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Bare White Lines] Text Muted",
+      "find_regex": "@@RX_TEXT_MUTED@@",
+      "replace_string": "#ececec",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 852,
+      "description": "Minimal square editorial white skin with slightly more opaque translucent fill, top and bottom line treatment, and outlined white pills for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Bare White Lines",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Bare White Lines] Text Label",
+      "find_regex": "@@RX_TEXT_LABEL@@",
+      "replace_string": "#f7f7f7",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 853,
+      "description": "Minimal square editorial white skin with slightly more opaque translucent fill, top and bottom line treatment, and outlined white pills for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Bare White Lines",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Bare White Lines] Chip BG",
+      "find_regex": "@@RX_CHIP_BG@@",
+      "replace_string": "linear-gradient(180deg,rgba(255,255,255,.12),rgba(255,255,255,.08))",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 854,
+      "description": "Minimal square editorial white skin with slightly more opaque translucent fill, top and bottom line treatment, and outlined white pills for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Bare White Lines",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Bare White Lines] Chip Border",
+      "find_regex": "@@RX_CHIP_BORDER@@",
+      "replace_string": "rgba(255,255,255,.48)",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 855,
+      "description": "Minimal square editorial white skin with slightly more opaque translucent fill, top and bottom line treatment, and outlined white pills for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Bare White Lines",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Bare White Lines] Chip Text",
+      "find_regex": "@@RX_CHIP_TEXT@@",
+      "replace_string": "#ffffff",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 856,
+      "description": "Minimal square editorial white skin with slightly more opaque translucent fill, top and bottom line treatment, and outlined white pills for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Bare White Lines",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Bare White Lines] Shadow Card",
+      "find_regex": "@@RX_SHADOW_CARD@@",
+      "replace_string": "inset 0 1px 0 rgba(255,255,255,.30), inset 0 -1px 0 rgba(255,255,255,.30)",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 857,
+      "description": "Minimal square editorial white skin with slightly more opaque translucent fill, top and bottom line treatment, and outlined white pills for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Bare White Lines",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Bare White Lines] Shadow Soft",
+      "find_regex": "@@RX_SHADOW_SOFT@@",
+      "replace_string": "inset 0 1px 0 rgba(255,255,255,.05), inset 0 -1px 0 rgba(255,255,255,.05)",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 858,
+      "description": "Minimal square editorial white skin with slightly more opaque translucent fill, top and bottom line treatment, and outlined white pills for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Bare White Lines",
+      "script_id": ""
+    }
+  ],
+  "exported_at": 1781043347
+}

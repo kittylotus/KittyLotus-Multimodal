@@ -1,0 +1,511 @@
+{
+  "version": 1,
+  "type": "lumiverse_regex_scripts",
+  "scripts": [
+    {
+      "name": "🎨 [Skin: Default Purple] Radius Card",
+      "find_regex": "@@RX_RADIUS_CARD@@",
+      "replace_string": "20px",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 900,
+      "description": "Default visual skin token: @@RX_RADIUS_CARD@@",
+      "metadata": {
+        "generated_by": "chatgpt-rx-skin-v1"
+      },
+      "folder": "Regex Skins/Default Purple",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Default Purple] Radius Inner",
+      "find_regex": "@@RX_RADIUS_INNER@@",
+      "replace_string": "16px",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 901,
+      "description": "Default visual skin token: @@RX_RADIUS_INNER@@",
+      "metadata": {
+        "generated_by": "chatgpt-rx-skin-v1"
+      },
+      "folder": "Regex Skins/Default Purple",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Default Purple] Radius Pill",
+      "find_regex": "@@RX_RADIUS_PILL@@",
+      "replace_string": "999px",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 902,
+      "description": "Default visual skin token: @@RX_RADIUS_PILL@@",
+      "metadata": {
+        "generated_by": "chatgpt-rx-skin-v1"
+      },
+      "folder": "Regex Skins/Default Purple",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Default Purple] Bg Main",
+      "find_regex": "@@RX_BG_MAIN@@",
+      "replace_string": "linear-gradient(180deg,rgba(10,8,18,.96),rgba(8,6,15,.98))",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 903,
+      "description": "Default visual skin token: @@RX_BG_MAIN@@",
+      "metadata": {
+        "generated_by": "chatgpt-rx-skin-v1"
+      },
+      "folder": "Regex Skins/Default Purple",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Default Purple] Bg Inner",
+      "find_regex": "@@RX_BG_INNER@@",
+      "replace_string": "linear-gradient(180deg,rgba(22,18,34,.94),rgba(13,10,23,.96))",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 904,
+      "description": "Default visual skin token: @@RX_BG_INNER@@",
+      "metadata": {
+        "generated_by": "chatgpt-rx-skin-v1"
+      },
+      "folder": "Regex Skins/Default Purple",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Default Purple] Bg Header",
+      "find_regex": "@@RX_BG_HEADER@@",
+      "replace_string": "linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.015))",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 905,
+      "description": "Default visual skin token: @@RX_BG_HEADER@@",
+      "metadata": {
+        "generated_by": "chatgpt-rx-skin-v1"
+      },
+      "folder": "Regex Skins/Default Purple",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Default Purple] Bg Soft",
+      "find_regex": "@@RX_BG_SOFT@@",
+      "replace_string": "linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.015))",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 906,
+      "description": "Default visual skin token: @@RX_BG_SOFT@@",
+      "metadata": {
+        "generated_by": "chatgpt-rx-skin-v1"
+      },
+      "folder": "Regex Skins/Default Purple",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Default Purple] Border Main",
+      "find_regex": "@@RX_BORDER_MAIN@@",
+      "replace_string": "rgba(192,176,230,.18)",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 907,
+      "description": "Default visual skin token: @@RX_BORDER_MAIN@@",
+      "metadata": {
+        "generated_by": "chatgpt-rx-skin-v1"
+      },
+      "folder": "Regex Skins/Default Purple",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Default Purple] Border Soft",
+      "find_regex": "@@RX_BORDER_SOFT@@",
+      "replace_string": "rgba(192,176,230,.12)",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 908,
+      "description": "Default visual skin token: @@RX_BORDER_SOFT@@",
+      "metadata": {
+        "generated_by": "chatgpt-rx-skin-v1"
+      },
+      "folder": "Regex Skins/Default Purple",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Default Purple] Accent A",
+      "find_regex": "@@RX_ACCENT_A@@",
+      "replace_string": "rgba(150,121,217,.55)",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 909,
+      "description": "Default visual skin token: @@RX_ACCENT_A@@",
+      "metadata": {
+        "generated_by": "chatgpt-rx-skin-v1"
+      },
+      "folder": "Regex Skins/Default Purple",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Default Purple] Accent B",
+      "find_regex": "@@RX_ACCENT_B@@",
+      "replace_string": "rgba(104,121,179,.55)",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 910,
+      "description": "Default visual skin token: @@RX_ACCENT_B@@",
+      "metadata": {
+        "generated_by": "chatgpt-rx-skin-v1"
+      },
+      "folder": "Regex Skins/Default Purple",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Default Purple] Text Main",
+      "find_regex": "@@RX_TEXT_MAIN@@",
+      "replace_string": "#f7f3ff",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 911,
+      "description": "Default visual skin token: @@RX_TEXT_MAIN@@",
+      "metadata": {
+        "generated_by": "chatgpt-rx-skin-v1"
+      },
+      "folder": "Regex Skins/Default Purple",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Default Purple] Text Muted",
+      "find_regex": "@@RX_TEXT_MUTED@@",
+      "replace_string": "#d8c9ff",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 912,
+      "description": "Default visual skin token: @@RX_TEXT_MUTED@@",
+      "metadata": {
+        "generated_by": "chatgpt-rx-skin-v1"
+      },
+      "folder": "Regex Skins/Default Purple",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Default Purple] Text Label",
+      "find_regex": "@@RX_TEXT_LABEL@@",
+      "replace_string": "#cdbdf2",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 913,
+      "description": "Default visual skin token: @@RX_TEXT_LABEL@@",
+      "metadata": {
+        "generated_by": "chatgpt-rx-skin-v1"
+      },
+      "folder": "Regex Skins/Default Purple",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Default Purple] Chip Bg",
+      "find_regex": "@@RX_CHIP_BG@@",
+      "replace_string": "linear-gradient(135deg,#ffeaf6,#e9ddff)",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 914,
+      "description": "Default visual skin token: @@RX_CHIP_BG@@",
+      "metadata": {
+        "generated_by": "chatgpt-rx-skin-v1"
+      },
+      "folder": "Regex Skins/Default Purple",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Default Purple] Chip Text",
+      "find_regex": "@@RX_CHIP_TEXT@@",
+      "replace_string": "#1a1424",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 915,
+      "description": "Default visual skin token: @@RX_CHIP_TEXT@@",
+      "metadata": {
+        "generated_by": "chatgpt-rx-skin-v1"
+      },
+      "folder": "Regex Skins/Default Purple",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Default Purple] Shadow Card",
+      "find_regex": "@@RX_SHADOW_CARD@@",
+      "replace_string": "0 14px 28px rgba(0,0,0,.28)",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 916,
+      "description": "Default visual skin token: @@RX_SHADOW_CARD@@",
+      "metadata": {
+        "generated_by": "chatgpt-rx-skin-v1"
+      },
+      "folder": "Regex Skins/Default Purple",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Default Purple] Shadow Soft",
+      "find_regex": "@@RX_SHADOW_SOFT@@",
+      "replace_string": "0 10px 22px rgba(0,0,0,.18),inset 0 1px 0 rgba(255,255,255,.03)",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 917,
+      "description": "Default visual skin token: @@RX_SHADOW_SOFT@@",
+      "metadata": {
+        "generated_by": "chatgpt-rx-skin-v1"
+      },
+      "folder": "Regex Skins/Default Purple",
+      "script_id": ""
+    }
+  ],
+  "exported_at": 1781044689
+}

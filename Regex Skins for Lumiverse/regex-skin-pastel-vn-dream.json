@@ -1,0 +1,501 @@
+{
+  "version": 1,
+  "type": "lumiverse_regex_scripts",
+  "scripts": [
+    {
+      "name": "🎨 [Skin: Pastel VN Dream] Radius Card",
+      "find_regex": "@@RX_RADIUS_CARD@@",
+      "replace_string": "18px",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 840,
+      "description": "Pastel pink, blue, and lilac VN-inspired skin with white inner cards and dark readable text for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Pastel VN Dream",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Pastel VN Dream] Radius Inner",
+      "find_regex": "@@RX_RADIUS_INNER@@",
+      "replace_string": "14px",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 841,
+      "description": "Pastel pink, blue, and lilac VN-inspired skin with white inner cards and dark readable text for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Pastel VN Dream",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Pastel VN Dream] Radius Pill",
+      "find_regex": "@@RX_RADIUS_PILL@@",
+      "replace_string": "999px",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 842,
+      "description": "Pastel pink, blue, and lilac VN-inspired skin with white inner cards and dark readable text for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Pastel VN Dream",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Pastel VN Dream] BG Main",
+      "find_regex": "@@RX_BG_MAIN@@",
+      "replace_string": "linear-gradient(135deg,rgba(255,214,238,.70),rgba(214,232,255,.68),rgba(231,221,255,.72))",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 843,
+      "description": "Pastel pink, blue, and lilac VN-inspired skin with white inner cards and dark readable text for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Pastel VN Dream",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Pastel VN Dream] BG Inner",
+      "find_regex": "@@RX_BG_INNER@@",
+      "replace_string": "linear-gradient(180deg,rgba(255,255,255,.94),rgba(255,255,255,.90))",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 844,
+      "description": "Pastel pink, blue, and lilac VN-inspired skin with white inner cards and dark readable text for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Pastel VN Dream",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Pastel VN Dream] BG Header",
+      "find_regex": "@@RX_BG_HEADER@@",
+      "replace_string": "linear-gradient(90deg,rgba(255,228,242,.88),rgba(223,237,255,.86),rgba(237,230,255,.88))",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 845,
+      "description": "Pastel pink, blue, and lilac VN-inspired skin with white inner cards and dark readable text for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Pastel VN Dream",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Pastel VN Dream] BG Soft",
+      "find_regex": "@@RX_BG_SOFT@@",
+      "replace_string": "linear-gradient(180deg,rgba(255,255,255,.96),rgba(250,248,255,.92))",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 846,
+      "description": "Pastel pink, blue, and lilac VN-inspired skin with white inner cards and dark readable text for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Pastel VN Dream",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Pastel VN Dream] Border Main",
+      "find_regex": "@@RX_BORDER_MAIN@@",
+      "replace_string": "rgba(214,184,230,.52)",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 847,
+      "description": "Pastel pink, blue, and lilac VN-inspired skin with white inner cards and dark readable text for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Pastel VN Dream",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Pastel VN Dream] Border Soft",
+      "find_regex": "@@RX_BORDER_SOFT@@",
+      "replace_string": "rgba(194,173,223,.34)",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 848,
+      "description": "Pastel pink, blue, and lilac VN-inspired skin with white inner cards and dark readable text for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Pastel VN Dream",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Pastel VN Dream] Accent A",
+      "find_regex": "@@RX_ACCENT_A@@",
+      "replace_string": "#ffb6d9",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 849,
+      "description": "Pastel pink, blue, and lilac VN-inspired skin with white inner cards and dark readable text for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Pastel VN Dream",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Pastel VN Dream] Accent B",
+      "find_regex": "@@RX_ACCENT_B@@",
+      "replace_string": "#b9d7ff",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 850,
+      "description": "Pastel pink, blue, and lilac VN-inspired skin with white inner cards and dark readable text for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Pastel VN Dream",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Pastel VN Dream] Text Main",
+      "find_regex": "@@RX_TEXT_MAIN@@",
+      "replace_string": "#17131c",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 851,
+      "description": "Pastel pink, blue, and lilac VN-inspired skin with white inner cards and dark readable text for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Pastel VN Dream",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Pastel VN Dream] Text Muted",
+      "find_regex": "@@RX_TEXT_MUTED@@",
+      "replace_string": "#544b67",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 852,
+      "description": "Pastel pink, blue, and lilac VN-inspired skin with white inner cards and dark readable text for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Pastel VN Dream",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Pastel VN Dream] Text Label",
+      "find_regex": "@@RX_TEXT_LABEL@@",
+      "replace_string": "#7a6d98",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 853,
+      "description": "Pastel pink, blue, and lilac VN-inspired skin with white inner cards and dark readable text for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Pastel VN Dream",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Pastel VN Dream] Chip BG",
+      "find_regex": "@@RX_CHIP_BG@@",
+      "replace_string": "linear-gradient(135deg,rgba(255,195,223,.96),rgba(195,223,255,.95),rgba(224,207,255,.96))",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 854,
+      "description": "Pastel pink, blue, and lilac VN-inspired skin with white inner cards and dark readable text for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Pastel VN Dream",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Pastel VN Dream] Chip Border",
+      "find_regex": "@@RX_CHIP_BORDER@@",
+      "replace_string": "rgba(188,160,225,.52)",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 855,
+      "description": "Pastel pink, blue, and lilac VN-inspired skin with white inner cards and dark readable text for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Pastel VN Dream",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Pastel VN Dream] Chip Text",
+      "find_regex": "@@RX_CHIP_TEXT@@",
+      "replace_string": "#1d1824",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 856,
+      "description": "Pastel pink, blue, and lilac VN-inspired skin with white inner cards and dark readable text for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Pastel VN Dream",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Pastel VN Dream] Shadow Card",
+      "find_regex": "@@RX_SHADOW_CARD@@",
+      "replace_string": "0 18px 34px rgba(146,128,184,.16),0 4px 14px rgba(255,255,255,.35),inset 0 1px 0 rgba(255,255,255,.58)",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 857,
+      "description": "Pastel pink, blue, and lilac VN-inspired skin with white inner cards and dark readable text for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Pastel VN Dream",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Pastel VN Dream] Shadow Soft",
+      "find_regex": "@@RX_SHADOW_SOFT@@",
+      "replace_string": "0 10px 18px rgba(167,146,206,.10),inset 0 1px 0 rgba(255,255,255,.62)",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 858,
+      "description": "Pastel pink, blue, and lilac VN-inspired skin with white inner cards and dark readable text for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Pastel VN Dream",
+      "script_id": ""
+    }
+  ],
+  "exported_at": 1781043309
+}

@@ -1,0 +1,547 @@
+{
+  "version": 1,
+  "type": "lumiverse_regex_scripts",
+  "scripts": [
+    {
+      "name": "🎨 [Skin: Razor Neon Tryout] Radius Card",
+      "find_regex": "@@RX_RADIUS_CARD@@",
+      "replace_string": "6px",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 850,
+      "description": "Tryout token skin for tokenized Track, Track Aux, and Motive Ledger regexes. Import alongside the tokenized base preset.",
+      "metadata": {
+        "skin_id": "razor_neon_tryout",
+        "skin_type": "token_replacement",
+        "token": "@@RX_RADIUS_CARD@@"
+      },
+      "folder": "Regex Skins/Razor Neon Tryout",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Razor Neon Tryout] Radius Inner",
+      "find_regex": "@@RX_RADIUS_INNER@@",
+      "replace_string": "4px",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 851,
+      "description": "Tryout token skin for tokenized Track, Track Aux, and Motive Ledger regexes. Import alongside the tokenized base preset.",
+      "metadata": {
+        "skin_id": "razor_neon_tryout",
+        "skin_type": "token_replacement",
+        "token": "@@RX_RADIUS_INNER@@"
+      },
+      "folder": "Regex Skins/Razor Neon Tryout",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Razor Neon Tryout] Radius Pill",
+      "find_regex": "@@RX_RADIUS_PILL@@",
+      "replace_string": "3px",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 852,
+      "description": "Tryout token skin for tokenized Track, Track Aux, and Motive Ledger regexes. Import alongside the tokenized base preset.",
+      "metadata": {
+        "skin_id": "razor_neon_tryout",
+        "skin_type": "token_replacement",
+        "token": "@@RX_RADIUS_PILL@@"
+      },
+      "folder": "Regex Skins/Razor Neon Tryout",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Razor Neon Tryout] Bg Main",
+      "find_regex": "@@RX_BG_MAIN@@",
+      "replace_string": "linear-gradient(180deg,rgba(3,7,13,.98),rgba(10,4,18,.98))",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 853,
+      "description": "Tryout token skin for tokenized Track, Track Aux, and Motive Ledger regexes. Import alongside the tokenized base preset.",
+      "metadata": {
+        "skin_id": "razor_neon_tryout",
+        "skin_type": "token_replacement",
+        "token": "@@RX_BG_MAIN@@"
+      },
+      "folder": "Regex Skins/Razor Neon Tryout",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Razor Neon Tryout] Bg Inner",
+      "find_regex": "@@RX_BG_INNER@@",
+      "replace_string": "linear-gradient(180deg,rgba(10,18,28,.95),rgba(7,10,19,.97))",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 854,
+      "description": "Tryout token skin for tokenized Track, Track Aux, and Motive Ledger regexes. Import alongside the tokenized base preset.",
+      "metadata": {
+        "skin_id": "razor_neon_tryout",
+        "skin_type": "token_replacement",
+        "token": "@@RX_BG_INNER@@"
+      },
+      "folder": "Regex Skins/Razor Neon Tryout",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Razor Neon Tryout] Bg Header",
+      "find_regex": "@@RX_BG_HEADER@@",
+      "replace_string": "linear-gradient(90deg,rgba(84,235,255,.11),rgba(255,94,221,.075))",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 855,
+      "description": "Tryout token skin for tokenized Track, Track Aux, and Motive Ledger regexes. Import alongside the tokenized base preset.",
+      "metadata": {
+        "skin_id": "razor_neon_tryout",
+        "skin_type": "token_replacement",
+        "token": "@@RX_BG_HEADER@@"
+      },
+      "folder": "Regex Skins/Razor Neon Tryout",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Razor Neon Tryout] Bg Soft",
+      "find_regex": "@@RX_BG_SOFT@@",
+      "replace_string": "linear-gradient(180deg,rgba(84,235,255,.055),rgba(255,94,221,.035))",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 856,
+      "description": "Tryout token skin for tokenized Track, Track Aux, and Motive Ledger regexes. Import alongside the tokenized base preset.",
+      "metadata": {
+        "skin_id": "razor_neon_tryout",
+        "skin_type": "token_replacement",
+        "token": "@@RX_BG_SOFT@@"
+      },
+      "folder": "Regex Skins/Razor Neon Tryout",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Razor Neon Tryout] Border Main",
+      "find_regex": "@@RX_BORDER_MAIN@@",
+      "replace_string": "rgba(84,235,255,.32)",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 857,
+      "description": "Tryout token skin for tokenized Track, Track Aux, and Motive Ledger regexes. Import alongside the tokenized base preset.",
+      "metadata": {
+        "skin_id": "razor_neon_tryout",
+        "skin_type": "token_replacement",
+        "token": "@@RX_BORDER_MAIN@@"
+      },
+      "folder": "Regex Skins/Razor Neon Tryout",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Razor Neon Tryout] Border Soft",
+      "find_regex": "@@RX_BORDER_SOFT@@",
+      "replace_string": "rgba(255,94,221,.20)",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 858,
+      "description": "Tryout token skin for tokenized Track, Track Aux, and Motive Ledger regexes. Import alongside the tokenized base preset.",
+      "metadata": {
+        "skin_id": "razor_neon_tryout",
+        "skin_type": "token_replacement",
+        "token": "@@RX_BORDER_SOFT@@"
+      },
+      "folder": "Regex Skins/Razor Neon Tryout",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Razor Neon Tryout] Accent A",
+      "find_regex": "@@RX_ACCENT_A@@",
+      "replace_string": "#54ebff",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 859,
+      "description": "Tryout token skin for tokenized Track, Track Aux, and Motive Ledger regexes. Import alongside the tokenized base preset.",
+      "metadata": {
+        "skin_id": "razor_neon_tryout",
+        "skin_type": "token_replacement",
+        "token": "@@RX_ACCENT_A@@"
+      },
+      "folder": "Regex Skins/Razor Neon Tryout",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Razor Neon Tryout] Accent B",
+      "find_regex": "@@RX_ACCENT_B@@",
+      "replace_string": "#ff5edd",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 860,
+      "description": "Tryout token skin for tokenized Track, Track Aux, and Motive Ledger regexes. Import alongside the tokenized base preset.",
+      "metadata": {
+        "skin_id": "razor_neon_tryout",
+        "skin_type": "token_replacement",
+        "token": "@@RX_ACCENT_B@@"
+      },
+      "folder": "Regex Skins/Razor Neon Tryout",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Razor Neon Tryout] Text Main",
+      "find_regex": "@@RX_TEXT_MAIN@@",
+      "replace_string": "#eafcff",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 861,
+      "description": "Tryout token skin for tokenized Track, Track Aux, and Motive Ledger regexes. Import alongside the tokenized base preset.",
+      "metadata": {
+        "skin_id": "razor_neon_tryout",
+        "skin_type": "token_replacement",
+        "token": "@@RX_TEXT_MAIN@@"
+      },
+      "folder": "Regex Skins/Razor Neon Tryout",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Razor Neon Tryout] Text Muted",
+      "find_regex": "@@RX_TEXT_MUTED@@",
+      "replace_string": "#9fb9cc",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 862,
+      "description": "Tryout token skin for tokenized Track, Track Aux, and Motive Ledger regexes. Import alongside the tokenized base preset.",
+      "metadata": {
+        "skin_id": "razor_neon_tryout",
+        "skin_type": "token_replacement",
+        "token": "@@RX_TEXT_MUTED@@"
+      },
+      "folder": "Regex Skins/Razor Neon Tryout",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Razor Neon Tryout] Text Label",
+      "find_regex": "@@RX_TEXT_LABEL@@",
+      "replace_string": "#7ef5ff",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 863,
+      "description": "Tryout token skin for tokenized Track, Track Aux, and Motive Ledger regexes. Import alongside the tokenized base preset.",
+      "metadata": {
+        "skin_id": "razor_neon_tryout",
+        "skin_type": "token_replacement",
+        "token": "@@RX_TEXT_LABEL@@"
+      },
+      "folder": "Regex Skins/Razor Neon Tryout",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Razor Neon Tryout] Chip Bg",
+      "find_regex": "@@RX_CHIP_BG@@",
+      "replace_string": "linear-gradient(135deg,#54ebff,#ff5edd)",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 864,
+      "description": "Tryout token skin for tokenized Track, Track Aux, and Motive Ledger regexes. Import alongside the tokenized base preset.",
+      "metadata": {
+        "skin_id": "razor_neon_tryout",
+        "skin_type": "token_replacement",
+        "token": "@@RX_CHIP_BG@@"
+      },
+      "folder": "Regex Skins/Razor Neon Tryout",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Razor Neon Tryout] Chip Text",
+      "find_regex": "@@RX_CHIP_TEXT@@",
+      "replace_string": "#050611",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 865,
+      "description": "Tryout token skin for tokenized Track, Track Aux, and Motive Ledger regexes. Import alongside the tokenized base preset.",
+      "metadata": {
+        "skin_id": "razor_neon_tryout",
+        "skin_type": "token_replacement",
+        "token": "@@RX_CHIP_TEXT@@"
+      },
+      "folder": "Regex Skins/Razor Neon Tryout",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Razor Neon Tryout] Shadow Card",
+      "find_regex": "@@RX_SHADOW_CARD@@",
+      "replace_string": "0 16px 34px rgba(0,0,0,.44),0 0 18px rgba(84,235,255,.12)",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 866,
+      "description": "Tryout token skin for tokenized Track, Track Aux, and Motive Ledger regexes. Import alongside the tokenized base preset.",
+      "metadata": {
+        "skin_id": "razor_neon_tryout",
+        "skin_type": "token_replacement",
+        "token": "@@RX_SHADOW_CARD@@"
+      },
+      "folder": "Regex Skins/Razor Neon Tryout",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Razor Neon Tryout] Shadow Soft",
+      "find_regex": "@@RX_SHADOW_SOFT@@",
+      "replace_string": "0 10px 22px rgba(0,0,0,.32),0 0 12px rgba(255,94,221,.08)",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": true,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 867,
+      "description": "Tryout token skin for tokenized Track, Track Aux, and Motive Ledger regexes. Import alongside the tokenized base preset.",
+      "metadata": {
+        "skin_id": "razor_neon_tryout",
+        "skin_type": "token_replacement",
+        "token": "@@RX_SHADOW_SOFT@@"
+      },
+      "folder": "Regex Skins/Razor Neon Tryout",
+      "script_id": ""
+    }
+  ],
+  "exported_at": 1781003894
+}

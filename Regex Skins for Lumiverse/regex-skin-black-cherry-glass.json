@@ -1,0 +1,501 @@
+{
+  "version": 1,
+  "type": "lumiverse_regex_scripts",
+  "scripts": [
+    {
+      "name": "🎨 [Skin: Black Cherry Glass] Radius Card",
+      "find_regex": "@@RX_RADIUS_CARD@@",
+      "replace_string": "14px",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 840,
+      "description": "Black cherry semi-transparent glass skin with rich cherry gradients and glossy dark cards for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Black Cherry Glass",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Black Cherry Glass] Radius Inner",
+      "find_regex": "@@RX_RADIUS_INNER@@",
+      "replace_string": "10px",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 841,
+      "description": "Black cherry semi-transparent glass skin with rich cherry gradients and glossy dark cards for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Black Cherry Glass",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Black Cherry Glass] Radius Pill",
+      "find_regex": "@@RX_RADIUS_PILL@@",
+      "replace_string": "999px",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 842,
+      "description": "Black cherry semi-transparent glass skin with rich cherry gradients and glossy dark cards for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Black Cherry Glass",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Black Cherry Glass] BG Main",
+      "find_regex": "@@RX_BG_MAIN@@",
+      "replace_string": "linear-gradient(135deg,rgba(20,8,14,.74),rgba(36,10,22,.68),rgba(18,8,20,.76))",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 843,
+      "description": "Black cherry semi-transparent glass skin with rich cherry gradients and glossy dark cards for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Black Cherry Glass",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Black Cherry Glass] BG Inner",
+      "find_regex": "@@RX_BG_INNER@@",
+      "replace_string": "linear-gradient(180deg,rgba(34,14,26,.72),rgba(20,10,18,.78))",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 844,
+      "description": "Black cherry semi-transparent glass skin with rich cherry gradients and glossy dark cards for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Black Cherry Glass",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Black Cherry Glass] BG Header",
+      "find_regex": "@@RX_BG_HEADER@@",
+      "replace_string": "linear-gradient(90deg,rgba(160,46,88,.14),rgba(104,34,74,.12),rgba(184,70,110,.14))",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 845,
+      "description": "Black cherry semi-transparent glass skin with rich cherry gradients and glossy dark cards for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Black Cherry Glass",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Black Cherry Glass] BG Soft",
+      "find_regex": "@@RX_BG_SOFT@@",
+      "replace_string": "linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.015))",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 846,
+      "description": "Black cherry semi-transparent glass skin with rich cherry gradients and glossy dark cards for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Black Cherry Glass",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Black Cherry Glass] Border Main",
+      "find_regex": "@@RX_BORDER_MAIN@@",
+      "replace_string": "rgba(206,120,154,.24)",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 847,
+      "description": "Black cherry semi-transparent glass skin with rich cherry gradients and glossy dark cards for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Black Cherry Glass",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Black Cherry Glass] Border Soft",
+      "find_regex": "@@RX_BORDER_SOFT@@",
+      "replace_string": "rgba(255,228,238,.10)",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 848,
+      "description": "Black cherry semi-transparent glass skin with rich cherry gradients and glossy dark cards for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Black Cherry Glass",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Black Cherry Glass] Accent A",
+      "find_regex": "@@RX_ACCENT_A@@",
+      "replace_string": "#ea8fb2",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 849,
+      "description": "Black cherry semi-transparent glass skin with rich cherry gradients and glossy dark cards for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Black Cherry Glass",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Black Cherry Glass] Accent B",
+      "find_regex": "@@RX_ACCENT_B@@",
+      "replace_string": "#9b6cff",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 850,
+      "description": "Black cherry semi-transparent glass skin with rich cherry gradients and glossy dark cards for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Black Cherry Glass",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Black Cherry Glass] Text Main",
+      "find_regex": "@@RX_TEXT_MAIN@@",
+      "replace_string": "#f9eff3",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 851,
+      "description": "Black cherry semi-transparent glass skin with rich cherry gradients and glossy dark cards for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Black Cherry Glass",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Black Cherry Glass] Text Muted",
+      "find_regex": "@@RX_TEXT_MUTED@@",
+      "replace_string": "#d8c0ca",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 852,
+      "description": "Black cherry semi-transparent glass skin with rich cherry gradients and glossy dark cards for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Black Cherry Glass",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Black Cherry Glass] Text Label",
+      "find_regex": "@@RX_TEXT_LABEL@@",
+      "replace_string": "#efbdd0",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 853,
+      "description": "Black cherry semi-transparent glass skin with rich cherry gradients and glossy dark cards for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Black Cherry Glass",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Black Cherry Glass] Chip BG",
+      "find_regex": "@@RX_CHIP_BG@@",
+      "replace_string": "linear-gradient(135deg,rgba(120,26,62,.74),rgba(84,24,50,.70),rgba(168,66,108,.70))",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 854,
+      "description": "Black cherry semi-transparent glass skin with rich cherry gradients and glossy dark cards for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Black Cherry Glass",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Black Cherry Glass] Chip Border",
+      "find_regex": "@@RX_CHIP_BORDER@@",
+      "replace_string": "rgba(245,206,221,.22)",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 855,
+      "description": "Black cherry semi-transparent glass skin with rich cherry gradients and glossy dark cards for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Black Cherry Glass",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Black Cherry Glass] Chip Text",
+      "find_regex": "@@RX_CHIP_TEXT@@",
+      "replace_string": "#fff7fa",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 856,
+      "description": "Black cherry semi-transparent glass skin with rich cherry gradients and glossy dark cards for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Black Cherry Glass",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Black Cherry Glass] Shadow Card",
+      "find_regex": "@@RX_SHADOW_CARD@@",
+      "replace_string": "0 18px 38px rgba(0,0,0,.30),0 0 22px rgba(145,40,82,.10),inset 0 1px 0 rgba(255,255,255,.08)",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 857,
+      "description": "Black cherry semi-transparent glass skin with rich cherry gradients and glossy dark cards for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Black Cherry Glass",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Black Cherry Glass] Shadow Soft",
+      "find_regex": "@@RX_SHADOW_SOFT@@",
+      "replace_string": "0 10px 24px rgba(0,0,0,.22),0 0 10px rgba(170,80,120,.08),inset 0 1px 0 rgba(255,255,255,.05)",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 858,
+      "description": "Black cherry semi-transparent glass skin with rich cherry gradients and glossy dark cards for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Black Cherry Glass",
+      "script_id": ""
+    }
+  ],
+  "exported_at": 1781044851
+}

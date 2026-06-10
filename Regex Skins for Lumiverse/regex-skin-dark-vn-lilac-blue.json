@@ -1,0 +1,501 @@
+{
+  "version": 1,
+  "type": "lumiverse_regex_scripts",
+  "scripts": [
+    {
+      "name": "🎨 [Skin: Dark VN Lilac Blue] Radius Card",
+      "find_regex": "@@RX_RADIUS_CARD@@",
+      "replace_string": "20px",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 840,
+      "description": "Dark VN-inspired lilac and blue gradient skin with darker panels, cool-glow pills, and readable pale text for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Dark VN Lilac Blue",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Dark VN Lilac Blue] Radius Inner",
+      "find_regex": "@@RX_RADIUS_INNER@@",
+      "replace_string": "14px",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 841,
+      "description": "Dark VN-inspired lilac and blue gradient skin with darker panels, cool-glow pills, and readable pale text for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Dark VN Lilac Blue",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Dark VN Lilac Blue] Radius Pill",
+      "find_regex": "@@RX_RADIUS_PILL@@",
+      "replace_string": "999px",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 842,
+      "description": "Dark VN-inspired lilac and blue gradient skin with darker panels, cool-glow pills, and readable pale text for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Dark VN Lilac Blue",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Dark VN Lilac Blue] BG Main",
+      "find_regex": "@@RX_BG_MAIN@@",
+      "replace_string": "linear-gradient(135deg,rgba(24,18,44,.94),rgba(18,28,56,.94),rgba(38,22,62,.95))",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 843,
+      "description": "Dark VN-inspired lilac and blue gradient skin with darker panels, cool-glow pills, and readable pale text for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Dark VN Lilac Blue",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Dark VN Lilac Blue] BG Inner",
+      "find_regex": "@@RX_BG_INNER@@",
+      "replace_string": "linear-gradient(180deg,rgba(28,24,52,.94),rgba(18,20,40,.96))",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 844,
+      "description": "Dark VN-inspired lilac and blue gradient skin with darker panels, cool-glow pills, and readable pale text for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Dark VN Lilac Blue",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Dark VN Lilac Blue] BG Header",
+      "find_regex": "@@RX_BG_HEADER@@",
+      "replace_string": "linear-gradient(90deg,rgba(118,94,196,.18),rgba(95,140,235,.16),rgba(170,122,228,.18))",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 845,
+      "description": "Dark VN-inspired lilac and blue gradient skin with darker panels, cool-glow pills, and readable pale text for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Dark VN Lilac Blue",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Dark VN Lilac Blue] BG Soft",
+      "find_regex": "@@RX_BG_SOFT@@",
+      "replace_string": "linear-gradient(180deg,rgba(108,95,186,.10),rgba(82,120,214,.08),rgba(165,120,214,.08))",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 846,
+      "description": "Dark VN-inspired lilac and blue gradient skin with darker panels, cool-glow pills, and readable pale text for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Dark VN Lilac Blue",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Dark VN Lilac Blue] Border Main",
+      "find_regex": "@@RX_BORDER_MAIN@@",
+      "replace_string": "rgba(136,121,214,.34)",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 847,
+      "description": "Dark VN-inspired lilac and blue gradient skin with darker panels, cool-glow pills, and readable pale text for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Dark VN Lilac Blue",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Dark VN Lilac Blue] Border Soft",
+      "find_regex": "@@RX_BORDER_SOFT@@",
+      "replace_string": "rgba(175,166,235,.18)",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 848,
+      "description": "Dark VN-inspired lilac and blue gradient skin with darker panels, cool-glow pills, and readable pale text for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Dark VN Lilac Blue",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Dark VN Lilac Blue] Accent A",
+      "find_regex": "@@RX_ACCENT_A@@",
+      "replace_string": "#b19cff",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 849,
+      "description": "Dark VN-inspired lilac and blue gradient skin with darker panels, cool-glow pills, and readable pale text for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Dark VN Lilac Blue",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Dark VN Lilac Blue] Accent B",
+      "find_regex": "@@RX_ACCENT_B@@",
+      "replace_string": "#8cc8ff",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 850,
+      "description": "Dark VN-inspired lilac and blue gradient skin with darker panels, cool-glow pills, and readable pale text for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Dark VN Lilac Blue",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Dark VN Lilac Blue] Text Main",
+      "find_regex": "@@RX_TEXT_MAIN@@",
+      "replace_string": "#f3efff",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 851,
+      "description": "Dark VN-inspired lilac and blue gradient skin with darker panels, cool-glow pills, and readable pale text for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Dark VN Lilac Blue",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Dark VN Lilac Blue] Text Muted",
+      "find_regex": "@@RX_TEXT_MUTED@@",
+      "replace_string": "#c6bddf",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 852,
+      "description": "Dark VN-inspired lilac and blue gradient skin with darker panels, cool-glow pills, and readable pale text for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Dark VN Lilac Blue",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Dark VN Lilac Blue] Text Label",
+      "find_regex": "@@RX_TEXT_LABEL@@",
+      "replace_string": "#d8cbff",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 853,
+      "description": "Dark VN-inspired lilac and blue gradient skin with darker panels, cool-glow pills, and readable pale text for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Dark VN Lilac Blue",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Dark VN Lilac Blue] Chip BG",
+      "find_regex": "@@RX_CHIP_BG@@",
+      "replace_string": "linear-gradient(135deg,rgba(122,104,214,.88),rgba(95,140,235,.84),rgba(174,122,228,.88))",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 854,
+      "description": "Dark VN-inspired lilac and blue gradient skin with darker panels, cool-glow pills, and readable pale text for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Dark VN Lilac Blue",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Dark VN Lilac Blue] Chip Border",
+      "find_regex": "@@RX_CHIP_BORDER@@",
+      "replace_string": "rgba(196,186,255,.34)",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 855,
+      "description": "Dark VN-inspired lilac and blue gradient skin with darker panels, cool-glow pills, and readable pale text for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Dark VN Lilac Blue",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Dark VN Lilac Blue] Chip Text",
+      "find_regex": "@@RX_CHIP_TEXT@@",
+      "replace_string": "#0f1020",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 856,
+      "description": "Dark VN-inspired lilac and blue gradient skin with darker panels, cool-glow pills, and readable pale text for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Dark VN Lilac Blue",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Dark VN Lilac Blue] Shadow Card",
+      "find_regex": "@@RX_SHADOW_CARD@@",
+      "replace_string": "0 18px 36px rgba(0,0,0,.34),0 0 24px rgba(132,118,214,.12),inset 0 1px 0 rgba(255,255,255,.06)",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 857,
+      "description": "Dark VN-inspired lilac and blue gradient skin with darker panels, cool-glow pills, and readable pale text for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Dark VN Lilac Blue",
+      "script_id": ""
+    },
+    {
+      "name": "🎨 [Skin: Dark VN Lilac Blue] Shadow Soft",
+      "find_regex": "@@RX_SHADOW_SOFT@@",
+      "replace_string": "0 10px 20px rgba(0,0,0,.22),0 0 12px rgba(140,128,230,.08),inset 0 1px 0 rgba(255,255,255,.04)",
+      "flags": "g",
+      "placement": [
+        "ai_output",
+        "user_input"
+      ],
+      "scope": "global",
+      "scope_id": null,
+      "target": [
+        "display"
+      ],
+      "min_depth": null,
+      "max_depth": null,
+      "trim_strings": [],
+      "run_on_edit": false,
+      "substitute_macros": "none",
+      "disabled": false,
+      "sort_order": 858,
+      "description": "Dark VN-inspired lilac and blue gradient skin with darker panels, cool-glow pills, and readable pale text for tokenized Lumiverse UI.",
+      "metadata": {},
+      "folder": "Regex Skins/Dark VN Lilac Blue",
+      "script_id": ""
+    }
+  ],
+  "exported_at": 1781044491
+}
