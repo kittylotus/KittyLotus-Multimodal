@@ -6,7 +6,7 @@
 ### ‧₊˚ೃ . Check [the Carrd](https://multimodalkl.carrd.co/) for more info!
 
 ### ‧₊˚ೃ For Lumiverse:
-## - [Latest KittyLotus preset](https://illarin.com/a/9998b495-1a9a-4e57-822f-3853f0b32380/kittylotus) on Illarin
+- [**Latest KittyLotus preset**](https://illarin.com/a/9998b495-1a9a-4e57-822f-3853f0b32380/kittylotus) on Illarin
 - [Gabrielle's card](https://illarin.com/a/dd8c3b6b-e335-4259-b744-ccf25543f289/gabrielle-debug-ic-alt-fields) (CCv2, CCv3, and .CharX)
 
 ### ‧₊˚ೃ Index!
