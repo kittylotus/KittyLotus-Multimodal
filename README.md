@@ -5,6 +5,10 @@
 
 ### ‧₊˚ೃ . Check [the Carrd](https://multimodalkl.carrd.co/) for more info!
 
+### ‧₊˚ೃ For Lumiverse:
+## - [Latest KittyLotus preset](https://illarin.com/a/9998b495-1a9a-4e57-822f-3853f0b32380/kittylotus) on Illarin
+- [Gabrielle's card](https://illarin.com/a/dd8c3b6b-e335-4259-b744-ccf25543f289/gabrielle-debug-ic-alt-fields) (CCv2, CCv3, and .CharX)
+
 ### ‧₊˚ೃ Index!
 - [Main Features](https://github.com/kittylotus/KittyLotus-Multimodal/tree/main#%E0%A9%88-main-features-%E0%B3%83-)
 - [What Makes It Work?](https://github.com/kittylotus/KittyLotus-Multimodal/tree/main#what-makes-it-work)
