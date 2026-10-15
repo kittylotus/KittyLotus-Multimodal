@@ -12,7 +12,7 @@
 ### ‧₊˚ೃ Index!
 - [Main Features](https://github.com/kittylotus/KittyLotus-Multimodal/tree/main#%E0%A9%88-main-features-%E0%B3%83-)
 - [What Makes It Work?](https://github.com/kittylotus/KittyLotus-Multimodal/tree/main#what-makes-it-work)
-- [Regex HTML examples](https://github.com/kittylotus/KittyLotus-Multimodal/tree/main#regexes)
+- [Regex HTML examples](https://github.com/kittylotus/KittyLotus-Multimodal/tree/main#regexes) ST|Tavo
 - [Simtrakcer Skins ](https://github.com/kittylotus/KittyLotus-Multimodal/tree/main#-simtracker-skins)
 
 
