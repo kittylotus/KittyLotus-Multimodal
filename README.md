@@ -96,7 +96,7 @@ A private **Continuity Summary** can periodically compress recent turns, with co
 
 ## *ૢ✧ World pressure, failure, and antagonists
 
-The old single “DARK_LEVEL” idea has grown into a broader consequence system.
+The broader consequence system.
 
 **AutoWorld** can infer world pressure from the scene, or you can switch to manual controls for:
 
@@ -138,7 +138,7 @@ The preset can stay plain-text, but it also knows how to produce and coordinate 
 
 ## Scene Trace
 
-Scene Trace is a streaming modular inspection console for scene facts, inspectable signals, social geometry, and knowledge boundaries. It is meant for people who look at a perfectly functional roleplay and think, *okay, but what if it had diagnostics?*
+Scene Trace is a streaming modular inspection console for scene facts, inspectable signals, social geometry, and knowledge boundaries.
 
 ---
 
