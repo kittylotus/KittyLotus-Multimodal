@@ -5,7 +5,7 @@
 <h1 align="center">⋆｡‧₊ °♱ ༺ 𓆩𖤍𓆪 KittyLotus Multimodal</h1>
 
 <p align="center">
-  <b>A modular narrative preset for Lumiverse(mainly) / SillyTavern.</b><br>
+  <b>A modular narrative preset for Lumiverse (mainly) / SillyTavern.</b><br>
   Prose control, character fidelity, story pressure, state tracking, interactive HTML, social formats, campaign tools, and one extremely opinionated engine operator.
 </p>
 
